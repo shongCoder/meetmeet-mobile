@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="intro ing">
-      <change afterPath="$PROJECT_DIR$/css/intro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/intro-loading.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/intro-logo2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/signin-apple.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/signin-google.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/signin-kakao.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/intro2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sign-in.html" afterDir="false" />
+    <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="intro &amp; sign-in">
+      <change afterPath="$PROJECT_DIR$/img/icon/checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/icon-arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/unchecked.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/intro/intro.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/intro/intro-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/intro/intro-logo1.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/intro1.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign-in.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +58,7 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\intro" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img" />
@@ -90,7 +84,7 @@
       <workItem from="1761557205610" duration="2661000" />
       <workItem from="1761559984143" duration="67000" />
       <workItem from="1761610615460" duration="3000" />
-      <workItem from="1761629768842" duration="8440000" />
+      <workItem from="1761629768842" duration="13656000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
@@ -116,16 +110,36 @@
       <option name="project" value="LOCAL" />
       <updated>1761560008431</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="intro &amp; sign-in">
+      <option name="closed" value="true" />
+      <created>1761646230518</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1761646230518</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="?" />
     <MESSAGE value="test" />
     <MESSAGE value="intro ing" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro ing" />
+    <MESSAGE value="intro &amp; sign-in" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro &amp; sign-in" />
   </component>
 </project>

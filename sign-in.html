@@ -19,13 +19,143 @@
       <div class="sign-section">
         <p>Sign up with Social Networks</p>
         <div class="sign-button">
-          <button><img src="img/intro/signin-google.svg" alt="google sign in"></button>
-          <button><img src="img/intro/signin-apple.svg" alt="apple sign in"></button>
-          <button><img src="img/intro/signin-kakao.svg" alt="kakao sign in"></button>
+          <button onclick="openSheet()"><img src="img/intro/signin-google.svg" alt="google sign in"></button>
+          <button onclick="openSheet()"><img src="img/intro/signin-apple.svg" alt="apple sign in"></button>
+          <button onclick="openSheet()"><img src="img/intro/signin-kakao.svg" alt="kakao sign in"></button>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<!-- 하단 모달 -->
+<div id="backdrop" class="backdrop" onclick="closeSheet()"></div>
+
+<div id="sheet" class="bottom-sheet">
+  <div class="handle">
+    <div class="handle-bar"></div>
+  </div>
+
+  <h1 class="title">약관 동의</h1>
+  <p class="content">서비스 이용을 위해 약관에 동의해 주세요</p>
+  <div class="terms">
+    <div>
+      <div class="terms-box">
+        <label class="terms-check">
+          <input type="checkbox" id="all-check" />
+          <span class="custom-check"></span>
+          <span class="text">모든 약관에 동의합니다.</span>
+        </label>
+      </div>
+      <div class="terms-box">
+        <label class="terms-check">
+          <input type="checkbox" class="sub-check" />
+          <span class="custom-check"></span>
+          <span class="text">이용약관 동의 <span style="color: #FA1155;">(필수)</span></span>
+        </label>
+        <button><img src="img/icon/icon-arrow-right.svg" alt="terms detail"></button>
+      </div>
+      <div class="terms-box">
+        <label class="terms-check">
+          <input type="checkbox" class="sub-check" />
+          <span class="custom-check"></span>
+          <span class="text">개인정보처리방침 동의 <span style="color: #FA1155;">(필수)</span></span>
+        </label>
+        <button><img src="img/icon/icon-arrow-right.svg" alt="terms detail"></button>
+      </div>
+      <div class="terms-box">
+        <label class="terms-check">
+          <input type="checkbox" class="sub-check" />
+          <span class="custom-check"></span>
+          <span class="text">마케팅 및 광고 활용 동의</span>
+        </label>
+        <button><img src="img/icon/icon-arrow-right.svg" alt="terms detail"></button>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <div class="buttons">
+    <button>동의하기</button>
+    <button>모두 동의하기</button>
+  </div>
+</div>
+
+<script>
+  const sheet = document.getElementById('sheet');
+  const backdrop = document.getElementById('backdrop');
+  const handle = sheet.querySelector('.handle');
+
+  function openSheet(){
+    sheet.classList.add('show');
+    backdrop.style.display = 'block';
+  }
+
+  function closeSheet(){
+    sheet.classList.remove('show');
+    backdrop.style.display = 'none';
+    sheet.style.transform = '';
+  }
+
+  // ----- Pointer Events (마우스/터치 통합) -----
+  let startY = 0;
+  let dragging = false;
+  let currentTranslate = 0;
+
+  const THRESHOLD = 120;
+
+  handle.addEventListener('pointerdown', (e) => {
+    dragging = true;
+    startY = e.clientY;
+    currentTranslate = 0;
+    sheet.style.transition = 'none';
+    handle.setPointerCapture(e.pointerId);
+  });
+
+  handle.addEventListener('pointermove', (e) => {
+    if (!dragging) return;
+    const diff = e.clientY - startY;
+    if (diff > 0) {
+      currentTranslate = diff;
+      sheet.style.transform = `translateY(${diff}px)`;
+      // 모바일에서 스크롤로 먹히지 않도록 방지
+      e.preventDefault?.();
+    }
+  }, { passive: false });
+
+  const endDrag = (e) => {
+    if (!dragging) return;
+    dragging = false;
+    sheet.style.transition = 'transform 0.25s ease';
+
+    const sheetHeight = sheet.offsetHeight;
+    const ratio = currentTranslate / sheetHeight;
+
+    if (ratio > 0.5) {
+      closeSheet();
+    } else {
+      sheet.style.transform = 'translateY(0)';
+    }
+
+    handle.releasePointerCapture?.(e.pointerId);
+  };
+
+  handle.addEventListener('pointerup', endDrag);
+  handle.addEventListener('pointercancel', endDrag);
+
+  // 약관 전체 동의
+  const allCheck = document.getElementById('all-check');
+  const subChecks = document.querySelectorAll('.sub-check');
+
+  allCheck.addEventListener('change', () => {
+    subChecks.forEach(chk => chk.checked = allCheck.checked);
+  });
+
+  subChecks.forEach(chk => {
+    chk.addEventListener('change', () => {
+      const allChecked = Array.from(subChecks).every(c => c.checked);
+      allCheck.checked = allChecked;
+    });
+  });
+</script>
 </body>
 </html>

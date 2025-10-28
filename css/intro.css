@@ -64,6 +64,21 @@
                 pulse 2s ease-in-out infinite;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%   { transform: scale(0.85)   rotate(0deg); }
+    50%  { transform: scale(1) rotate(180deg); }
+    100% { transform: scale(0.85)   rotate(360deg); }
+}
+
 .copy-right {
     width: 100%;
     position: absolute;
@@ -96,17 +111,141 @@
     margin-top: 1rem;
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* 하단 모달 */
+
+.backdrop {
+    position: fixed;
+    top:0; left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.6);
+    display:none;
 }
 
-@keyframes pulse {
-    0%   { transform: scale(0.85)   rotate(0deg); }
-    50%  { transform: scale(1) rotate(180deg); }
-    100% { transform: scale(0.85)   rotate(360deg); }
+.bottom-sheet {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0 20px 20px 20px;
+    width: 100%;
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    transform: translateY(100%);
+    transition: transform .25s ease;
+    z-index: 99;
+    box-sizing: border-box;
+}
+
+.bottom-sheet.show {
+    transform: translateY(0);
+}
+
+.bottom-sheet .handle {
+    width: 100%;
+    touch-action: none;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-sheet .handle .handle-bar {
+    width: 60px;
+    height: 4px;
+    background: #E8E8E8;
+    border-radius: 100px;
+}
+
+.bottom-sheet .title {
+    color: #1C1E22;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.bottom-sheet .content {
+    color: #7D8A9F;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.bottom-sheet .terms {
+    display: flex;
+    margin-bottom: 1.25rem;
+}
+
+.bottom-sheet .terms div {
+    flex: 1;
+}
+
+.bottom-sheet .terms .terms-box {
+    padding: 12px 0 12px 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-sheet .terms .terms-box:first-child {
+    background: #FA115505;
+}
+
+.bottom-sheet .terms .terms-box .terms-check {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.bottom-sheet .terms .terms-box input {
+    display: none;
+}
+
+.bottom-sheet .terms .terms-box .custom-check {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('../img/icon/unchecked.svg') no-repeat center / contain;
+}
+.bottom-sheet .terms .terms-box input:checked ~ .custom-check {
+    background: url('../img/icon/checked.svg') no-repeat center / contain;
+}
+
+.bottom-sheet .terms .terms-box .text {
+    color: #898D99;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.bottom-sheet .terms .terms-box:first-child .text {
+    color: #1C1E22;
+    font-weight: 500;
+}
+
+.bottom-sheet .buttons {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 1.25rem;
+}
+
+.bottom-sheet .buttons button {
+    flex: 1;
+    padding: 0.875rem 0;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    border-radius: 0.75rem;
+}
+
+.bottom-sheet .buttons button:first-child {
+    background: #FA11550A;
+    color: #FA1155;
+}
+
+.bottom-sheet .buttons button:last-child {
+    background: #FA1155;
+    color: white;
+    box-shadow: 0 5px 10px 0 #1A1A1A1A;
 }
