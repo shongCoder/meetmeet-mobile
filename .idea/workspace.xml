@@ -4,14 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="test">
-      <change afterPath="$PROJECT_DIR$/css/font.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/intro/intro.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/intro/intro-logo.svg" afterDir="false" />
+    <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="intro ing">
+      <change afterPath="$PROJECT_DIR$/css/intro.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/intro/intro-loading.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/intro/intro-logo2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/intro/signin-apple.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/intro/signin-google.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/intro/signin-kakao.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/intro2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign-in.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/intro-back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/intro/intro-back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/intro/intro.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/intro/intro-logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/intro/intro-logo1.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/intro1.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -38,29 +43,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/sypark/WebstormProjects/meetmeet-mobile/css",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/sypark/WebstormProjects/meetmeet-mobile/css&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\intro" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img" />
     </key>
   </component>
@@ -82,6 +88,9 @@
       <workItem from="1761264444352" duration="20000" />
       <workItem from="1761294944755" duration="403000" />
       <workItem from="1761557205610" duration="2661000" />
+      <workItem from="1761559984143" duration="67000" />
+      <workItem from="1761610615460" duration="3000" />
+      <workItem from="1761629768842" duration="8440000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
@@ -99,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761295328521</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="intro ing">
+      <option name="closed" value="true" />
+      <created>1761560008431</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1761560008431</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="?" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="intro ing" />
+    <option name="LAST_COMMIT_MESSAGE" value="intro ing" />
   </component>
 </project>
