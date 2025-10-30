@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>본인인증</title>
+</head>
+<body>
+    <div id="wrapper">
+        <section id="verify" class="step">
+            <div class="header">
+                <div class="back">
+                    <button><img src="img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+                </div>
+                <div class="title">
+                    <h1>
+                        본인인증을<br />
+                        진행해 주세요
+                    </h1>
+                    <p>
+                        본인 인증 코드를 문자로 발송합니다.<br />
+                        본인 인증 목적으로만 사용되니 안심하세요.
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <form>
+                    <div class="form-field">
+                        <label for="phone">연락처</label>
+                        <div class="input-box">
+                            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="“-”없이 입력해 주세요" />
+                            <button type="button" class="send-btn">발송하기</button>
+                        </div>
+                        <p>문자 메시지 및 데이터 이용 시 요금이 부과될 수 있습니다.</p>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <!--//verify-->
+    </div>
+</body>
+</html>

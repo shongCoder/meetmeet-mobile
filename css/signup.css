@@ -1,0 +1,78 @@
+#wrapper {
+    width: 100%;
+    height: 100vh;
+}
+
+#wrapper .step .header .back {
+    padding: 1.125rem 0 1.125rem 1rem;
+}
+
+#wrapper .step .header .title {
+    padding: 0.5rem 1.25rem 2.5rem 1.25rem;
+}
+
+#wrapper .step .header .title h1 {
+    color: #1C1E22;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#wrapper .step .header .title p {
+    color: #7D8A9F;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+}
+
+#wrapper .step .content form {
+    padding: 0 1.25rem;
+}
+
+#wrapper .step .content form label {
+    color: #898D99;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+}
+
+#wrapper .step .content form .form-field .input-box {
+    display: flex;
+    gap: 0.75rem;
+    margin: 0.75rem 0;
+}
+
+#wrapper .step .content form .form-field .input-box input {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    color: #1C1E22;
+}
+
+#wrapper .step .content form .form-field .input-box input::placeholder {
+    color: #898D99;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+#wrapper .step .content form .form-field .input-box .send-btn {
+    color: white;
+    background: #7D8A9F;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    white-space: nowrap;
+}
+
+#wrapper .step .content form .form-field p {
+    color: #898D99;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+}

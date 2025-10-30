@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="intro &amp; sign-in">
-      <change afterPath="$PROJECT_DIR$/img/icon/checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/icon-arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/unchecked.svg" afterDir="false" />
+    <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
+      <change afterPath="$PROJECT_DIR$/css/signup.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/icon-arrow-left-pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sign-up.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/intro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro1.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/intro2.html" beforeDir="false" afterPath="$PROJECT_DIR$/intro2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/sign-in.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -58,6 +60,7 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\intro" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
@@ -84,7 +87,10 @@
       <workItem from="1761557205610" duration="2661000" />
       <workItem from="1761559984143" duration="67000" />
       <workItem from="1761610615460" duration="3000" />
-      <workItem from="1761629768842" duration="13656000" />
+      <workItem from="1761629768842" duration="14351000" />
+      <workItem from="1761738345640" duration="4956000" />
+      <workItem from="1761805408528" duration="26000" />
+      <workItem from="1761823051990" duration="173000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
@@ -118,7 +124,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761646230518</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="약관동의 모달">
+      <option name="closed" value="true" />
+      <created>1761652735650</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1761652735650</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +154,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="intro ing" />
     <MESSAGE value="intro &amp; sign-in" />
-    <option name="LAST_COMMIT_MESSAGE" value="intro &amp; sign-in" />
+    <MESSAGE value="약관동의 모달" />
+    <option name="LAST_COMMIT_MESSAGE" value="약관동의 모달" />
   </component>
 </project>
