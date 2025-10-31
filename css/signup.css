@@ -3,12 +3,18 @@
     height: 100vh;
 }
 
-#wrapper .step .header .back {
+#wrapper .back {
     padding: 1.125rem 0 1.125rem 1rem;
 }
 
+#wrapper #container {
+    overflow: hidden;
+    position: relative;
+    height: calc(100vh - 60px);
+}
+
 #wrapper .step .header .title {
-    padding: 0.5rem 1.25rem 2.5rem 1.25rem;
+    padding: 0.5rem 1.25rem 1.875rem 1.25rem;
 }
 
 #wrapper .step .header .title h1 {
@@ -26,8 +32,13 @@
     line-height: 1.25rem;
 }
 
-#wrapper .step .content form {
+#wrapper .step .content .inner {
     padding: 0 1.25rem;
+    position: relative;
+}
+
+#wrapper .step .content form .form-field {
+    margin: 0.625rem 0;
 }
 
 #wrapper .step .content form label {
@@ -38,24 +49,53 @@
 }
 
 #wrapper .step .content form .form-field .input-box {
-    display: flex;
-    gap: 0.75rem;
     margin: 0.75rem 0;
 }
 
-#wrapper .step .content form .form-field .input-box input {
+#wrapper .step .content form .form-field .input-box input,
+#wrapper .step .content form .form-field .input-box textarea,
+#wrapper .step .content form .form-field .input-box select {
     width: 100%;
     padding: 1rem 0.75rem;
     border-radius: 0.5rem;
     border: 1px solid rgba(0, 52, 125, 0.08);
-    color: #1C1E22;
-}
 
-#wrapper .step .content form .form-field .input-box input::placeholder {
-    color: #898D99;
+    /* ✅ 공통 텍스트 스타일 */
     font-size: 0.8125rem;
     font-weight: 400;
     line-height: 1.25rem;
+    color: #1C1E22;
+
+    appearance: none;
+    background-size: 12px;
+}
+
+#wrapper .step .content form .form-field .input-box input::placeholder,
+#wrapper .step .content form .form-field .input-box textarea::placeholder,
+#wrapper .step .content form .form-field .input-box select::placeholder {
+    color: #898D99;       /* ✅ color만 다름 */
+
+    /* ✅ 입력 텍스트와 동일 폰트 속성 */
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+#wrapper .step .content form .form-field .input-box textarea {
+    height: 3.75rem;
+}
+
+#wrapper .step .content form .form-field .input-box select {
+    color: #898D99;
+    background: #fff url('/img/icon/icon-arrow-down-pink.svg') no-repeat right 0.75rem center;
+    background-size: 12px;
+}
+
+#wrapper .step .content form .form-field .input-box input:focus,
+#wrapper .step .content form .form-field .input-box textarea:focus,
+#wrapper .step .content form .form-field .input-box select:focus {
+    outline: none;
+    border-color: #FA1155;
 }
 
 #wrapper .step .content form .form-field .input-box .send-btn {
@@ -75,4 +115,51 @@
     font-size: 0.6875rem;
     font-weight: 400;
     line-height: 0.75rem;
+}
+
+.verify-btn {
+    width: 100%;
+    color: white;
+    font-size: 0.8125rem;
+    line-height: 0.75rem;
+    font-weight: 600;
+    background: #2E3C52;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+}
+
+.next-btn {
+    position: fixed;
+    left: 0;
+    bottom: 1.25rem;
+    width: calc(100% - 2.5rem);
+    margin: 0 1.25rem;
+    color: white;
+    font-size: 0.875rem;
+    line-height: 0.75rem;
+    font-weight: 700;
+    background: #FA1155;
+    padding: 0.875rem 0;
+    border-radius: 0.75rem;
+    box-shadow: 0 5px 10px 0 rgba(26, 26, 26, 0.1);
+}
+
+/*
+애니메이션
+*/
+.step {
+    opacity: 0;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    min-height: 100vh;
+    transform: translateY(100%);
+    transition: transform .35s ease;
+    background: white;
+}
+
+.step.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }

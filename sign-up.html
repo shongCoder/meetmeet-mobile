@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,37 +11,158 @@
 </head>
 <body>
     <div id="wrapper">
-        <section id="verify" class="step">
-            <div class="header">
-                <div class="back">
-                    <button><img src="img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
-                </div>
-                <div class="title">
-                    <h1>
-                        본인인증을<br />
-                        진행해 주세요
-                    </h1>
-                    <p>
-                        본인 인증 코드를 문자로 발송합니다.<br />
-                        본인 인증 목적으로만 사용되니 안심하세요.
-                    </p>
-                </div>
-            </div>
-            <div class="content">
-                <form>
-                    <div class="form-field">
-                        <label for="phone">연락처</label>
-                        <div class="input-box">
-                            <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="“-”없이 입력해 주세요" />
-                            <button type="button" class="send-btn">발송하기</button>
-                        </div>
-                        <p>문자 메시지 및 데이터 이용 시 요금이 부과될 수 있습니다.</p>
+        <div class="back">
+            <button><img src="img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+        </div>
+        <div id="container">
+            <section id="verify" class="step">
+                <div class="header">
+                    <div class="title">
+                        <h1>
+                            본인인증을<br />
+                            진행해 주세요
+                        </h1>
+                        <p>
+                            본인 인증 코드를 문자로 발송합니다.<br />
+                            본인 인증 목적으로만 사용되니 안심하세요.
+                        </p>
                     </div>
-
-                </form>
-            </div>
-        </section>
-        <!--//verify-->
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <form>
+                            <div class="form-field mb-20">
+                                <label for="phone">연락처</label>
+                                <div class="input-box flex gap-12">
+                                    <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" required placeholder='“-”없이 입력해 주세요' />
+                                    <button type="button" class="send-btn">발송하기</button>
+                                </div>
+                                <p>문자 메시지 및 데이터 이용 시 요금이 부과될 수 있습니다.</p>
+                            </div>
+                            <div class="form-field">
+                                <label for="verify_code">인증번호</label>
+                                <div class="input-box flex gap-12">
+                                    <input id="verify_code" name="verify_code" type="number" inputmode="numeric" required placeholder="숫자 6자리를 입력해 주세요" />
+                                </div>
+                            </div>
+                            <button type="button" class="verify-btn">인증하기</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--//verify-->
+            <section id="profile" class="step">
+                <div class="header">
+                    <div class="title">
+                        <h1>
+                            회원 정보를<br />
+                            입력해 주세요
+                        </h1>
+                        <p>
+                            다른 사용자에게 당신의 정보를 알려주세요
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <div>
+                            <!--이미지 넣어야 함-->
+                        </div>
+                        <form>
+                            <div class="form-field mb-20">
+                                <label for="nick_name">닉네임</label>
+                                <div class="input-box flex gap-12">
+                                    <input id="nick_name" name="nick_name" type="text" required placeholder='닉네임을 입력해 주세요' />
+                                </div>
+                                <p>한글, 영문, 숫자, 특수문자, 이모티콘 입력이 가능합니다.</p>
+                            </div>
+                            <div class="form-field">
+                                <label for="age">나이</label>
+                                <div class="input-box flex gap-12">
+                                    <select id="age" name="age">
+                                        <option value="">나이를 선택해 주세요</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="gender">성별</label>
+                                <div class="input-box flex gap-12">
+                                    <select id="gender" name="gender">
+                                        <option value="">성별을 선택해 주세요</option>
+                                        <option value="남">남</option>
+                                        <option value="여">여</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--//profile-->
+            <section id="info" class="step">
+                <div class="header">
+                    <div class="title">
+                        <h1>
+                            회원 정보를<br />
+                            입력해 주세요
+                        </h1>
+                        <p>
+                            다른 사용자에게 당신의 정보를 알려주세요
+                        </p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <form>
+                            <div class="form-field mb-20">
+                                <label for="user_name">닉네임</label>
+                                <div class="input-box flex gap-12">
+                                    <input id="user_name" name="user_name" type="text" required placeholder='@c0b56cb843248d0b' />
+                                </div>
+                                <p>영문, 숫자만 입력 가능하며, 유저네임은 1회 변경이 가능합니다.</p>
+                            </div>
+                            <div class="form-field">
+                                <label for="information">자기소개</label>
+                                <div class="input-box flex gap-12">
+                                    <textarea id="information" name="information" required placeholder='자기소개를 해주세요'></textarea>
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="referrer">추천인</label>
+                                <div class="input-box flex gap-12">
+                                    <input id="referrer" name="referrer" type="text" placeholder='추천인 코드를 입력해 주세요' />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!--//info-->
+        </div>
+        <button class="next-btn">다&nbsp;음</button>
     </div>
+    <script>
+        const steps = document.querySelectorAll('.step');
+        const nextBtn = document.querySelector('.next-btn');
+        let current = 0;
+
+        function showStep(idx){
+            steps.forEach((s,i)=>{
+                s.classList.toggle('active', i === idx);
+            });
+        }
+
+        showStep(current);
+
+        nextBtn.addEventListener('click', ()=> {
+            if(current < steps.length - 1){
+                current++;
+                showStep(current);
+            }
+        });
+    </script>
 </body>
 </html>
