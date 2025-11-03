@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font.css">
-    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/font.css">
+    <link rel="stylesheet" href="../../css/auth/signup.css">
     <title>본인인증</title>
 </head>
 <body>
     <div id="wrapper">
         <div class="back">
-            <button><img src="img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+            <button class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
         </div>
         <div id="container">
             <section id="verify" class="step">
@@ -118,7 +118,7 @@
                     <div class="inner">
                         <form>
                             <div class="form-field mb-20">
-                                <label for="user_name">닉네임</label>
+                                <label for="user_name">유저네임</label>
                                 <div class="input-box flex gap-12">
                                     <input id="user_name" name="user_name" type="text" required placeholder='@c0b56cb843248d0b' />
                                 </div>
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                             <div class="form-field">
-                                <label for="referrer">추천인</label>
+                                <label for="referrer">추천인 (선택)</label>
                                 <div class="input-box flex gap-12">
                                     <input id="referrer" name="referrer" type="text" placeholder='추천인 코드를 입력해 주세요' />
                                 </div>
@@ -142,27 +142,49 @@
             </section>
             <!--//info-->
         </div>
-        <button class="next-btn">다&nbsp;음</button>
+        <div class="button-box">
+            <button class="next-btn">다&nbsp;음</button>
+        </div>
     </div>
     <script>
         const steps = document.querySelectorAll('.step');
         const nextBtn = document.querySelector('.next-btn');
+
+        // 👇 대협께서 말씀하신 back 버튼
+        const backBtn = document.querySelector('.back button');
+
         let current = 0;
 
-        function showStep(idx){
-            steps.forEach((s,i)=>{
+        function showStep(idx) {
+            steps.forEach((s, i) => {
                 s.classList.toggle('active', i === idx);
             });
         }
 
+        // ✅ 최초 한 번 실행
         showStep(current);
 
-        nextBtn.addEventListener('click', ()=> {
-            if(current < steps.length - 1){
+        // ✅ 다음 버튼
+        nextBtn.addEventListener('click', () => {
+            if (current < steps.length - 1) {
                 current++;
                 showStep(current);
             }
         });
+
+        // ✅ 뒤로가기 버튼
+        backBtn.addEventListener('click', () => {
+            // 1) 현재가 첫 번째 섹션이면 → sign-in.html 로 이동
+            if (current === 0) {
+                window.location.href = "sign-in.html";
+                return;
+            }
+
+            // 2) 그 외 → 한 단계 이전으로 이동
+            current--;
+            showStep(current);
+        });
     </script>
+
 </body>
 </html>
