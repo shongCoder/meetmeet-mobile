@@ -5,28 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/korean-flag.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/paid.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/profile1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/story1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/story2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/story3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/story4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/verified.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/alarm_active.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/alarm_inactive.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/point.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/search-icon-pink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/meetmeet_logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/Home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/auth/intro1.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth/intro1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/auth/intro2.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth/intro2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/auth/sign-in.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth/sign-in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/auth/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth/sign-up.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
