@@ -18,3 +18,7 @@ html, body {
 .mb-20 {
     margin-bottom: 1.25rem;
 }
+
+.item-center {
+    align-items: center;
+}
