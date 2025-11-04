@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/tab-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/home/profile2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/home/profile3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/home/profile4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-chat-pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-feed-pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-feed.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-home-pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-my-pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-my.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-ranking-pink.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/tab/tab-ranking.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,17 +69,17 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\tab" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\home" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css\auth" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\pages\auth" />
     </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-76f8388c3a79-JavaScript-WS-243.24978.60" />
+        <option value="bundled-js-predefined-d6986cc7102b-f27c65a3e318-JavaScript-WS-251.23774.424" />
       </set>
     </attachedChunks>
   </component>
@@ -87,6 +102,7 @@
       <workItem from="1761805408528" duration="26000" />
       <workItem from="1761823051990" duration="173000" />
       <workItem from="1761897156187" duration="5690000" />
+      <workItem from="1762248679781" duration="4336000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />

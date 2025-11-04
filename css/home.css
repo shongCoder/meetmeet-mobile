@@ -2,6 +2,7 @@
     width: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    padding-bottom: 5rem
 }
 
 #header {
@@ -64,6 +65,7 @@
     justify-content: center;
     border: 2px solid #C8C8C8;
     border-radius: 99px;
+    padding: 1px;
 }
 
 #story .story-list {
@@ -167,8 +169,6 @@
 
 #profile ul.profile-list li .profile-box {
     height: 14rem;
-    background: #fff url('/img/home/profile1.jpg') no-repeat;
-    background-size: cover;
     border-radius: 0.75rem;
     overflow: hidden;
 }
@@ -201,6 +201,10 @@
     border-radius: 2px;
 }
 
+#profile ul.profile-list li .profile-box .gradient .pro-content .name-box .online.active {
+    background: #14F698;
+}
+
 #profile ul.profile-list li .profile-box .gradient .pro-content .name-box span {
     color: white;
     font-size: 0.8125rem;
@@ -220,6 +224,7 @@
     height: 0.625rem;
     border-radius: 50%;
     overflow: hidden;
+    margin-bottom: -1.5px;
 }
 
 #profile ul.profile-list li .profile-box .gradient .pro-content .info-box .flag img {
@@ -227,6 +232,7 @@
     height: 100%;
     object-fit: cover;
     object-position: center center;
+    display: block;
 }
 #profile ul.profile-list li .profile-box .gradient .pro-content .info-box span {
     color: white;
@@ -236,5 +242,5 @@
 
 #profile ul.profile-list li .profile-box .gradient .pro-content .info-box span.dot {
     color: #7D8A9F;
-    font-width: 300;
+    font-weight: 300;
 }

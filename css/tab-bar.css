@@ -1,0 +1,35 @@
+#tab-wrapper {
+    width: 100%;
+    padding: 3px 1.25rem 1rem 1.25rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.96);
+    box-sizing: border-box;
+    border: 1px solid #F7F7F7;
+    border-radius: 1.25rem 1.25rem 0 0;
+    backdrop-filter: blur(8px);
+}
+
+#tab-wrapper ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#tab-wrapper ul li .tab-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tab-wrapper ul li .tab-box span {
+    font-size: 0.625rem;
+    font-weight: 500;
+    color: #C8C8C8;
+    line-height: 0.75rem;
+}
+
+#tab-wrapper ul li .tab-box span.open {
+    color: #FA1155;
+}
