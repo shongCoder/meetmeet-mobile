@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/header-base.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/ranking.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/icon_search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/ranking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tab-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tab-bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ranking.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ranking.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +56,11 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\auth" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\tab" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\home" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css\auth" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -98,7 +89,7 @@
       <workItem from="1761805408528" duration="26000" />
       <workItem from="1761823051990" duration="173000" />
       <workItem from="1761897156187" duration="5690000" />
-      <workItem from="1762248679781" duration="8094000" />
+      <workItem from="1762248679781" duration="8427000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />

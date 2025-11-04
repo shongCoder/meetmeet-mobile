@@ -22,3 +22,27 @@
     font-weight: 600;
     line-height: 2rem;
 }
+
+#wrapper #content {
+    padding: 0 1.25rem;
+}
+
+#content .filter-box {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+#content .filter-box .select-box select {
+    color: #2E3C52;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    border: 1px solid #F1F1F1;
+    border-radius: 1000px;
+    background: #fff url('/img/icon/icon-arrow-down-pink.svg') no-repeat right 0.75rem center;
+    background-size: 12px;
+    appearance: none;
+}
