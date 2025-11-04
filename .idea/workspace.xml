@@ -5,22 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/tab-bar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/profile2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/profile3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/home/profile4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-chat-pink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-chat.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-feed-pink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-feed.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-home-pink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-home.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-my-pink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-my.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-ranking-pink.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tab/tab-ranking.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/header-base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/ranking.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/icon_search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/ranking.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/tab-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tab-bar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,31 +40,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/sypark/WebstormProjects/meetmeet-mobile/css&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/sypark/WebstormProjects/meetmeet-mobile/css",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\tab" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\home" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css\auth" />
     </key>
@@ -102,7 +98,7 @@
       <workItem from="1761805408528" duration="26000" />
       <workItem from="1761823051990" duration="173000" />
       <workItem from="1761897156187" duration="5690000" />
-      <workItem from="1762248679781" duration="4336000" />
+      <workItem from="1762248679781" duration="8094000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />

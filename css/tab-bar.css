@@ -17,10 +17,11 @@
     align-items: center;
 }
 
-#tab-wrapper ul li .tab-box {
+#tab-wrapper ul li .tab-box a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-decoration: none;
 }
 
 #tab-wrapper ul li .tab-box span {
