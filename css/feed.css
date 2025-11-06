@@ -1,0 +1,138 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#feed {
+    width: 100%;
+    padding: 2.5rem 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#feed .post-box {
+    width: 375px;
+    margin-bottom: 1.25rem;
+}
+
+#feed .post-box:last-child {
+    margin-bottom: 0;
+}
+
+#feed .post-box .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+#feed .post-box .profile .img-box {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid #2E3C52;
+    overflow: hidden;
+}
+
+#feed .post-box .profile .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#feed .post-box .profile .name-time .name {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    color: #1C1E22;
+}
+
+#feed .post-box .profile .name-time .time {
+    color: #898D99;
+    font-size: 0.625rem;
+    font-weight: 300;
+    line-height: 0.75rem;
+}
+
+#feed .post-box .content {
+    margin-bottom: 0.75rem;
+}
+
+#feed .post-box .content .text {
+    padding: 0 1.25rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+#feed .post-box .content .post-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
+#feed .post-box .content .post-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#feed .post-box .status {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    gap: 0.75rem;
+}
+
+#feed .post-box .status .like-box {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#feed .post-box .status span {
+    color: #C8C8C8;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+}
+
+#feed .post-box .status .like-box span.active {
+    color: #FA1155;
+}
+
+#feed .post-box .status .comment-box {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+#add-post {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 4.5rem;
+    background: #2E3C52;
+    padding: 0.75rem 0.875rem;
+    border-radius: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}

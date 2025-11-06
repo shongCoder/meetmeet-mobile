@@ -1,10 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>피드</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common/reset.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/feed.css">
+    <link rel="stylesheet" href="../css/common/tab-bar.css">
+    <link rel="stylesheet" href="../css/common/header-base.css">
+    <link rel="stylesheet" href="../css/common/story.css">
+    <title>MeetMeet : 피드</title>
 </head>
 <body>
-
+    <div id="wrapper">
+        <header id="header">
+            <div><img src="../img/meetmeet_logo.svg" alt="밋밋"/></div>
+            <div class="flex gap-12 item-center">
+                <div class="point-box">
+                    <img src="../img/icon/point.svg" alt="포인트"/>
+                    <span>40,000</span>
+                </div>
+                <div class="alarm-icon">
+                    <img src="../img/icon/alarm_inactive.svg" alt="알람"/>
+                </div>
+            </div>
+        </header>
+        <div id="story">
+            <div class="search-box">
+                <div class="circle">
+                    <img src="../img/icon/search-icon-pink.svg" alt="찾아보기" />
+                </div>
+                <span>찾아보기</span>
+            </div>
+            <ul class="story-list">
+                <li>
+                    <div class="story-box">
+                        <div class="circle active">
+                            <div class="circle-img">
+                                <img src="../img/home/story1.png" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Bin Thieu</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle active">
+                            <div class="circle-img">
+                                <img src="../img/home/story2.jpg" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Fernandez</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle">
+                            <div class="circle-img">
+                                <img src="../img/home/story3.png" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Aiony Haust</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle">
+                            <div class="circle-img">
+                                <img src="../img/home/story4.png" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Gabriel</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle active">
+                            <div class="circle-img">
+                                <img src="../img/home/story1.png" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Bin Thieu</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle active">
+                            <div class="circle-img">
+                                <img src="../img/home/story2.jpg" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Fernandez</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle">
+                            <div class="circle-img">
+                                <img src="../img/home/story3.png" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Aiony Haust</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="story-box">
+                        <div class="circle">
+                            <div class="circle-img">
+                                <img src="../img/home/story4.png" alt="profile" />
+                            </div>
+                        </div>
+                        <span>Gabriel</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--//story-->
+        <div id="feed">
+            <ul>
+                <li class="post-box">
+                    <div class="profile">
+                        <div class="flex item-center gap-8">
+                            <div class="img-box">
+                                <img src="../img/feed/profile1.jpg" alt="프로필 이미지" />
+                            </div>
+                            <div class="name-time">
+                                <div class="name">
+                                    <span>귤귤무슨귤</span>
+                                    <img src="../img/feed/verified.svg" alt="인증된 사용자"/>
+                                </div>
+                                <div class="time">3시간 전</div>
+                            </div>
+                        </div>
+                        <button>
+                            <img src="../img/icon/kebab.svg" alt="더보기" />
+                        </button>
+                    </div>
+                    <!--//profile-->
+                    <div class="content">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        </div>
+                        <div class="post-img">
+                            <img src="../img/feed/post1.jpg" alt="포스팅 이미지" />
+                        </div>
+                    </div>
+                    <!--//content-->
+                    <div class="status">
+                        <div class="like-box">
+                            <img src="../img/icon/like-active.svg" alt="좋아요" />
+                            <span class="active">172</span>
+                        </div>
+                        <div class="comment-box">
+                            <img src="../img/icon/comment.svg" alt="댓글" />
+                            <span>32</span>
+                        </div>
+                    </div>
+                    <!--//status-->
+                </li>
+                <li class="post-box">
+                    <div class="profile">
+                        <div class="flex item-center gap-8">
+                            <div class="img-box">
+                                <img src="../img/feed/profile1.jpg" alt="프로필 이미지" />
+                            </div>
+                            <div class="name-time">
+                                <div class="name">
+                                    <span>귤귤무슨귤</span>
+                                    <img src="../img/feed/verified.svg" alt="인증된 사용자"/>
+                                </div>
+                                <div class="time">3시간 전</div>
+                            </div>
+                        </div>
+                        <button>
+                            <img src="../img/icon/kebab.svg" alt="더보기" />
+                        </button>
+                    </div>
+                    <!--//profile-->
+                    <div class="content">
+                        <div class="text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                        </div>
+                        <div class="post-img">
+                            <img src="../img/feed/view-pass.png" alt="포스팅 이미지" />
+                        </div>
+                    </div>
+                    <!--//content-->
+                    <div class="status">
+                        <div class="like-box">
+                            <img src="../img/icon/like.svg" alt="좋아요" />
+                            <span>172</span>
+                        </div>
+                        <div class="comment-box">
+                            <img src="../img/icon/comment.svg" alt="댓글" />
+                            <span>32</span>
+                        </div>
+                    </div>
+                    <!--//status-->
+                </li>
+            </ul>
+        </div>
+        <!--//feed-->
+        <div id="add-post">
+            <span>추가하기</span>
+            <img src="../img/icon/plus.svg" alt="" />
+        </div>
+        <!--//add post-->
+        <nav id="tab-wrapper">
+            <ul>
+                <li>
+                    <div class="tab-box">
+                        <a href="#">
+                            <img src="../img/tab/tab-home.svg" alt="" />
+                            <span>홈</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tab-box">
+                        <a href="ranking.html">
+                            <img src="../img/tab/tab-ranking.svg" alt="" />
+                            <span>랭킹</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tab-box">
+                        <a href="feed.html">
+                            <img src="../img/tab/tab-feed-pink.svg" alt="" />
+                            <span class="open">피드</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tab-box">
+                        <a href="chat.html">
+                            <img src="../img/tab/tab-chat.svg" alt="" />
+                            <span>채팅</span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tab-box">
+                        <a href="my.html">
+                            <img src="../img/tab/tab-my.svg" alt="" />
+                            <span>MY</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--//tab bar-->
+    </div>
 </body>
 </html>
