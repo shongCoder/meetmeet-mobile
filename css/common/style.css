@@ -19,12 +19,20 @@ html, body {
     gap: 0.5rem;
 }
 
+.gap-4 {
+    gap: 0.25rem;
+}
+
 .mb-20 {
     margin-bottom: 1.25rem;
 }
 
 .item-center {
     align-items: center;
+}
+
+.item-end {
+    align-items: end;
 }
 
 .justify-center {

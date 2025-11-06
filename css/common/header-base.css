@@ -3,6 +3,7 @@
     padding: 1rem 1.25rem 0.75rem 1.25rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-sizing: border-box;
 }
 
