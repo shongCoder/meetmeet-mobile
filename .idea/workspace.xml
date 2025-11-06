@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/img/ranking/verified.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/ranking.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ranking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/ranking.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ranking.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

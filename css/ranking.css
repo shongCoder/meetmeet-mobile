@@ -2,6 +2,7 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+    position: relative;
 }
 
 #wrapper #title {
@@ -24,7 +25,8 @@
 }
 
 #wrapper #content {
-    padding: 0 1.25rem;
+    padding: 0 1.25rem 5rem 1.25rem;
+    box-sizing: border-box;
 }
 
 #content .filter-box {
@@ -52,6 +54,7 @@
     align-items: center;
     justify-content: center;
     gap: 1.75rem;
+    margin-bottom: 0.75rem;
 }
 
 #content .ranking-top .top-box {
@@ -135,4 +138,140 @@
 
 #content .ranking-top .top-box .text-box .info .dot {
     font-weight: 300;
+}
+
+#content .ranking-list ul {
+    width: 100%;
+}
+
+#content .ranking-list ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+#content .ranking-list ul li .name {
+    display: flex;
+    align-items: center;
+}
+
+#content .ranking-list ul li .name .img-box {
+    width: 1.75rem;
+    height: 1.75rem;
+    overflow: hidden;
+    border: 1px solid #898D99;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+#content .ranking-list ul li .name .img-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#content .ranking-list ul li .name .rank-number {
+    width: 2.25rem;
+    height: 2.25rem;
+    color: #7D8A9F;
+    font-size: 0.875rem;
+    font-weight: 900;
+    line-height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75rem;
+}
+
+#content .ranking-list ul li .name span {
+    margin-right: 0.25rem;
+    font-weight: 600;
+}
+
+#content .ranking-list ul li .info {
+    color: #898D99;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    gap: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+#content .ranking-list ul li .info .dot {
+    font-weight: 300;
+}
+
+#content .ranking-my {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 71px;
+    left: 20px;
+    right: 20px;
+    box-sizing: border-box;
+    padding: 0.5rem 1.25rem;
+    border-radius: 100px;
+    background: linear-gradient(133.54deg, #EA0098 2.42%, #FA1155 51.21%);
+}
+
+#content .ranking-my .name {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#content .ranking-my .name .rank-number {
+    width: 2.25rem;
+    height: 2.25rem;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 900;
+    line-height: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.75rem;
+}
+
+#content .ranking-my .name .img-box {
+    width: 1.75rem;
+    height: 1.75rem;
+    overflow: hidden;
+    border: 1px solid #898D99;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+#content .ranking-my .name .img-box img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#content .ranking-my .name span {
+    margin-right: 0.25rem;
+    font-weight: 600;
+}
+
+#content .ranking-my .info {
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    gap: 0.2rem;
+    display: flex;
+    align-items: center;
+}
+
+#content .ranking-my .info .dot {
+    font-weight: 300;
+}
+
+@keyframes flash {
+    0% { background: rgba(255,255,0,0.3); }
+    100% { background: transparent; }
+}
+.highlight {
+    animation: flash 1s ease;
 }
