@@ -31,7 +31,7 @@
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2.125rem;
 }
 
 #content .filter-box .select-box select {
@@ -45,4 +45,94 @@
     background: #fff url('/img/icon/icon-arrow-down-pink.svg') no-repeat right 0.75rem center;
     background-size: 12px;
     appearance: none;
+}
+
+#content .ranking-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.75rem;
+}
+
+#content .ranking-top .top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#content .ranking-top .top-box .circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6rem;
+    height: 6rem;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+#content .ranking-top .top-box .circle .rank-number {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+#content .ranking-top .top-box .circle.big {
+    width: 6.75rem;
+    height: 6.75rem;
+    padding: 4px;
+}
+
+#content .ranking-top .top-box .circle .img-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 1000px;
+}
+
+#content .ranking-top .top-box .circle .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#content .ranking-top .top-box .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content .ranking-top .top-box .text-box .name {
+    display: flex;
+    align-items: center;
+    gap: 4.8px;
+    color: #1C1E22;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+#content .ranking-top .top-box .text-box .info {
+    display: flex;
+    align-items: center;
+    color: #898D99;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    gap: 0.2rem;
+}
+
+#content .ranking-top .top-box .text-box .info .dot {
+    font-weight: 300;
 }
