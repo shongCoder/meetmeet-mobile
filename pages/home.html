@@ -9,10 +9,24 @@
   <link rel="stylesheet" href="../css/common/tab-bar.css">
   <link rel="stylesheet" href="../css/common/header-base.css">
   <link rel="stylesheet" href="../css/common/story.css">
+  <link rel="stylesheet" href="../css/common/select-modal.css">
   <title>MeetMeet : Home</title>
 </head>
 <body>
   <div id="wrapper">
+
+    <div id="selectModal" class="bottom-modal">
+      <div class="handle">
+        <div class="handle-bar"></div>
+      </div>
+      <div class="modal-content">
+        <ul class="modal-list"></ul>
+        <div class="btn-box">
+          <button class="modal-close" type="button">닫기</button>
+        </div>
+      </div>
+    </div>
+
     <header id="header">
       <div><img src="../img/meetmeet_logo.svg" alt="밋밋"/></div>
       <div class="flex gap-12 item-center">
@@ -119,22 +133,16 @@
     <div id="profile">
       <div class="filter-box">
         <div class="select-box">
-          <select id="gender" name="gender">
-            <option value="여자">여자</option>
-            <option value="남자">남자</option>
-          </select>
+          <button type="button" class="open-select" data-target="gender">여자</button>
         </div>
         <div class="select-box">
-          <select id="region" name="region">
-            <option value="국내">국내</option>
-            <option value="국외">국외</option>
-          </select>
+          <button type="button" class="open-select" data-target="region">국내</button>
         </div>
       </div>
       <!--filter-->
       <ul class="profile-list">
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -156,7 +164,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -178,7 +186,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile3.png') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile3.png') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -200,7 +208,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile4.png') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile4.png') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -222,7 +230,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -244,7 +252,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -266,7 +274,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile3.png') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile3.png') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -288,7 +296,7 @@
           </div>
         </li>
         <li>
-          <div class="profile-box" style="background: #fff url('/img/home/profile4.png') no-repeat; background-size: cover;">
+          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile4.png') no-repeat; background-size: cover;">
             <div class="gradient">
               <div class="pro-content">
                 <div class="name-box">
@@ -358,5 +366,7 @@
     </nav>
     <!--//tab bar-->
   </div>
+
+  <script src="../js/select-modal.js"></script>
 </body>
 </html>
