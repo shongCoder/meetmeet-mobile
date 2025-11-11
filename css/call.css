@@ -1,0 +1,195 @@
+* {
+  overflow: hidden;
+}
+
+#wrapper {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Call */
+#call {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-card {
+  border-radius: 24px;
+  width: 400px;
+  padding: 24px;
+  position: relative;
+  text-align: center;
+}
+
+#header .close-btn {
+  position: static;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.profile-content {
+  margin-top: 32px;
+}
+
+.profile-photo img {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00347d14;
+  margin: 0 auto 16px auto;
+}
+
+.name-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.online-dot {
+  width: 5px;
+  height: 5px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+}
+
+.verified-icon {
+  color: #3498db;
+  font-size: 16px;
+}
+
+.country-age {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.8;
+  color: #c8c8c8;
+}
+
+.rating {
+  margin-top: 12px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-icon {
+  margin-right: 4px;
+}
+
+.score {
+  font-weight: 700;
+  color: white;
+}
+
+.small-text {
+  font-size: 13px;
+  opacity: 0.8;
+  margin-left: 4px;
+  color: #898d99;
+}
+
+.video-duration {
+  margin-top: 16px;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 26px;
+  background-color: #1c1e22;
+  border-radius: 999px;
+  color: #f5f5f5;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.duration {
+  color: #ff4d4f;
+  font-weight: 700;
+}
+
+.actions {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  width: calc(100% - 2.5rem);
+}
+
+.btn {
+  flex: 1;
+  padding: 14px 0;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.reject {
+  background-color: #ff3366;
+  color: white;
+}
+
+.accept {
+  background-color: #3366ff;
+  color: white;
+}
+
+.btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  display: inline-block;
+}
+
+.bg_img {
+  width: 100vw;
+  height: 100vh;
+  background: url("../img/call/background.png") center / cover no-repeat;
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+}
+
+.bg_img .filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scale(10);
+  background: linear-gradient(180deg, rgba(28, 30, 34, 0.6) 0%, rgba(28, 30, 34, 0.2) 33%, #1c1e22 100%);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  z-index: -1;
+}
