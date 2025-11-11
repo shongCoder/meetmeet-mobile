@@ -11,6 +11,10 @@ html, body {
     display: flex;
 }
 
+.flex-col {
+    flex-direction: column;
+}
+
 .gap-12 {
     gap: 0.75rem;
 }
@@ -41,4 +45,8 @@ html, body {
 
 .justify-between {
     justify-content: space-between;
+}
+
+.hidden {
+    display:  none !important;
 }
