@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/style.css">
+  <link rel="stylesheet" href="../css/chat-detail.css">
+  <link rel="stylesheet" href="../css/common/tab-bar.css">
+  <link rel="stylesheet" href="../css/common/header-base.css">
+  <link rel="stylesheet" href="../css/common/story.css">
+  <title>MeetMeet : 채팅</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="back">
+        <button class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+      </div>
+      <div class="flex gap-4 item-center">
+        <div class="profile-img">
+          <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+        </div>
+        <span>Gabriel</span>
+        <img src="../img/chat/verified.svg"  alt="인증된 사용자" />
+      </div>
+      <div class="flex gap-12 item-center">
+        <div class="alarm-icon">
+          <img src="../img/chat/call.svg" alt="통화"/>
+        </div>
+        <div class="message-icon">
+          <img src="../img/chat/picture.svg" alt="사진 전송"/>
+        </div>
+      </div>
+    </header>
+    <!--//header-->
+    <div id="content">
+      <!--본인의 메세지인 경우 클래스명 'my' 붙임-->
+      <div class="message-wrapper my">
+        <div class="message-box">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+            </div>
+            <span>Gabriel</span>
+          </div>
+          <div class="message">안녕하세요! 항상 콘텐츠 잘 보고 있어요.</div>
+          <div class="flex gap-4 item-center">
+            <div class="msg-time">19:13</div>
+            <div class="trans">번역하기</div>
+          </div>
+        </div>
+      </div>
+      <!--//message1-->
+      <div class="message-wrapper">
+        <div class="message-box">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+            </div>
+            <span>Gabriel</span>
+          </div>
+          <div class="message">응원해 주셔서 정말 감사해요💗</div>
+          <div class="flex gap-4 item-center">
+            <div class="msg-time">19:17</div>
+            <div class="trans">번역하기</div>
+          </div>
+        </div>
+      </div>
+      <!--//message2-->
+      <div class="message-wrapper my">
+        <div class="message-box">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+            </div>
+            <span>Gabriel</span>
+          </div>
+          <div class="message">또 새로운 콘텐츠는 언제 올라올까요?</div>
+          <div class="flex gap-4 item-center">
+            <div class="msg-time">지금</div>
+            <div class="trans">번역하기</div>
+          </div>
+        </div>
+      </div>
+      <!--//message3-->
+    </div>
+    <!--//content-->
+    <div id="action-area">
+      <div class="action-box">
+        <button class="gift-btn">
+          <img src="../img/chat/gift.svg" alt="선물하기" />
+        </button>
+        <input class="input-bar" type="text" placeholder="메세지를 입력하세요." />
+        <button class="send-btn">
+          <img src="../img/chat/send.svg" alt="메세지 전송" />
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

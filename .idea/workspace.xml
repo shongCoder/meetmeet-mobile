@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
+      <change afterPath="$PROJECT_DIR$/css/chat-detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/chat/call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/chat/picture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/chat-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/header-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/header-base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +22,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
       </list>
@@ -42,7 +50,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;gh__test&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/parksoyeong/Documents/my_works/meetmeet-mobile/img/chat&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -64,11 +72,11 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\chat" />
       <recent name="$PROJECT_DIR$/img/icon" />
       <recent name="$PROJECT_DIR$/css/common" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\auth" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\tab" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,6 +107,9 @@
       <workItem from="1761897156187" duration="5690000" />
       <workItem from="1762248679781" duration="8427000" />
       <workItem from="1762662604584" duration="194000" />
+      <workItem from="1762733829554" duration="4000" />
+      <workItem from="1762734087479" duration="39000" />
+      <workItem from="1762838524514" duration="1978000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
