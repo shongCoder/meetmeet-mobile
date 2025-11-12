@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
+      <change afterPath="$PROJECT_DIR$/css/my.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common/tab-bar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/tab-bar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/feed/verified.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/my/verified.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +63,11 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img/my" />
       <recent name="$PROJECT_DIR$/img/icon" />
       <recent name="$PROJECT_DIR$/css/common" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\auth" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\tab" />
     </key>
   </component>
   <component name="SharedIndexes">
