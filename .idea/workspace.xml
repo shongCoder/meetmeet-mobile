@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/select-modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/select-modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/ranking.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/ranking.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/ranking.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/ranking.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +105,7 @@
       <workItem from="1762734087479" duration="39000" />
       <workItem from="1762838524514" duration="16128000" />
       <workItem from="1762910083784" duration="5000" />
-      <workItem from="1762929739266" duration="8403000" />
+      <workItem from="1762929739266" duration="9002000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />

@@ -2,6 +2,7 @@ const selectData = {
     gender: ["여자", "남자"],
     region: ["국내", "국외"],
     feed: ["신고하기", "차단하기"],
+    period: ["월간 랭킹", "주간 랭킹", "연간 랭킹"]
 };
 
 const selectModal = document.getElementById("selectModal");

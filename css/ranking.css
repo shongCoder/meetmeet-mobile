@@ -49,6 +49,18 @@
     appearance: none;
 }
 
+.open-select {
+    color: #2E3C52;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1rem;
+    padding: 0.5rem 2rem 0.5rem 0.75rem;
+    border: 1px solid #F1F1F1;
+    border-radius: 1000px;
+    background: #fff url('/img/icon/icon-arrow-down-pink.svg') no-repeat right 0.75rem center;
+    background-size: 12px;
+}
+
 #content .ranking-top {
     display: flex;
     align-items: center;
