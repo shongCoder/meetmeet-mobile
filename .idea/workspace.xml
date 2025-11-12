@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/my/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/my/profile/back-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/my/profile/camera.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/feed/verified.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/my/verified.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/my/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +19,18 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -35,26 +41,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/parksoyeong/Documents/my_works/meetmeet-mobile/img/chat",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/parksoyeong/Documents/my_works/meetmeet-mobile/img/chat&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/img/chat" />
@@ -63,11 +69,11 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/img/my" />
-      <recent name="$PROJECT_DIR$/img/icon" />
-      <recent name="$PROJECT_DIR$/css/common" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\auth" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\profile" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\feed\comment" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\chat" />
+      <recent name="$PROJECT_DIR$/img/icon" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -97,6 +103,12 @@
       <workItem from="1761823051990" duration="173000" />
       <workItem from="1761897156187" duration="5690000" />
       <workItem from="1762248679781" duration="8427000" />
+      <workItem from="1762662604584" duration="194000" />
+      <workItem from="1762733829554" duration="4000" />
+      <workItem from="1762734087479" duration="39000" />
+      <workItem from="1762838524514" duration="16128000" />
+      <workItem from="1762910083784" duration="5000" />
+      <workItem from="1762929739266" duration="10929000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
@@ -149,7 +161,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
