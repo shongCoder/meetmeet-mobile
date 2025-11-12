@@ -8,11 +8,25 @@
     <link rel="stylesheet" href="../css/feed.css">
     <link rel="stylesheet" href="../css/common/tab-bar.css">
     <link rel="stylesheet" href="../css/common/header-base.css">
+    <link rel="stylesheet" href="../css/common/select-modal.css">
     <link rel="stylesheet" href="../css/common/story.css">
     <title>MeetMeet : 피드</title>
 </head>
 <body>
     <div id="wrapper">
+        <div id="selectModal" class="bottom-modal">
+            <div class="handle">
+                <div class="handle-bar"></div>
+            </div>
+            <div class="modal-content">
+                <ul class="modal-list"></ul>
+                <div class="btn-box">
+                    <button class="modal-close" type="button">닫기</button>
+                </div>
+            </div>
+        </div>
+        <!--//select modal-->
+
         <div id="comment">
             <div class="comment-box">
                 <div class="handle">
@@ -196,7 +210,7 @@
                                 <div class="time">3시간 전</div>
                             </div>
                         </div>
-                        <button>
+                        <button type="button" class="open-select" data-target="feed">
                             <img src="../img/icon/kebab.svg" alt="더보기" />
                         </button>
                     </div>
@@ -236,7 +250,7 @@
                                 <div class="time">3시간 전</div>
                             </div>
                         </div>
-                        <button>
+                        <button type="button" class="open-select" data-target="feed">
                             <img src="../img/icon/kebab.svg" alt="더보기" />
                         </button>
                     </div>
@@ -339,5 +353,6 @@
             });
         });
     </script>
+    <script src="../js/select-modal.js"></script>
 </body>
 </html>
