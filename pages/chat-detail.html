@@ -226,22 +226,20 @@
         popup.style.display = "none";
       });
 
-      // 취소 버튼
       cancelBtn.addEventListener("click", () => {
         popup.style.display = "none";
       });
 
-      // 선물하기 버튼
       submitBtn.addEventListener("click", () => {
         popup.style.display = "none";
       });
 
-      // 배경 눌러서 닫기
       popup.addEventListener("click", (e) => {
         if (e.target.id === "gift-popup") {
           popup.style.display = "none";
         }
       });
+
 
       /* ===== 메뉴 모달 ===== */
       const menuModal = document.getElementById("menu-modal");
@@ -250,23 +248,34 @@
       // 열기
       menuOpenBtn.addEventListener("click", () => {
         menuModal.style.display = "block";
+
+        requestAnimationFrame(() => {
+          menuModal.classList.add("show");
+        });
       });
 
-      // 배경 클릭 → 닫기
+      // 닫기
       menuModal.addEventListener("click", (e) => {
         if (e.target.id === "menu-modal") {
-          menuModal.style.display = "none";
+          menuModal.classList.remove("show");
+
+          setTimeout(() => {
+            menuModal.style.display = "none";
+          }, 300);
         }
       });
-    });
+    });   // ✅ ← 빠져있던 닫는 괄호
 
+
+    // 뒤로가기
     document.querySelector(".back-btn").addEventListener("click", () => {
       if (document.referrer !== "") {
         history.back();
       } else {
-        window.location.href = "chat.html"; // 원하는 fallback
+        window.location.href = "chat.html";
       }
     });
+
 
   </script>
 </body>
