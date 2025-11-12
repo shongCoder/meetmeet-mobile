@@ -13,6 +13,69 @@
 </head>
 <body>
     <div id="wrapper">
+        <div id="comment">
+            <div class="comment-box">
+                <div class="handle">
+                    <div class="handle-bar"></div>
+                </div>
+                <div class="comment-title">
+                    <div class="text">댓글 <span style="color: #EA0098">22개</span></div>
+                    <div class="close-btn"><img src="../img/icon/close.svg" alt="닫기" /></div>
+                </div>
+                <div class="comment-list">
+                    <ul>
+                        <li>
+                            <div class="profile-box">
+                                <img src="../img/feed/comment/comment-profile1.jpg" alt="프로필 이미지" />
+                            </div>
+                            <div>
+                                <div class="comment">
+                                    <div class="author-name">julius_gutierrez</div>
+                                    <div class="content">
+                                        grapes vanilla carnival florence marshmallow cresent serendipity flutter like laptop way bijou carnival florence marshmallow cresent serendipity flutter like laptop way bijou
+                                    </div>
+                                    <div class="comment-info">
+                                        <time>3시간 전</time>
+                                        <div></div>
+                                        <button>답글달기</button>
+                                    </div>
+                                </div>
+                                <div class="reply">
+                                    <div class="profile-box">
+                                        <img src="../img/feed/comment/comment-profile2.jpg" alt="프로필 이미지" />
+                                    </div>
+                                    <div class="comment">
+                                        <div class="author-name">julius_gutierrez</div>
+                                        <div class="content">
+                                            <a href="#">@julius_gutierrez</a> grapes vanilla carnival florence marshmallow cresent serendipity flutter like laptop way bijou
+                                        </div>
+                                        <div class="comment-info">
+                                            <time>3시간 전</time>
+                                            <div></div>
+                                            <button>답글달기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!--//comment list-->
+                <div class="action-box">
+                    <div class="my-profile-box">
+                        <div class="my-img-box">
+                            <img src="../img/feed/comment/my-profile.png" alt="내 프로필 이미지" />
+                        </div>
+                    </div>
+                    <input class="input-bar" type="text" placeholder="메세지를 입력하세요." />
+                    <button>
+                        <img src="../img/icon/send.svg" alt="댓글 작성" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--//comment-->
+
         <header id="header">
             <div><img src="../img/meetmeet_logo.svg" alt="밋밋"/></div>
             <div class="flex gap-12 item-center">
@@ -116,6 +179,7 @@
             </ul>
         </div>
         <!--//story-->
+
         <div id="feed">
             <ul>
                 <li class="post-box">
@@ -151,7 +215,7 @@
                             <img src="../img/icon/like-active.svg" alt="좋아요" />
                             <span class="active">172</span>
                         </div>
-                        <div class="comment-box">
+                        <div class="comment-btn">
                             <img src="../img/icon/comment.svg" alt="댓글" />
                             <span>32</span>
                         </div>
@@ -191,7 +255,7 @@
                             <img src="../img/icon/like.svg" alt="좋아요" />
                             <span>172</span>
                         </div>
-                        <div class="comment-box">
+                        <div class="comment-btn">
                             <img src="../img/icon/comment.svg" alt="댓글" />
                             <span>32</span>
                         </div>
@@ -252,5 +316,28 @@
         </nav>
         <!--//tab bar-->
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const comment = document.getElementById("comment");
+            const openBtn = document.querySelector("#feed .comment-btn");
+            const closeBtn = document.querySelector("#comment .close-btn");
+
+            // 열기
+            openBtn.addEventListener("click", () => {
+                comment.style.display = "block";
+                requestAnimationFrame(() => {
+                    comment.classList.add("show");
+                });
+            });
+
+            // 닫기
+            closeBtn.addEventListener("click", () => {
+                comment.classList.remove("show");
+                setTimeout(() => {
+                    comment.style.display = "none";
+                }, 350); // transition 시간과 동일
+            });
+        });
+    </script>
 </body>
 </html>

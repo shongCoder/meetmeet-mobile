@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
+      <change afterPath="$PROJECT_DIR$/img/feed/comment/comment-profile1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/feed/comment/comment-profile2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/feed/comment/my-profile.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/chat-detail.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/chat-detail.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/feed.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/feed.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/chat/close.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon/close.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/chat/send.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/icon/send.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/chat-detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/chat-detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,10 +75,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\feed\comment" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\chat" />
       <recent name="$PROJECT_DIR$/img/icon" />
       <recent name="$PROJECT_DIR$/css/common" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\auth" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -106,7 +113,7 @@
       <workItem from="1762734087479" duration="39000" />
       <workItem from="1762838524514" duration="16128000" />
       <workItem from="1762910083784" duration="5000" />
-      <workItem from="1762929739266" duration="362000" />
+      <workItem from="1762929739266" duration="7134000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
