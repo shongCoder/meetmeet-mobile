@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/common/reset.css">
+  <link rel="stylesheet" href="../css/common/style.css">
+  <link rel="stylesheet" href="../css/chat-detail.css">
+  <link rel="stylesheet" href="../css/common/tab-bar.css">
+  <link rel="stylesheet" href="../css/common/header-base.css">
+  <link rel="stylesheet" href="../css/common/story.css">
+  <title>MeetMeet : 채팅</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="gift-popup">
+      <div class="popup-box">
+        <div class="popup-title">
+          <span></span>
+          <span>선물하기</span>
+          <img src="../img/chat/close.svg" alt="창닫기">
+        </div>
+        <div class="my-mileage">
+          <span class="text">보유 마일리지</span>
+          <div class="point-box">
+            <img src="../img/icon/point.svg" alt="포인트" />
+            <span>4,000</span>
+          </div>
+        </div>
+        <div class="point-list">
+          <ul>
+            <li>1,000포인트</li>
+            <li>3,000포인트</li>
+            <li class="active">5,000포인트</li>
+            <li>7,000포인트</li>
+            <li>9,000포인트</li>
+            <li>10,000포인트</li>
+          </ul>
+        </div>
+        <div class="btn-box">
+          <button class="cancel">취소</button>
+          <button class="submit">선물하기</button>
+        </div>
+      </div>
+    </div>
+    <!--//gift popup-->
+
+    <div id="menu-modal">
+      <div class="menu-box">
+        <div class="picture-box">
+          <div class="picture-title">
+            <div class="flex align-center gap-4">
+              <img src="../img/chat/picture-icon.svg" alt="" />
+              <span>사진/동영상</span>
+            </div>
+            <button>
+              <img src="../img/chat/more-icon.svg" alt="더보기" />
+            </button>
+          </div>
+          <div class="picture-list">
+            <ul>
+              <li><img /></li>
+              <li><img /></li>
+              <li><img /></li>
+              <li><img /></li>
+            </ul>
+          </div>
+        </div>
+        <!--//사진/동영상-->
+        <div class="user-box">
+          <div class="user-title">
+            <span class="title">채팅 참여자</span>
+            <div class="user-qty">
+              <span style="font-weight: 700; color: #898D99">1</span><span>/</span><span>2</span>
+            </div>
+          </div>
+          <div class="user-list">
+            <ul>
+              <li>
+                <div class="user-img">
+                  <img src="../img/chat/my-profile.png" alt="내 프로필 이미지" />
+                </div>
+                <div class="user-info">
+                  <div class="name">
+                    <span>리나건</span>
+                    <img src="../img/icon/bronze.png" alt="브론즈 티어" />
+                  </div>
+                  <span class="code">@6828a842ef854217</span>
+                </div>
+              </li>
+              <li>
+                <div class="user-img">
+                  <img src="../img/chat/profile1.png" alt="내 프로필 이미지" />
+                </div>
+                <div class="user-info">
+                  <div class="name">
+                    <span>Gabriel</span>
+                    <img src="../img/icon/gold.png" alt="골드 티어" />
+                  </div>
+                  <div class="code">@5cf82a9f89fb48df</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="setting">
+          <div class="flex item-center gap-4">
+            <div class="btn">
+              <img src="../img/icon/exit-icon.svg" alt="나가기">
+            </div>
+            <span class="exit-text">채팅방 나가기</span>
+          </div>
+          <div class="flex item-center gap-8">
+            <div class="btn">
+              <img src="../img/icon/x-icon.svg" alt="나가기">
+            </div>
+            <div class="btn">
+              <img src="../img/icon/alarm-icon.svg" alt="나가기">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//menu modal-->
+
+    <header id="header">
+      <div class="back">
+        <button class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+      </div>
+      <div class="flex gap-4 item-center">
+        <div class="profile-img">
+          <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+        </div>
+        <span>Gabriel</span>
+        <img src="../img/chat/verified.svg"  alt="인증된 사용자" />
+      </div>
+      <div class="flex gap-12 item-center">
+        <div class="alarm-icon">
+          <img src="../img/chat/call.svg" alt="통화"/>
+        </div>
+        <div class="message-icon">
+          <img src="../img/chat/picture.svg" alt="사진 전송"/>
+        </div>
+      </div>
+    </header>
+    <!--//header-->
+    <div id="content">
+      <!--본인의 메세지인 경우 클래스명 'my' 붙임-->
+      <div class="message-wrapper my">
+        <div class="message-box">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+            </div>
+            <span>Gabriel</span>
+          </div>
+          <div class="message">안녕하세요! 항상 콘텐츠 잘 보고 있어요.</div>
+          <div class="flex gap-4 item-center">
+            <div class="msg-time">19:13</div>
+            <div class="trans">번역하기</div>
+          </div>
+        </div>
+      </div>
+      <!--//message1-->
+      <div class="message-wrapper">
+        <div class="message-box">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+            </div>
+            <span>Gabriel</span>
+          </div>
+          <div class="message">응원해 주셔서 정말 감사해요💗</div>
+          <div class="flex gap-4 item-center">
+            <div class="msg-time">19:17</div>
+            <div class="trans">번역하기</div>
+          </div>
+        </div>
+      </div>
+      <!--//message2-->
+      <div class="message-wrapper my">
+        <div class="message-box">
+          <div class="profile-box">
+            <div class="profile-img">
+              <img src="../img/chat/profile1.png" alt="프로필 이미지" />
+            </div>
+            <span>Gabriel</span>
+          </div>
+          <div class="message">또 새로운 콘텐츠는 언제 올라올까요?</div>
+          <div class="flex gap-4 item-center">
+            <div class="msg-time">지금</div>
+            <div class="trans">번역하기</div>
+          </div>
+        </div>
+      </div>
+      <!--//message3-->
+    </div>
+    <!--//content-->
+    <div id="action-area">
+      <div class="action-box">
+        <button class="gift-btn">
+          <img src="../img/chat/gift.svg" alt="선물하기" />
+        </button>
+        <input class="input-bar" type="text" placeholder="메세지를 입력하세요." />
+        <button class="send-btn">
+          <img src="../img/chat/send.svg" alt="메세지 전송" />
+        </button>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const popup = document.getElementById("gift-popup");
+      const openBtn = document.querySelector(".gift-btn");
+      const closeBtn = document.querySelector("#gift-popup .popup-title img");
+      const cancelBtn = document.querySelector("#gift-popup .btn-box .cancel");
+      const submitBtn = document.querySelector("#gift-popup .btn-box .submit");
+
+      // 팝업 열기
+      openBtn.addEventListener("click", () => {
+        popup.style.display = "block";
+      });
+
+      // 닫기 버튼
+      closeBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      // 취소 버튼
+      cancelBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      // 선물하기 버튼
+      submitBtn.addEventListener("click", () => {
+        popup.style.display = "none";
+      });
+
+      // 배경 눌러서 닫기
+      popup.addEventListener("click", (e) => {
+        if (e.target.id === "gift-popup") {
+          popup.style.display = "none";
+        }
+      });
+
+      /* ===== 메뉴 모달 ===== */
+      const menuModal = document.getElementById("menu-modal");
+      const menuOpenBtn = document.querySelector(".message-icon");
+
+      // 열기
+      menuOpenBtn.addEventListener("click", () => {
+        menuModal.style.display = "block";
+      });
+
+      // 배경 클릭 → 닫기
+      menuModal.addEventListener("click", (e) => {
+        if (e.target.id === "menu-modal") {
+          menuModal.style.display = "none";
+        }
+      });
+    });
+
+    document.querySelector(".back-btn").addEventListener("click", () => {
+      if (document.referrer !== "") {
+        history.back();
+      } else {
+        window.location.href = "chat.html"; // 원하는 fallback
+      }
+    });
+
+  </script>
+</body>
+</html>

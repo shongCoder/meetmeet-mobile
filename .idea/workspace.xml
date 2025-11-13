@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/my/profile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/my/profile/back-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/my/profile/camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/chat-detail.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/chat/call.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/chat/picture.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/chat-detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/profile.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/header-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/header-base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +60,7 @@
     &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -69,11 +72,11 @@
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\profile" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\feed\comment" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\chat" />
       <recent name="$PROJECT_DIR$/img/icon" />
+      <recent name="$PROJECT_DIR$/css/common" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\auth" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -106,9 +109,7 @@
       <workItem from="1762662604584" duration="194000" />
       <workItem from="1762733829554" duration="4000" />
       <workItem from="1762734087479" duration="39000" />
-      <workItem from="1762838524514" duration="16128000" />
-      <workItem from="1762910083784" duration="5000" />
-      <workItem from="1762929739266" duration="10929000" />
+      <workItem from="1762838524514" duration="1978000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
