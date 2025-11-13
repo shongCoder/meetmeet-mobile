@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/common/reset.css" />
+    <link rel="stylesheet" href="../css/common/style.css" />
+    <link rel="stylesheet" href="../css/common/tab-bar.css" />
+    <link rel="stylesheet" href="../css/common/header-base.css" />
+    <link rel="stylesheet" href="../css/add.css" />
+    <title>MeetMeet : Home</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- header -->
+      <header id="header">
+        <button class="back-btn">
+          <img src="../img/add/back_btn.svg" alt="" />
+        </button>
+      </header>
+      <!-- header -->
+
+      <div id="add">
+        <div class="add-title">
+          <h1 class="title">피드에 공유할<br />콘텐츠를 올려주세요</h1>
+          <p class="subtitle">한개 이상의 사진 또는 영상을 올려주세요</p>
+        </div>
+        <div class="form-group">
+          <label for="content" class="label">내용</label>
+          <textarea id="content" class="textarea" placeholder="판매를 위해 내용을 입력해 주세요"></textarea>
+        </div>
+        <div class="upload-wrap">
+          <div class="upload-section">
+            <span class="upload-label">사진 · 동영상</span>
+            <span class="upload-count">5개 남음</span>
+          </div>
+          <div class="upload-box">
+            <img src="../img/add/img_add.svg" alt="" class="upload-icon" />
+          </div>
+        </div>
+        <button class="setting-btn">게시글 설정</button>
+        <button class="submit-btn" disabled>업로드</button>
+      </div>
+    </div>
+  </body>
+</html>
