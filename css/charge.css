@@ -32,19 +32,27 @@
 }
 
 #charge .amount .amo-box {
-  padding: 1rem;
+  padding: 0.75rem;
   border: 1px solid #00347d14;
   border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
   display: flex;
   justify-content: space-between;
 }
+#charge .amount .amo-box:last-child {
+  margin-bottom: 0;
+}
+
 #charge .amount .amo-box div span {
-  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1rem;
+  color: #2E3C52;
 }
 
 #charge .amount .amo-box div span.b {
   font-weight: 700;
+  font-size: 0.8125rem;
 }
 
 /* info */
@@ -53,7 +61,7 @@
 }
 
 #charge .info-box {
-  padding: 1.5em 1rem;
+  padding: 1rem 0 1rem 0.75rem;
   border: 1px solid #00347d14;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
@@ -61,8 +69,10 @@
 }
 
 #charge .info-box p {
-  font-size: 12px;
-  color: #7d8a9f;
+  font-size: 0.75rem;
+  font-weight: 300;
+  color: #7D8A9F;
+  line-height: 1.25rem;
 }
 #charge .info-box p:nth-child(2) {
   margin-left: 5px;
