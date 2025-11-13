@@ -13,7 +13,7 @@
     <div id="wrapper">
       <header id="header">
         <div class="back">
-          <button class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+          <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
         </div>
         <div>
           <h1 style="margin-left: 5rem;">충전하기</h1>
@@ -115,5 +115,14 @@
         </div>
       </div>
     </div>
+    <script>
+      function goBack() {
+        if (document.referrer && document.referrer !== "") {
+          history.back();
+        } else {
+          window.location.href = "../my.html";
+        }
+      }
+    </script>
   </body>
 </html>
