@@ -13,7 +13,7 @@
 <body>
     <header id="header">
         <div class="back">
-            <button class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+            <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
         </div>
         <div class="flex gap-4 item-center">
             <h1>프로필 설정</h1>
@@ -65,5 +65,14 @@
             </div>
         </div>
     </div>
+    <script>
+        function goBack() {
+            if (document.referrer && document.referrer !== "") {
+                history.back();
+            } else {
+                window.location.href = "../my.html";
+            }
+        }
+    </script>
 </body>
 </html>
