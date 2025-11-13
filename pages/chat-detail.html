@@ -18,7 +18,7 @@
         <div class="popup-title">
           <span></span>
           <span>선물하기</span>
-          <img src="../img/chat/close.svg" alt="창닫기">
+          <img src="../img/icon/close.svg" alt="창닫기">
         </div>
         <div class="my-mileage">
           <span class="text">보유 마일리지</span>
@@ -203,7 +203,7 @@
         </button>
         <input class="input-bar" type="text" placeholder="메세지를 입력하세요." />
         <button class="send-btn">
-          <img src="../img/chat/send.svg" alt="메세지 전송" />
+          <img src="../img/icon/send.svg" alt="메세지 전송" />
         </button>
       </div>
     </div>
@@ -226,22 +226,20 @@
         popup.style.display = "none";
       });
 
-      // 취소 버튼
       cancelBtn.addEventListener("click", () => {
         popup.style.display = "none";
       });
 
-      // 선물하기 버튼
       submitBtn.addEventListener("click", () => {
         popup.style.display = "none";
       });
 
-      // 배경 눌러서 닫기
       popup.addEventListener("click", (e) => {
         if (e.target.id === "gift-popup") {
           popup.style.display = "none";
         }
       });
+
 
       /* ===== 메뉴 모달 ===== */
       const menuModal = document.getElementById("menu-modal");
@@ -250,23 +248,34 @@
       // 열기
       menuOpenBtn.addEventListener("click", () => {
         menuModal.style.display = "block";
+
+        requestAnimationFrame(() => {
+          menuModal.classList.add("show");
+        });
       });
 
-      // 배경 클릭 → 닫기
+      // 닫기
       menuModal.addEventListener("click", (e) => {
         if (e.target.id === "menu-modal") {
-          menuModal.style.display = "none";
+          menuModal.classList.remove("show");
+
+          setTimeout(() => {
+            menuModal.style.display = "none";
+          }, 300);
         }
       });
-    });
+    });   // ✅ ← 빠져있던 닫는 괄호
 
+
+    // 뒤로가기
     document.querySelector(".back-btn").addEventListener("click", () => {
       if (document.referrer !== "") {
         history.back();
       } else {
-        window.location.href = "chat.html"; // 원하는 fallback
+        window.location.href = "chat.html";
       }
     });
+
 
   </script>
 </body>

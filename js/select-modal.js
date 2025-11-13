@@ -1,6 +1,8 @@
 const selectData = {
     gender: ["여자", "남자"],
     region: ["국내", "국외"],
+    feed: ["신고하기", "차단하기"],
+    period: ["월간 랭킹", "주간 랭킹", "연간 랭킹"]
 };
 
 const selectModal = document.getElementById("selectModal");
@@ -38,7 +40,13 @@ function renderList(type) {
         li.textContent = item;
         li.addEventListener("click", () => {
             const btn = document.querySelector(`[data-target="${type}"]`);
-            if (btn) btn.textContent = item;
+            if (btn) {
+                // ✅ 버튼 내부에 img가 있는지 확인
+                const hasImage = btn.querySelector("img");
+                if (!hasImage) {
+                    btn.textContent = item;
+                }
+            }
             closeModal();
         });
         modalList.appendChild(li);
