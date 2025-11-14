@@ -13,7 +13,7 @@
 <body>
     <header id="header">
         <div class="back">
-            <button class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+            <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
         </div>
         <div class="flex gap-4 item-center">
             <h1>프로필 설정</h1>
@@ -23,12 +23,15 @@
     <!--//header-->
 
     <div id="content">
-        <div class="back-img" style="background-image:  url('../../img/my/profile/back-img.jpg');">
-            <div class="gradient-black">
-                <div class="camera">
-                    <img src="../../img/my/profile/camera.svg" alt="" />
+        <div class="back-area">
+            <div class="back-img" style="background-image:  url('../../img/my/profile/back-img.jpg')">
+                <div class="gradient-black">
+                    <div class="camera">
+                        <img src="../../img/my/profile/camera.svg" alt="" />
+                    </div>
                 </div>
             </div>
+
         </div>
         <div class="form-section">
             <div class="inner">
@@ -52,18 +55,28 @@
                         <p>영문, 숫자만 입력 가능하며, 유저네임은 1회 변경이 가능합니다.</p>
                     </div>
                     <div class="form-field">
-                        <label for="gender">성별</label>
+                        <label for="information">자기소개</label>
                         <div class="input-box flex gap-12">
-                            <select id="gender" name="gender">
-                                <option value="">성별을 선택해 주세요</option>
-                                <option value="남">남</option>
-                                <option value="여">여</option>
-                            </select>
+                            <textarea id="information" name="information" required placeholder='자기소개를 해주세요'></textarea>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
+        <!--//form section-->
+
+        <div class="button-area">
+            <button class="submit" onclick="goBack()">완 료</button>
+        </div>
     </div>
+    <script>
+        function goBack() {
+            if (document.referrer && document.referrer !== "") {
+                history.back();
+            } else {
+                window.location.href = "../my.html";
+            }
+        }
+    </script>
 </body>
 </html>

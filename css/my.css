@@ -104,3 +104,44 @@
     text-align: center;
     color: #1C1E22;
 }
+
+#management {
+    padding: 0 1.25rem 10.875rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#management .mgmt-title {
+    margin-bottom: 1rem;
+}
+
+#management .mgmt-title span {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    color: #2E3C52;
+}
+
+#management .mgmt-list li {
+    padding: 0.75rem 0;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #1C1E22;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+#management .mgmt-list li a {
+    width: 100%;
+    padding: 0.75rem 0;
+}
+
+#management .mgmt-list li:first-child {
+    padding-top: 0;
+}
+
+#management .mgmt-list li:last-child {
+    padding-bottom: 0;
+    border: none;
+}

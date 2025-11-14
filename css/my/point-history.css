@@ -1,0 +1,56 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#history {
+    width: 100%;
+}
+
+#history li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid #F7F7F7;
+}
+
+#history li .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#history li .info .description {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1C1E22;
+    line-height: 1.5rem;
+}
+
+#history li .info .date {
+    font-size: 0.625rem;
+    font-weight: 300;
+    color: #7D8A9F;
+    line-height: 0.75rem;
+}
+
+#history li .count {
+    padding-right: 0.75rem;
+}
+
+#history li .count span {
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.plus {
+    color: #4D67EB;
+}
+
+.minus {
+    color: #FA1155;
+}
