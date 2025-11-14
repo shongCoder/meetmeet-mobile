@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/my/subscriptions.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/verified.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/my/subscriptions/profile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/my/subscriptions/profile2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/subscriptions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/my/follow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/follow.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
