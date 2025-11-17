@@ -5,17 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/notice.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/notice/profile1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/notice/profile2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/notice/profile3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/notice/profile4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/notice/profile5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/notice.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/my/withdraw.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/checked-small.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/unchecked-small.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/withdraw.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common/header-base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/header-base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/charge.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/charge.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +71,11 @@
       <recent name="$PROJECT_DIR$/img/ranking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\notice" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\follow" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\subscriptions" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\profile" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -117,7 +112,7 @@
       <workItem from="1762910083784" duration="5000" />
       <workItem from="1762929739266" duration="10929000" />
       <workItem from="1763337919894" duration="13000" />
-      <workItem from="1763371373430" duration="7351000" />
+      <workItem from="1763371373430" duration="9673000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
