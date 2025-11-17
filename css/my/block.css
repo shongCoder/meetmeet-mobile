@@ -1,0 +1,72 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.block-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid rgba(0, 52, 125, 0.08);
+}
+.block-list li:last-child {
+    border: none;
+}
+
+.block-list li .block-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.block-list li .block-profile .profile-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    overflow: hidden;
+    border: 1px solid #F7F7F7;
+    border-radius: 1.875rem;
+}
+
+.block-list li .block-profile .profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block-list li .block-profile .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.block-list li .block-profile .profile-info .nick-name {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #1C1E22;
+}
+
+.block-list li .block-profile .profile-info .nick-name img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.block-list li .block-profile .profile-info .name {
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+    color: #7D8A9F;
+}
+
+.block-list li button.cancel-btn {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    background: #FA1155;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    line-height: 0.75rem;
+    color: white;
+}
