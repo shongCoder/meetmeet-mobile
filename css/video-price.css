@@ -111,3 +111,27 @@
     border: none;
     cursor: pointer;
 }
+
+#videochat .button-area {
+    position:  fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-top: 1px solid #F7F7F7;
+    background: white;
+    box-shadow: 0 -5px 20px 0 #00000005;
+}
+
+#videochat .button-area button.submit {
+    width: 100%;
+    padding: 0.875rem 0;
+    background: #FA1155;
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}

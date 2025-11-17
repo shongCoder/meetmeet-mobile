@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
-      <change afterPath="$PROJECT_DIR$/css/my/qna.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/qna-empty.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/my/qna-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/add.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/add.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/influ_apply.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/influ_apply.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/videochat.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/video-price.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/call.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/etc/call.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/feed/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/influ_apply.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/etc/influ_apply.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/video-price.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/etc/video-price.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +74,11 @@
       <recent name="$PROJECT_DIR$/img/ranking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/etc" />
       <recent name="$PROJECT_DIR$/pages/my" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\notice" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\follow" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\subscriptions" />
     </key>
   </component>
   <component name="SharedIndexes">
