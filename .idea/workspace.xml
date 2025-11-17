@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="약관동의 모달">
+      <change afterPath="$PROJECT_DIR$/css/my/qna.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/qna-empty.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/my/qna-list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/my/withdraw.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/my/withdraw.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/withdraw.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/withdraw.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -68,11 +69,11 @@
       <recent name="$PROJECT_DIR$/img/ranking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages/my" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\notice" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\follow" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\subscriptions" />
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\my\profile" />
     </key>
   </component>
   <component name="SharedIndexes">
