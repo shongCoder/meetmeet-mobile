@@ -47,47 +47,61 @@
       <div class="reason-check">
         <div class="reason-box">
           <label class="check-box">
-            <input type="radio" id="del" />
+            <input type="radio" name="withdraw-reason" id="del" />
             <span class="custom-check"></span>
             <span class="text">기록 삭제 목적</span>
           </label>
         </div>
         <div class="reason-box">
           <label class="check-box">
-            <input type="radio" id="inconv" />
+            <input type="radio" name="withdraw-reason" id="inconv" />
             <span class="custom-check"></span>
             <span class="text">이용이 불편해서</span>
           </label>
         </div>
         <div class="reason-box">
           <label class="check-box">
-            <input type="radio" id="lack" />
+            <input type="radio" name="withdraw-reason" id="lack" />
             <span class="custom-check"></span>
             <span class="text">정보가 부실해서</span>
           </label>
         </div>
         <div class="reason-box">
           <label class="check-box">
-            <input type="radio" id="better" />
+            <input type="radio" name="withdraw-reason" id="better" />
             <span class="custom-check"></span>
             <span class="text">다른 서비스가 더 좋아서</span>
           </label>
         </div>
         <div class="reason-box">
           <label class="check-box">
-            <input type="radio" id="etc" />
+            <input type="radio" name="withdraw-reason" id="etc" />
             <span class="custom-check"></span>
             <span class="text">기타</span>
           </label>
         </div>
         <div class="reason-box">
           <label class="etc-reason">
-            <input type="text" id="etc-text" />
+            <input type="text" id="etc-text" placeholder="기타 사유를 입력해 주세요" />
           </label>
         </div>
       </div>
+      <!--//reason check-->
 
+      <div class="button-area">
+        <button class="submit" onclick="goBack()">탈퇴신청</button>
+      </div>
     </div>
   </div>
+
+  <script>
+    function goBack() {
+      if (document.referrer && document.referrer !== "") {
+        history.back();
+      } else {
+        window.location.href = "../my.html";
+      }
+    }
+  </script>
 </body>
 </html>
