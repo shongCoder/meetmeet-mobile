@@ -27,6 +27,10 @@ html, body {
     gap: 0.25rem;
 }
 
+.mb-16 {
+    margin-bottom: 1rem;
+}
+
 .mb-20 {
     margin-bottom: 1.25rem;
 }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/common/reset.css" />
+  <link rel="stylesheet" href="../../css/common/style.css" />
+  <link rel="stylesheet" href="../../css/common/header-base.css" />
+  <link rel="stylesheet" href="../../css/etc/notice.css" />
+  <title>MeetMeet : 알림</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header id="header">
+      <div class="back">
+        <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+      </div>
+      <div class="flex gap-4 item-center">
+        <h1>알림</h1>
+      </div>
+      <div>
+        <button class="control-btn">읽음 처리</button>
+      </div>
+    </header>
+    <!--//header-->
+    <div id="notices">
+      <ul>
+        <li>
+          <div class="img-box">
+            <img src="../../img/notice/profile1.png" alt="프로필 이미지">
+          </div>
+          <div class="note-cnt">
+            <p>
+              <b>Peter</b>&nbsp;commented on your photo
+            </p>
+            <span>2분 전</span>
+          </div>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="../../img/notice/profile2.png" alt="프로필 이미지">
+          </div>
+          <div class="note-cnt">
+            <p>
+              <b>Lisa Shannon, Kevin Wrangler</b>&nbsp;and 3 others comments on your post: “Very happy today to play golf with my girlf…”
+            </p>
+            <span>2분 전</span>
+          </div>
+        </li>
+        <li class="unread">
+          <div class="img-box">
+            <img src="../../img/notice/profile3.png" alt="프로필 이미지">
+          </div>
+          <div class="note-cnt">
+            <p>
+              <b>Thomas Fischer, Daniel Martin</b>&nbsp;and 36 others like your round play at Meadow Spring Golf
+            </p>
+            <span>3시간 전</span>
+          </div>
+        </li>
+        <li>
+          <div class="img-box">
+            <img src="../../img/notice/profile4.png" alt="프로필 이미지">
+          </div>
+          <div class="note-cnt">
+            <p>
+              <b>Maria Adam</b>&nbsp;Jose share your post: “Amazing score!”
+            </p>
+            <span>3시간 전</span>
+          </div>
+        </li>
+        <li class="unread">
+          <div class="img-box">
+            <img src="../../img/notice/profile5.png" alt="프로필 이미지">
+          </div>
+          <div class="note-cnt">
+            <p>
+              <b>Peter</b>&nbsp;commented on your photo
+            </p>
+            <span>12시간 전</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    function goBack() {
+      if (document.referrer && document.referrer !== "") {
+        history.back();
+      } else {
+        window.location.href = "../my.html";
+      }
+    }
+  </script>
+</body>
+</html>

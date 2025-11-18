@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/auth/intro.css">
     <title>Home</title>
     <style>
-        /* 전체 리스트 기본 스타일 */
         ul {
             list-style: none;
             margin: 20px;
@@ -16,13 +15,11 @@
             font-family: sans-serif;
         }
 
-        /* 상위 메뉴 */
         ul > li {
             margin-bottom: 10px;
             position: relative;
         }
 
-        /* 상위 메뉴 링크 */
         ul > li > a {
             display: inline-block;
             padding: 6px 12px;
@@ -33,35 +30,29 @@
             font-size: 14px;
         }
 
-        /* 하위 메뉴 */
         ul > li > ul {
             margin-top: 6px;
-            margin-left: 16px;  /* 자연스러운 들여쓰기 */
+            margin-left: 16px;
             padding: 0;
         }
 
-        /* 하위 메뉴 아이템 */
         ul > li > ul > li {
             margin-bottom: 6px;
         }
 
-        /* 하위 메뉴 링크 */
         ul > li > ul > li > a {
             display: inline-block;
-            background: #fafafa;
+            background: white;
             border-radius: 4px;
             border: 1px solid #eee;
             padding: 4px 8px;
             font-size: 13px;
             color: #444;
             text-decoration: none;
-
-            /* ✨ 대협이 요청한 핵심: 텍스트만큼만 너비 */
             width: fit-content;
             white-space: nowrap;
         }
 
-        /* 호버 효과 */
         ul li a:hover {
             background: #ffe7f2;
             color: #d60080;
@@ -81,19 +72,35 @@
         <li>
             <a href="pages/feed.html" target="_blank">피드</a>
             <ul>
-                <li><a href="pages/feed/add.html" target="_blank">추가하기(수정중)</a></li>
+                <li><a href="pages/feed/add.html" target="_blank">추가하기</a></li>
             </ul>
         </li>
         <li><a href="pages/chat.html" target="_blank">채팅</a></li>
         <li>
-            <a href="pages/call.html" target="_blank">my</a>
+            <a href="pages/my.html" target="_blank">my</a>
             <ul>
                 <li><a href="pages/my/profile.html" target="_blank">프로필 수정</a></li>
                 <li><a href="pages/my/charge.html" target="_blank">포인트 충전</a></li>
                 <li><a href="pages/my/point-history.html" target="_blank">포인트 사용내역</a></li>
+                <li><a href="pages/my/subscriptions.html" target="_blank">구독 리스트</a></li>
+                <li><a href="pages/my/follow.html" target="_blank">팔로워 관리</a></li>
+                <li><a href="pages/my/block.html" target="_blank">차단 목록</a></li>
+                <li><a href="pages/my/alarm-set.html" target="_blank">알람 설정</a></li>
+                <li><a href="pages/my/withdraw.html" target="_blank">계정설정 - 회원 탈퇴</a></li>
+                <li><a href="pages/my/qna-empty.html" target="_blank">1:1문의(문의내용 없음)</a></li>
+                <li><a href="pages/my/qna-list.html" target="_blank">1:1문의</a></li>
             </ul>
         </li>
-        <li><a href="pages/call.html" target="_blank">통화</a></li>
+        <li><a href="pages/etc/notice.html" target="_blank">알림</a></li>
+        <li>
+            <a href="#">기타</a>
+            <ul>
+                <li><a href="pages/etc/call.html" target="_blank">통화</a></li>
+                <li><a href="pages/etc/influ_apply.html" target="_blank">인플루언서 신청</a></li>
+                <li><a href="pages/etc/video-price.html" target="_blank">영상통화 가격설정</a></li>
+            </ul>
+        </li>
+
     </ul>
 </body>
 </html>

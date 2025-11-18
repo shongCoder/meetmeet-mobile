@@ -1,0 +1,153 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#content {
+    padding: 0.5rem 1.25rem 6rem 1.25rem;
+}
+
+#content .title {
+    margin-bottom: 2.5rem;
+}
+
+#content .title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: #1C1E22;
+    margin-bottom: 0.5rem;
+}
+
+#content .title p {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: #898D99;
+}
+
+#content .info .info-title {
+    color: #1C1E22;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+#content .info .info-title span {
+    color: #FA1155;
+    font-weight: 500;
+}
+
+#content .info .info-title span.dot {
+    font-weight: 800;
+}
+
+#content .info .info-cnt {
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 1rem 0.75rem;
+    background: rgba(0, 52, 125, 0.08);
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    box-sizing:  border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+#content .info .info-cnt p {
+    color: #646D7B;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    width: 19.375rem;
+}
+
+#content .info .info-cnt p strong {
+    color: #FA1155;
+    font-weight: 600;
+}
+
+#content .info .info-cnt p b {
+    font-weight: 600;
+}
+
+#content .reason-check {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#content .reason-check .reason-box .check-box {
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#content .reason-check .reason-box .check-box input {
+    display: none;
+}
+
+#content .reason-check .reason-box .check-box .custom-check {
+    width: 20px;
+    height: 20px;
+    background: url('../../img/icon/unchecked-small.svg') no-repeat center / contain;
+}
+
+#content .reason-check .reason-box .check-box input:checked ~ .custom-check {
+    background: url('../../img/icon/checked-small.svg') no-repeat center / contain;
+}
+
+#content .reason-check .reason-box .check-box .text {
+    color: #7D8A9F;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+#content .reason-check .reason-box .check-box input:checked ~ .text {
+    color: #1C1E22;
+}
+
+#content .reason-check .reason-box .etc-reason input {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    border-radius: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #1C1E22;
+    box-sizing: border-box;
+}
+
+#content .reason-check .reason-box .etc-reason input::placeholder {
+    color: #7D8A9F;
+}
+
+#content .button-area {
+    position:  fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-top: 1px solid #F7F7F7;
+    background: white;
+    box-shadow: 0 -5px 20px 0 #00000005;
+}
+
+#content .button-area button.submit {
+    width: 100%;
+    padding: 0.875rem 0;
+    background: #FA1155;
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}

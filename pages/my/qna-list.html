@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/common/reset.css" />
+  <link rel="stylesheet" href="../../css/common/style.css" />
+  <link rel="stylesheet" href="../../css/common/header-base.css" />
+  <link rel="stylesheet" href="../../css/my/qna.css" />
+  <title>MeetMeet : 1:1 문의</title>
+</head>
+<body>
+<div id="wrapper">
+  <header id="header">
+    <div class="back">
+      <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+    </div>
+    <div class="flex gap-4 item-center">
+      <h1>문의하기</h1>
+    </div>
+    <div>
+      <button class="control-btn">문의하기</button>
+    </div>
+  </header>
+  <!--//header-->
+
+  <div id="list">
+    <div class="qna-list">
+      <ul>
+        <li>
+          <div class="qna-state wait">답변 대기</div>
+          <div class="qna-title">
+            Important Update: Changes to Account Policies Starting Next Month
+          </div>
+          <div class="qna-info">
+            <span class="qna-type">앱 오류</span>
+            <span class="dot">・</span>
+            <span class="qna-time">12시간 전</span>
+          </div>
+        </li>
+        <li>
+          <div class="qna-state answered">답변 완료</div>
+          <div class="qna-title">
+            Explore New Features Available Now to Enhance Your Experience
+          </div>
+          <div class="qna-info">
+            <span class="qna-type">개인정보 도용</span>
+            <span class="dot">・</span>
+            <span class="qna-time">2025. 12. 15</span>
+          </div>
+        </li>
+        <li>
+          <div class="qna-state answered">답변 완료</div>
+          <div class="qna-title">
+            Important Update: Changes to Account Policies Starting Next Month
+          </div>
+          <div class="qna-info">
+            <span class="qna-type">개인정보 도용</span>
+            <span class="dot">・</span>
+            <span class="qna-time">2025. 12. 15</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<script>
+  function goBack() {
+    if (document.referrer && document.referrer !== "") {
+      history.back();
+    } else {
+      window.location.href = "../my.html";
+    }
+  }
+</script>
+</body>
+</html>
