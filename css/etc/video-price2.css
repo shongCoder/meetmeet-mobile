@@ -1,0 +1,173 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#header {
+    position: relative;
+}
+
+#header .h-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#videochat2 {
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.top-camera {
+    width: 100%;
+    height: 140px;
+    background: #efefef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-circle {
+    width: 100%;
+    height: 100%;
+    max-width: 60px;
+    max-height: 60px;
+    background: #ffffffaa;
+    border: 2px solid var(--nmoment-Out_line, #00347d14);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile-section {
+    padding: 30px;
+    margin: 0 auto;
+    background: white;
+    width: 100%;
+    max-width: 312px;
+}
+
+.profile-img_wrap {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    position: relative;
+    border-radius: 50%;
+}
+
+.profile-img_wrap .pro_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-position: 0 12px;
+    background: #d9e7f5;
+}
+
+.small-camera {
+    width: 100%;
+    height: 100%;
+    max-width: 32px;
+    max-height: 32px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    right: 5px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.small-camera .small-camera_img {
+    width: 12px;
+    height: 12px;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 25px;
+
+    color: #7d8a9f;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+textarea {
+    width: 100%;
+    padding: 16px 12px;
+    font-size: 14px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: 1px solid #e4e4e4;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: none;
+    overflow: auto;
+}
+
+.form-group textarea::placeholder {
+    color: #898d99;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: "Pretendard", sans-serif;
+}
+
+.id-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 8px 0;
+    width: 100%;
+    height: 48px;
+}
+
+.id-box input {
+    border: none;
+    outline: none;
+    padding: 0;
+    flex: 1;
+}
+
+.copy-icon {
+    cursor: pointer;
+}
+
+.desc {
+    font-size: 11px;
+    color: #7d8a9f;
+    font-weight: 400;
+}
+
+.submit-btn {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    width: calc(100% - 36px);
+    padding: 14px 36px;
+    background-color: #e1e1e1;
+    border-radius: 16px;
+    transform: translateX(-50%);
+    box-shadow: 0px 5px 10px 0px #1a1a1a1a;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
