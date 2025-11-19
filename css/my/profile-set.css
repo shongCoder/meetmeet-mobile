@@ -1,0 +1,143 @@
+#wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#wrapper #content {
+    width: 100%;
+    margin-bottom: 6.125rem;
+}
+
+#content .back-area {
+    width: 100%;
+    height: 17rem;
+    background-color: #F7F7F7;
+    margin-bottom: 1.25rem;
+}
+
+#content .back-area .back-img {
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-size: cover;
+}
+
+#content .back-area .gradient-black {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(360deg, rgba(28, 30, 34, 0) 40%, #1C1E22 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .form-section .inner {
+    padding: 0 1.25rem 5rem 1.25rem;
+}
+
+#content .form-section form .form-field {
+    margin: 1.25rem 0;
+}
+
+#content .form-section form label {
+    color: #898D99;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+}
+
+#content .form-section form .form-field .input-box {
+    margin: 0.75rem 0;
+}
+
+#content .form-section form .form-field .input-box input,
+#content .form-section form .form-field .input-box textarea,
+#content .form-section form .form-field .input-box select {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+
+    /* ✅ 공통 텍스트 스타일 */
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #1C1E22;
+
+    appearance: none;
+    background-size: 12px;
+}
+
+#content .form-section form .form-field .input-box input::placeholder,
+#content .form-section form .form-field .input-box textarea::placeholder,
+#content .form-section form .form-field .input-box select::placeholder {
+    color: #898D99;       /* ✅ color만 다름 */
+
+    /* ✅ 입력 텍스트와 동일 폰트 속성 */
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+#content .form-section form .form-field .input-box textarea {
+    height: 3.75rem;
+    font-family: "Pretendard", sans-serif;
+}
+
+#content .form-section form .form-field .input-box select {
+    color: #898D99;
+    background: #fff url('/img/icon/icon-arrow-down-pink.svg') no-repeat right 0.75rem center;
+    background-size: 12px;
+}
+
+#content .form-section form .form-field .input-box input:focus,
+#content .form-section form .form-field .input-box textarea:focus,
+#content .form-section form .form-field .input-box select:focus {
+    outline: none;
+    border-color: #FA1155;
+}
+
+#content .form-section form .form-field .input-box .send-btn {
+    color: white;
+    background: #7D8A9F;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    white-space: nowrap;
+}
+
+#content .form-section form .form-field p {
+    color: #898D99;
+    font-size: 0.6875rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+}
+
+#content .button-area {
+    position:  fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-top: 1px solid #F7F7F7;
+    background: white;
+    box-shadow: 0 -5px 20px 0 #00000005;
+}
+
+#content .button-area button.submit {
+    width: 100%;
+    padding: 0.875rem 0;
+    background: #FA1155;
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
