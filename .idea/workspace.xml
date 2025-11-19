@@ -5,22 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="파일 구조 변경">
-      <change afterPath="$PROJECT_DIR$/css/common/form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/etc/group-message.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/etc/group-message.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/auth/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/auth/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/my/alarm-set.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/my/alarm-set.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/my/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/my/profile-set.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/my/profile/back-img.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/my/profile-set/back-img.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/my/profile/camera.svg" beforeDir="false" afterPath="$PROJECT_DIR$/img/my/profile-set/camera.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/auth/sign-up.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/auth/sign-up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/feed.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/feed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/profile-set.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/etc/owneditems.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/etc/owneditems.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/etc/owneditems.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/etc/owneditems.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +110,7 @@
       <workItem from="1762929739266" duration="10929000" />
       <workItem from="1763337919894" duration="13000" />
       <workItem from="1763371373430" duration="9673000" />
-      <workItem from="1763407505517" duration="7232000" />
+      <workItem from="1763407505517" duration="11068000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
