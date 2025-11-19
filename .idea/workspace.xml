@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="파일 구조 변경">
-      <change afterPath="$PROJECT_DIR$/css/etc/payment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/etc/payment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/etc/post-set.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/etc/post-set.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <workItem from="1762929739266" duration="10929000" />
       <workItem from="1763337919894" duration="13000" />
       <workItem from="1763371373430" duration="9673000" />
-      <workItem from="1763407505517" duration="22928000" />
+      <workItem from="1763407505517" duration="25440000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />

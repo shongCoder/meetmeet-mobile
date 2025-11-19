@@ -1,0 +1,116 @@
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#setting-wrap {
+    padding: 0.5rem 1.25rem;
+}
+
+#setting-wrap ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#setting-wrap ul li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #F7F7F7;
+    position: relative;
+}
+
+#setting-wrap ul li .set-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#setting-wrap ul li .set-box span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #7D8A9F;
+}
+
+#setting-wrap ul li .set-box select {
+    border: none;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    color: #1C1E22;
+    padding-right: 1.25rem;
+    appearance: none;
+    outline: none;
+}
+
+#setting-wrap ul li .set-box img.arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box input {
+    width: 100%;
+    padding: 1rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    box-sizing: border-box;
+
+    /* ✅ 공통 텍스트 스타일 */
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    color: #1C1E22;
+
+    appearance: none;
+    background-size: 12px;
+}
+
+.input-box input::placeholder {
+    color: #898D99;
+
+    /* ✅ 입력 텍스트와 동일 폰트 속성 */
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #FA1155;
+}
+
+.info-text {
+    padding: 0 1.25rem;
+    font-size: 0.6875rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+    color: #4D67EB;
+}
+
+.button-area {
+    position:  fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-top: 1px solid #F7F7F7;
+    background: white;
+    box-shadow: 0 -5px 20px 0 #00000005;
+}
+
+.button-area button.submit {
+    width: 100%;
+    padding: 0.875rem 0;
+    background: #FA1155;
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+}
