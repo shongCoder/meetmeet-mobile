@@ -93,3 +93,17 @@
     line-height: 1.25rem;
     color: #4D67EB;
 }
+
+.input-box button.add {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box button.remove {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+}

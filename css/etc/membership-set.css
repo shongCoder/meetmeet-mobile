@@ -1,0 +1,128 @@
+#wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    padding: 0.5rem 1.25rem 0 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+#title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: #1C1E22;
+    margin-bottom: 0.5rem;
+}
+
+#title p {
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: #898D99;
+}
+
+#membership-wrap {
+    padding: 0 6.25rem;
+}
+
+#membership-wrap .membership-card {
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(0, 52, 125, 0.08);
+    margin-bottom: 1.25rem;
+}
+
+#membership-wrap .membership-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(0, 52, 125, 0.08);
+    margin-bottom: 1.25rem;
+}
+
+#membership-wrap .membership-card .card-header h2 {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: #1C1E22;
+}
+
+#membership-wrap .membership-card .card-body .info-box {
+    padding: 1rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 2px solid rgba(0, 52, 125, 0.08);
+    background: rgba(0, 52, 125, 0.08);
+    margin-top: 0.75rem;
+}
+
+#membership-wrap .membership-card .card-body .info-box li {
+    position: relative;
+    font-size: 0.8125rem;
+    font-weight: 300;
+    line-height: 1.25rem;
+    color: #2E3C52;
+    padding-left: 1.25rem;
+}
+
+#membership-wrap .membership-card .card-body .info-box li:before {
+    position: absolute;
+    content: "";
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 2px;
+    border-radius: 2px;
+    background: #2E3C52;
+}
+
+#membership-wrap .add-membership {
+    padding: 1rem 0;
+    width: 100%;
+    border: 1px solid #4D67EB;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1rem;
+    color: #4D67EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 6rem;
+}
+
+#wrapper .button-area {
+    position:  fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.5rem 1.25rem 1.25rem 1.25rem;
+    border-radius: 1.25rem 1.25rem 0 0;
+    border-top: 1px solid #F7F7F7;
+    background: white;
+    box-shadow: 0 -5px 20px 0 #00000005;
+}
+
+#wrapper .button-area button {
+    width: 100%;
+    padding: 0.875rem 0;
+    border-radius: 0.75rem;
+    color: white;
+    text-align: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    background: #E1E1E1;
+    box-shadow: 0 5px 10px 0 #1A1A1A1A;
+}
+
+#wrapper .button-area button.submit {
+    background: #FA1155;
+    box-shadow: none;
+}
