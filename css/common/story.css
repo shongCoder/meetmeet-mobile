@@ -45,8 +45,13 @@
     touch-action: pan-x;
 }
 
-#story .story-list { cursor: grab; }
-#story .story-list.grabbing { cursor: grabbing; }
+#story .story-list {
+    cursor: grab;
+}
+
+#story .story-list.grabbing {
+    cursor: grabbing;
+}
 
 #story .story-list::-webkit-scrollbar {
     display: none;

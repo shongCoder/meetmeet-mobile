@@ -1,84 +1,86 @@
 #wrapper {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  position: relative;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
 }
 
 /* 충전하기 (공통) */
 #charge {
-  width: 100%;
-  padding: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 /* 충전하기 (베너) */
 #charge .banner .ban-box {
-  width: 100%;
+    width: 100%;
 }
 
 #charge .banner .ban-box img {
-  width: 100%;
-  object-fit: cover;
+    width: 100%;
+    object-fit: cover;
 }
 
 /* 충전하기 (금액) */
 #charge .amount {
-  width: 100%;
+    width: 100%;
 }
 
 #charge .amount .amo-box {
-  padding: 0.75rem;
-  border: 1px solid #00347d14;
-  border-radius: 0.5rem;
-  margin-bottom: 0.75rem;
-  display: flex;
-  justify-content: space-between;
+    padding: 0.75rem;
+    border: 1px solid #00347d14;
+    border-radius: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: flex;
+    justify-content: space-between;
 }
+
 #charge .amount .amo-box:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 #charge .amount .amo-box div span {
-  font-size: 0.75rem;
-  font-weight: 700;
-  line-height: 1rem;
-  color: #2E3C52;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1rem;
+    color: #2E3C52;
 }
 
 #charge .amount .amo-box div span.b {
-  font-weight: 700;
-  font-size: 0.8125rem;
+    font-weight: 700;
+    font-size: 0.8125rem;
 }
 
 /* info */
 #charge .info {
-  width: 100%;
+    width: 100%;
 }
 
 #charge .info-box {
-  padding: 1rem 0 1rem 0.75rem;
-  border: 1px solid #00347d14;
-  border-radius: 0.5rem;
-  margin-bottom: 0.5rem;
-  display: flex;
+    padding: 1rem 0 1rem 0.75rem;
+    border: 1px solid #00347d14;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
 }
 
 #charge .info-box p {
-  font-size: 0.75rem;
-  font-weight: 300;
-  color: #7D8A9F;
-  line-height: 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: #7D8A9F;
+    line-height: 1.25rem;
 }
+
 #charge .info-box p:nth-child(2) {
-  margin-left: 5px;
+    margin-left: 5px;
 }
 
 #charge .info-box p span {
-  color: #fa1155;
-  font-weight: 700;
+    color: #fa1155;
+    font-weight: 700;
 }

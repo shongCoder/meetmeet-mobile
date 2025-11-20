@@ -46,6 +46,7 @@
     padding: 0.75rem 1.25rem;
     border-bottom: 1px solid rgba(0, 52, 125, 0.08);
 }
+
 .follow-list li:last-child {
     border: none;
 }
@@ -104,10 +105,12 @@
     color: #898D99;
     background: #F1F1F1;
 }
+
 .follow-list li .follow-profile .profile-info .nick-name .rank.lover {
     color: white;
     background: #4D67EB;
 }
+
 .follow-list li .follow-profile .profile-info .nick-name .rank.vip {
     color: white;
     background: #FA1155;

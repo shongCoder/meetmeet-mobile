@@ -34,7 +34,7 @@
 #wrapper form .form-field .input-box input::placeholder,
 #wrapper form .form-field .input-box textarea::placeholder,
 #wrapper form .form-field .input-box select::placeholder {
-    color: #898D99;       /* ✅ color만 다름 */
+    color: #898D99; /* ✅ color만 다름 */
 
     /* ✅ 입력 텍스트와 동일 폰트 속성 */
     font-size: 0.8125rem;

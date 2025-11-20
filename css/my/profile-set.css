@@ -73,7 +73,7 @@
 #content .form-section form .form-field .input-box input::placeholder,
 #content .form-section form .form-field .input-box textarea::placeholder,
 #content .form-section form .form-field .input-box select::placeholder {
-    color: #898D99;       /* ✅ color만 다름 */
+    color: #898D99; /* ✅ color만 다름 */
 
     /* ✅ 입력 텍스트와 동일 폰트 속성 */
     font-size: 0.8125rem;
@@ -119,7 +119,7 @@
 }
 
 #content .button-area {
-    position:  fixed;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;

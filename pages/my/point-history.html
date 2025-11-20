@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/common/reset.css">
-    <link rel="stylesheet" href="../../css/common/style.css">
-    <link rel="stylesheet" href="../../css/my/point-history.css">
-    <link rel="stylesheet" href="../../css/common/header-base.css">
-    <link rel="stylesheet" href="../../css/common/story.css">
-    <title>MeetMeet : 포인트 사용내역</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/my/point-history.css" rel="stylesheet">
+  <link href="../../css/common/header-base.css" rel="stylesheet">
+  <link href="../../css/common/story.css" rel="stylesheet">
+  <title>MeetMeet : 포인트 사용내역</title>
 </head>
 <body>
-    <div id="wrapper">
-        <header id="header">
-            <div class="back">
-                <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
-            </div>
-            <div>
-                <h1 style="margin-left: 5rem;">사용 내역</h1>
-            </div>
-            <div class="point-box">
-                <img src="../../img/icon/point.svg" alt="포인트" />
-                <span>40,000</span>
-            </div>
-        </header>
-        <!--//header-->
-        <div id="history">
-            <ul>
-                <li>
-                    <div class="info">
-                        <span class="description">출석 체크</span>
-                        <span class="date">2024. 12. 07</span>
-                    </div>
-                    <div class="count">
-                        <span>+10</span>
-                    </div>
-                </li>
-                <li>
-                    <div class="info">
-                        <span class="description">채팅</span>
-                        <span class="date">2024. 12. 07</span>
-                    </div>
-                    <div class="count">
-                        <span>-10</span>
-                    </div>
-                </li>
-            </ul>
-        </div>
+<div id="wrapper">
+  <header id="header">
+    <div class="back">
+      <button class="back-btn" onclick="goBack()"><img alt="뒤로가기" src="../../img/icon/icon-arrow-left-pink.svg"/>
+      </button>
     </div>
-    <script>
-        document.querySelectorAll('#history .count span').forEach(el => {
-            const value = parseInt(el.innerText, 10);
-            if (value < 0) {
-                el.classList.add('minus');
-            } else {
-                el.classList.add('plus');
-            }
-        });
-
-        function goBack() {
-            if (document.referrer && document.referrer !== "") {
-                history.back();
-            } else {
-                window.location.href = "../my.html";
-            }
+    <div>
+      <h1 style="margin-left: 5rem;">사용 내역</h1>
+    </div>
+    <div class="point-box">
+      <img alt="포인트" src="../../img/icon/point.svg"/>
+      <span>40,000</span>
+    </div>
+  </header>
+  <!--//header-->
+  <div id="history">
+    <ul>
+      <li>
+        <div class="info">
+          <span class="description">출석 체크</span>
+          <span class="date">2024. 12. 07</span>
+        </div>
+        <div class="count">
+          <span>+10</span>
+        </div>
+      </li>
+      <li>
+        <div class="info">
+          <span class="description">채팅</span>
+          <span class="date">2024. 12. 07</span>
+        </div>
+        <div class="count">
+          <span>-10</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+    document.querySelectorAll('#history .count span').forEach(el => {
+        const value = parseInt(el.innerText, 10);
+        if (value < 0) {
+            el.classList.add('minus');
+        } else {
+            el.classList.add('plus');
         }
-    </script>
+    });
+
+    function goBack() {
+        if (document.referrer && document.referrer !== "") {
+            history.back();
+        } else {
+            window.location.href = "../my.html";
+        }
+    }
+</script>
 </body>
 </html>

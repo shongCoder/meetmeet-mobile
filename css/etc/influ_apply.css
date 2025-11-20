@@ -57,6 +57,7 @@
     display: block;
     color: #c8c8c8;
 }
+
 #influ .upload .upload-box {
     background: #fa115505;
     border: 1px dashed #fa115533;
@@ -71,6 +72,7 @@
     height: 52px;
     margin-bottom: 12px;
 }
+
 #influ .upload .upload-box .upload-box-text {
     font-size: 0.625rem;
     color: #646d7b;
@@ -100,6 +102,7 @@
     margin-left: 0.5rem;
     transform: rotate(180deg);
 }
+
 #influ .submit-button {
     position: absolute;
     bottom: 1rem;
@@ -115,7 +118,7 @@
 }
 
 #influ .button-area {
-    position:  fixed;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;

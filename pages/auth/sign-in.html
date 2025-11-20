@@ -2,10 +2,10 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/common/reset.css">
-  <link rel="stylesheet" href="../../css/common/style.css">
-  <link rel="stylesheet" href="../../css/auth/intro.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/auth/intro.css" rel="stylesheet">
   <title>로그인</title>
 </head>
 <body>
@@ -13,14 +13,14 @@
   <div class="gradient-black">
     <div class="back-black">
       <div class="logo-section">
-        <img src="../../img/auth/intro-logo2.svg" alt="meetmeet: 만나고 싶은 순간, 밋밋하세요!" style="margin-bottom: 56px;" />
+        <img alt="meetmeet: 만나고 싶은 순간, 밋밋하세요!" src="../../img/auth/intro-logo2.svg" style="margin-bottom: 56px;"/>
       </div>
       <div class="sign-section">
         <p>Sign up with Social Networks</p>
         <div class="sign-button">
-          <button onclick="openSheet()"><img src="../../img/auth/signin-google.svg" alt="구글 로그인"></button>
-          <button onclick="openSheet()"><img src="../../img/auth/signin-apple.svg" alt="애플 로그인"></button>
-          <button onclick="openSheet()"><img src="../../img/auth/signin-kakao.svg" alt="카카오 로그인"></button>
+          <button onclick="openSheet()"><img alt="구글 로그인" src="../../img/auth/signin-google.svg"></button>
+          <button onclick="openSheet()"><img alt="애플 로그인" src="../../img/auth/signin-apple.svg"></button>
+          <button onclick="openSheet()"><img alt="카카오 로그인" src="../../img/auth/signin-kakao.svg"></button>
         </div>
       </div>
     </div>
@@ -28,9 +28,9 @@
 </div>
 
 <!-- 하단 모달 -->
-<div id="backdrop" class="backdrop" onclick="closeSheet()"></div>
+<div class="backdrop" id="backdrop" onclick="closeSheet()"></div>
 
-<div id="sheet" class="bottom-sheet">
+<div class="bottom-sheet" id="sheet">
   <div class="handle">
     <div class="handle-bar"></div>
   </div>
@@ -41,34 +41,34 @@
     <div>
       <div class="terms-box">
         <label class="terms-check">
-          <input type="checkbox" id="all-check" />
+          <input id="all-check" type="checkbox"/>
           <span class="custom-check"></span>
           <span class="text">모든 약관에 동의합니다.</span>
         </label>
       </div>
       <div class="terms-box">
         <label class="terms-check">
-          <input type="checkbox" class="sub-check" />
+          <input class="sub-check" type="checkbox"/>
           <span class="custom-check"></span>
           <span class="text">이용약관 동의 <span style="color: #FA1155;">(필수)</span></span>
         </label>
-        <button><img src="../../img/icon/icon-arrow-right.svg" alt="terms detail"></button>
+        <button><img alt="terms detail" src="../../img/icon/icon-arrow-right.svg"></button>
       </div>
       <div class="terms-box">
         <label class="terms-check">
-          <input type="checkbox" class="sub-check" />
+          <input class="sub-check" type="checkbox"/>
           <span class="custom-check"></span>
           <span class="text">개인정보처리방침 동의 <span style="color: #FA1155;">(필수)</span></span>
         </label>
-        <button><img src="../../img/icon/icon-arrow-right.svg" alt="terms detail"></button>
+        <button><img alt="terms detail" src="../../img/icon/icon-arrow-right.svg"></button>
       </div>
       <div class="terms-box">
         <label class="terms-check">
-          <input type="checkbox" class="sub-check" />
+          <input class="sub-check" type="checkbox"/>
           <span class="custom-check"></span>
           <span class="text">마케팅 및 광고 활용 동의</span>
         </label>
-        <button><img src="../../img/icon/icon-arrow-right.svg" alt="terms detail"></button>
+        <button><img alt="terms detail" src="../../img/icon/icon-arrow-right.svg"></button>
       </div>
     </div>
     <div></div>
@@ -80,81 +80,81 @@
 </div>
 
 <script>
-  const sheet = document.getElementById('sheet');
-  const backdrop = document.getElementById('backdrop');
-  const handle = sheet.querySelector('.handle');
+    const sheet = document.getElementById('sheet');
+    const backdrop = document.getElementById('backdrop');
+    const handle = sheet.querySelector('.handle');
 
-  function openSheet(){
-    sheet.classList.add('show');
-    backdrop.style.display = 'block';
-  }
-
-  function closeSheet(){
-    sheet.classList.remove('show');
-    backdrop.style.display = 'none';
-    sheet.style.transform = '';
-  }
-
-  // ----- Pointer Events (마우스/터치 통합) -----
-  let startY = 0;
-  let dragging = false;
-  let currentTranslate = 0;
-
-  const THRESHOLD = 120;
-
-  handle.addEventListener('pointerdown', (e) => {
-    dragging = true;
-    startY = e.clientY;
-    currentTranslate = 0;
-    sheet.style.transition = 'none';
-    handle.setPointerCapture(e.pointerId);
-  });
-
-  handle.addEventListener('pointermove', (e) => {
-    if (!dragging) return;
-    const diff = e.clientY - startY;
-    if (diff > 0) {
-      currentTranslate = diff;
-      sheet.style.transform = `translateY(${diff}px)`;
-      // 모바일에서 스크롤로 먹히지 않도록 방지
-      e.preventDefault?.();
-    }
-  }, { passive: false });
-
-  const endDrag = (e) => {
-    if (!dragging) return;
-    dragging = false;
-    sheet.style.transition = 'transform 0.25s ease';
-
-    const sheetHeight = sheet.offsetHeight;
-    const ratio = currentTranslate / sheetHeight;
-
-    if (ratio > 0.5) {
-      closeSheet();
-    } else {
-      sheet.style.transform = 'translateY(0)';
+    function openSheet() {
+        sheet.classList.add('show');
+        backdrop.style.display = 'block';
     }
 
-    handle.releasePointerCapture?.(e.pointerId);
-  };
+    function closeSheet() {
+        sheet.classList.remove('show');
+        backdrop.style.display = 'none';
+        sheet.style.transform = '';
+    }
 
-  handle.addEventListener('pointerup', endDrag);
-  handle.addEventListener('pointercancel', endDrag);
+    // ----- Pointer Events (마우스/터치 통합) -----
+    let startY = 0;
+    let dragging = false;
+    let currentTranslate = 0;
 
-  // 약관 전체 동의
-  const allCheck = document.getElementById('all-check');
-  const subChecks = document.querySelectorAll('.sub-check');
+    const THRESHOLD = 120;
 
-  allCheck.addEventListener('change', () => {
-    subChecks.forEach(chk => chk.checked = allCheck.checked);
-  });
-
-  subChecks.forEach(chk => {
-    chk.addEventListener('change', () => {
-      const allChecked = Array.from(subChecks).every(c => c.checked);
-      allCheck.checked = allChecked;
+    handle.addEventListener('pointerdown', (e) => {
+        dragging = true;
+        startY = e.clientY;
+        currentTranslate = 0;
+        sheet.style.transition = 'none';
+        handle.setPointerCapture(e.pointerId);
     });
-  });
+
+    handle.addEventListener('pointermove', (e) => {
+        if (!dragging) return;
+        const diff = e.clientY - startY;
+        if (diff > 0) {
+            currentTranslate = diff;
+            sheet.style.transform = `translateY(${diff}px)`;
+            // 모바일에서 스크롤로 먹히지 않도록 방지
+            e.preventDefault?.();
+        }
+    }, {passive: false});
+
+    const endDrag = (e) => {
+        if (!dragging) return;
+        dragging = false;
+        sheet.style.transition = 'transform 0.25s ease';
+
+        const sheetHeight = sheet.offsetHeight;
+        const ratio = currentTranslate / sheetHeight;
+
+        if (ratio > 0.5) {
+            closeSheet();
+        } else {
+            sheet.style.transform = 'translateY(0)';
+        }
+
+        handle.releasePointerCapture?.(e.pointerId);
+    };
+
+    handle.addEventListener('pointerup', endDrag);
+    handle.addEventListener('pointercancel', endDrag);
+
+    // 약관 전체 동의
+    const allCheck = document.getElementById('all-check');
+    const subChecks = document.querySelectorAll('.sub-check');
+
+    allCheck.addEventListener('change', () => {
+        subChecks.forEach(chk => chk.checked = allCheck.checked);
+    });
+
+    subChecks.forEach(chk => {
+        chk.addEventListener('change', () => {
+            const allChecked = Array.from(subChecks).every(c => c.checked);
+            allCheck.checked = allChecked;
+        });
+    });
 </script>
 </body>
 </html>

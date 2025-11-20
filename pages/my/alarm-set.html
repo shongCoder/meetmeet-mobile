@@ -1,82 +1,83 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/common/reset.css" />
-    <link rel="stylesheet" href="../../css/common/style.css" />
-    <link rel="stylesheet" href="../../css/common/header-base.css" />
-    <link rel="stylesheet" href="../../css/my/alarm-set.css" />
-    <title>MeetMeet : 알람 설정</title>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../../css/common/reset.css" rel="stylesheet"/>
+  <link href="../../css/common/style.css" rel="stylesheet"/>
+  <link href="../../css/common/header-base.css" rel="stylesheet"/>
+  <link href="../../css/my/alarm-set.css" rel="stylesheet"/>
+  <title>MeetMeet : 알람 설정</title>
 </head>
 <body>
-    <div id="wrapper">
-        <header id="header">
-            <div class="back">
-                <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
-            </div>
-            <div class="flex gap-4 item-center">
-                <h1>알람 설정</h1>
-            </div>
-            <div style="width: 1.25rem;"></div>
-        </header>
-        <!--//header-->
-
-        <div class="setting-list">
-            <ul>
-                <li>
-                    <span>밋밋셀럽 추천</span>
-                    <label class="toggle">
-                        <input type="checkbox" id="celebRec">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-                <li>
-                    <span>댓글</span>
-                    <label class="toggle">
-                        <input type="checkbox" id="comment">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-                <li>
-                    <span>영상통화 허용 여부</span>
-                    <label class="toggle">
-                        <input type="checkbox" id="videoCall">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-                <li>
-                    <span>멤버십 새글</span>
-                    <label class="toggle">
-                        <input type="checkbox" id="memberPost">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-                <li>
-                    <span>채팅 유무</span>
-                    <label class="toggle">
-                        <input type="checkbox" id="chat">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-                <li>
-                    <span>팔로잉 알림</span>
-                    <label class="toggle">
-                        <input type="checkbox" id="follow">
-                        <span class="slider"></span>
-                    </label>
-                </li>
-            </ul>
-        </div>
+<div id="wrapper">
+  <header id="header">
+    <div class="back">
+      <button class="back-btn" onclick="goBack()"><img alt="뒤로가기" src="../../img/icon/icon-arrow-left-pink.svg"/>
+      </button>
     </div>
-    <script>
-        function goBack() {
-            if (document.referrer && document.referrer !== "") {
-                history.back();
-            } else {
-                window.location.href = "../my.html";
-            }
+    <div class="flex gap-4 item-center">
+      <h1>알람 설정</h1>
+    </div>
+    <div style="width: 1.25rem;"></div>
+  </header>
+  <!--//header-->
+
+  <div class="setting-list">
+    <ul>
+      <li>
+        <span>밋밋셀럽 추천</span>
+        <label class="toggle">
+          <input id="celebRec" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li>
+        <span>댓글</span>
+        <label class="toggle">
+          <input id="comment" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li>
+        <span>영상통화 허용 여부</span>
+        <label class="toggle">
+          <input id="videoCall" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li>
+        <span>멤버십 새글</span>
+        <label class="toggle">
+          <input id="memberPost" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li>
+        <span>채팅 유무</span>
+        <label class="toggle">
+          <input id="chat" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+      <li>
+        <span>팔로잉 알림</span>
+        <label class="toggle">
+          <input id="follow" type="checkbox">
+          <span class="slider"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+</div>
+<script>
+    function goBack() {
+        if (document.referrer && document.referrer !== "") {
+            history.back();
+        } else {
+            window.location.href = "../my.html";
         }
-    </script>
+    }
+</script>
 </body>
 </html>

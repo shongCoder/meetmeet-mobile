@@ -35,6 +35,7 @@
     line-height: 1.25rem;
     color: #7D8A9F;
 }
+
 .photo-text {
     font-size: 0.6875rem;
     font-weight: 300;
@@ -92,7 +93,7 @@ ul.check-list li span {
 }
 
 #form-wrap .button-area {
-    position:  fixed;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;

@@ -51,7 +51,7 @@
     padding: 1rem 0.75rem;
     background: rgba(0, 52, 125, 0.08);
     border: 1px solid rgba(0, 52, 125, 0.08);
-    box-sizing:  border-box;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
@@ -129,7 +129,7 @@
 }
 
 #content .button-area {
-    position:  fixed;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;

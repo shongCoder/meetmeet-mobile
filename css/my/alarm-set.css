@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-between;
 }
+
 .setting-list ul li:last-child {
     border: none;
 }

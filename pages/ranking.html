@@ -1,402 +1,402 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/common/reset.css">
-    <link rel="stylesheet" href="../css/common/style.css">
-    <link rel="stylesheet" href="../css/ranking.css">
-    <link rel="stylesheet" href="../css/common/tab-bar.css">
-    <link rel="stylesheet" href="../css/common/header-base.css">
-    <link rel="stylesheet" href="../css/common/select-modal.css">
-    <title>MeetMeet : 랭킹</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../css/common/reset.css" rel="stylesheet">
+  <link href="../css/common/style.css" rel="stylesheet">
+  <link href="../css/ranking.css" rel="stylesheet">
+  <link href="../css/common/tab-bar.css" rel="stylesheet">
+  <link href="../css/common/header-base.css" rel="stylesheet">
+  <link href="../css/common/select-modal.css" rel="stylesheet">
+  <title>MeetMeet : 랭킹</title>
 </head>
 <body>
-    <div id="wrapper">
-        <div id="selectModal" class="bottom-modal">
-            <div class="handle">
-                <div class="handle-bar"></div>
-            </div>
-            <div class="modal-content">
-                <ul class="modal-list"></ul>
-                <div class="btn-box">
-                    <button class="modal-close" type="button">닫기</button>
-                </div>
-            </div>
-        </div>
-
-        <header id="header">
-            <h1>인기 순위</h1>
-            <div class="flex gap-12 item-center">
-                <div class="search-icon">
-                    <img src="../img/icon/icon_search.svg" alt="검색"/>
-                </div>
-                <div class="alarm-icon">
-                    <a href="etc/notice.html">
-                        <img src="../img/icon/alarm_inactive.svg" alt="알람"/>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <div id="title">
-            <span>인기 순위</span>
-            <h2>
-                높은 랭킹일수록<br />
-                특별한 혜택이 기다립니다.
-            </h2>
-        </div>
-        <div id="content">
-            <div class="filter-box">
-                <div class="select-box">
-                    <button type="button" class="open-select" data-target="period">월간 랭킹</button>
-                </div>
-                <div class="select-box">
-                    <button type="button" class="open-select" data-target="region">국내</button>
-                </div>
-            </div>
-            <!--//filter-->
-            <div class="ranking-top">
-                <div class="top-box">
-                    <div class="circle" style="border: 1.8px solid #EB734D">
-                        <div class="rank-number" style="background: #EB734D">
-                            <span>2</span>
-                        </div>
-                        <div class="img-box">
-                            <img src="../img/ranking/ranking-top2.png" alt="프로필 이미지" />
-                        </div>
-                    </div>
-                    <div class="text-box">
-                        <div class="name">
-                            <span>Ahmeyd</span>
-                            <img src="">
-                        </div>
-                        <div class="info">
-                            <span>대한민국</span>
-                            <span class="dot">・</span>
-                            <span>22</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="top-box" style="margin-top: -0.875rem;">
-                    <div class="circle big" style="border: 1.8px solid #FA1155">
-                        <div class="rank-number" style="background: #FA1155">
-                            <span>1</span>
-                        </div>
-                        <div class="img-box">
-                            <img src="../img/ranking/ranking-top1.png" alt="프로필 이미지" />
-                        </div>
-                    </div>
-                    <div class="text-box">
-                        <div class="name">
-                            <span>Gabriel</span>
-                            <img src="../img/ranking/verified.svg" alt="인증된 사용자" style="width: 1rem; height: 1rem;" />
-                        </div>
-                        <div class="info">
-                            <span>대한민국</span>
-                            <span class="dot">・</span>
-                            <span>22</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="top-box">
-                    <div class="circle" style="border: 1.8px solid #EBB64D">
-                        <div class="rank-number" style="background: #EBB64D">
-                            <span>3</span>
-                        </div>
-                        <div class="img-box">
-                            <img src="../img/ranking/ranking-top3.png" alt="프로필 이미지" />
-                        </div>
-                    </div>
-                    <div class="text-box">
-                        <div class="name">
-                            <span>Kaelasv</span>
-                            <img src="">
-                        </div>
-                        <div class="info">
-                            <span>대한민국</span>
-                            <span class="dot">・</span>
-                            <span>22</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--//ranking-top-->
-            <div class="ranking-list">
-                <ul>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">4</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top4.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Greaiya</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">5</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top5.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Lootbox</span>
-                                <img src="">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">6</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top6.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">7</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">8</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">9</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">10</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">11</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">12</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">13</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top7.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Kmzia</span>
-                                <img src="../img/ranking/verified.svg" alt="인증된 사용자">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                    <li id="my-rank">
-                        <div class="flex justify-between align-center">
-                            <div class="name">
-                                <div class="rank-number">14</div>
-                                <div class="img-box">
-                                    <img src="../img/ranking/ranking-top14.png" alt="프로필 이미지" />
-                                </div>
-                                <span>Chappy</span>
-                                <img src="">
-                            </div>
-                            <div class="info">
-                                <span>대한민국</span>
-                                <span class="dot">・</span>
-                                <span>22</span>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <!--//ranking-list-->
-            <div class="ranking-my">
-                <div class="name">
-                    <div class="rank-number">14</div>
-                    <div class="img-box">
-                        <img src="../img/ranking/ranking-top14.png" alt="프로필 이미지" />
-                    </div>
-                    <span>Chappy</span>
-                    <img src="">
-                </div>
-                <div class="info">
-                    <span>대한민국</span>
-                    <span class="dot">・</span>
-                    <span>22</span>
-                </div>
-            </div>
-        </div>
-        <nav id="tab-wrapper">
-            <ul>
-                <li>
-                    <div class="tab-box">
-                        <a href="home.html">
-                            <img src="../img/tab/tab-home.svg" alt="" />
-                            <span>홈</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tab-box">
-                        <a href="#">
-                            <img src="../img/tab/tab-ranking-pink.svg" alt="" />
-                            <span class="open">랭킹</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tab-box">
-                        <a href="feed.html">
-                            <img src="../img/tab/tab-feed.svg" alt="" />
-                            <span>피드</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tab-box">
-                        <a href="chat.html">
-                            <img src="../img/tab/tab-chat.svg" alt="" />
-                            <span>채팅</span>
-                        </a>
-                    </div>
-                </li>
-                <li>
-                    <div class="tab-box">
-                        <a href="my.html">
-                            <img src="../img/tab/tab-my.svg" alt="" />
-                            <span>MY</span>
-                        </a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-        <!--//tab bar-->
+<div id="wrapper">
+  <div class="bottom-modal" id="selectModal">
+    <div class="handle">
+      <div class="handle-bar"></div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const myRankBtn = document.querySelector("#content .ranking-my");
-            const targetEl = document.querySelector("#my-rank");
+    <div class="modal-content">
+      <ul class="modal-list"></ul>
+      <div class="btn-box">
+        <button class="modal-close" type="button">닫기</button>
+      </div>
+    </div>
+  </div>
 
-            if (myRankBtn && targetEl) {
-                myRankBtn.addEventListener("click", () => {
-                    // 스크롤 이동
-                    targetEl.scrollIntoView({
-                        behavior: "smooth",
-                        block: "center"
-                    });
+  <header id="header">
+    <h1>인기 순위</h1>
+    <div class="flex gap-12 item-center">
+      <div class="search-icon">
+        <img alt="검색" src="../img/icon/icon_search.svg"/>
+      </div>
+      <div class="alarm-icon">
+        <a href="etc/notice.html">
+          <img alt="알람" src="../img/icon/alarm_inactive.svg"/>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div id="title">
+    <span>인기 순위</span>
+    <h2>
+      높은 랭킹일수록<br/>
+      특별한 혜택이 기다립니다.
+    </h2>
+  </div>
+  <div id="content">
+    <div class="filter-box">
+      <div class="select-box">
+        <button class="open-select" data-target="period" type="button">월간 랭킹</button>
+      </div>
+      <div class="select-box">
+        <button class="open-select" data-target="region" type="button">국내</button>
+      </div>
+    </div>
+    <!--//filter-->
+    <div class="ranking-top">
+      <div class="top-box">
+        <div class="circle" style="border: 1.8px solid #EB734D">
+          <div class="rank-number" style="background: #EB734D">
+            <span>2</span>
+          </div>
+          <div class="img-box">
+            <img alt="프로필 이미지" src="../img/ranking/ranking-top2.png"/>
+          </div>
+        </div>
+        <div class="text-box">
+          <div class="name">
+            <span>Ahmeyd</span>
+            <img src="">
+          </div>
+          <div class="info">
+            <span>대한민국</span>
+            <span class="dot">・</span>
+            <span>22</span>
+          </div>
+        </div>
+      </div>
+      <div class="top-box" style="margin-top: -0.875rem;">
+        <div class="circle big" style="border: 1.8px solid #FA1155">
+          <div class="rank-number" style="background: #FA1155">
+            <span>1</span>
+          </div>
+          <div class="img-box">
+            <img alt="프로필 이미지" src="../img/ranking/ranking-top1.png"/>
+          </div>
+        </div>
+        <div class="text-box">
+          <div class="name">
+            <span>Gabriel</span>
+            <img alt="인증된 사용자" src="../img/ranking/verified.svg" style="width: 1rem; height: 1rem;"/>
+          </div>
+          <div class="info">
+            <span>대한민국</span>
+            <span class="dot">・</span>
+            <span>22</span>
+          </div>
+        </div>
+      </div>
+      <div class="top-box">
+        <div class="circle" style="border: 1.8px solid #EBB64D">
+          <div class="rank-number" style="background: #EBB64D">
+            <span>3</span>
+          </div>
+          <div class="img-box">
+            <img alt="프로필 이미지" src="../img/ranking/ranking-top3.png"/>
+          </div>
+        </div>
+        <div class="text-box">
+          <div class="name">
+            <span>Kaelasv</span>
+            <img src="">
+          </div>
+          <div class="info">
+            <span>대한민국</span>
+            <span class="dot">・</span>
+            <span>22</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//ranking-top-->
+    <div class="ranking-list">
+      <ul>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">4</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top4.png"/>
+              </div>
+              <span>Greaiya</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">5</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top5.png"/>
+              </div>
+              <span>Lootbox</span>
+              <img src="">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">6</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top6.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img src="">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">7</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">8</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">9</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">10</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">11</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">12</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">13</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top7.png"/>
+              </div>
+              <span>Kmzia</span>
+              <img alt="인증된 사용자" src="../img/ranking/verified.svg">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+        <li id="my-rank">
+          <div class="flex justify-between align-center">
+            <div class="name">
+              <div class="rank-number">14</div>
+              <div class="img-box">
+                <img alt="프로필 이미지" src="../img/ranking/ranking-top14.png"/>
+              </div>
+              <span>Chappy</span>
+              <img src="">
+            </div>
+            <div class="info">
+              <span>대한민국</span>
+              <span class="dot">・</span>
+              <span>22</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--//ranking-list-->
+    <div class="ranking-my">
+      <div class="name">
+        <div class="rank-number">14</div>
+        <div class="img-box">
+          <img alt="프로필 이미지" src="../img/ranking/ranking-top14.png"/>
+        </div>
+        <span>Chappy</span>
+        <img src="">
+      </div>
+      <div class="info">
+        <span>대한민국</span>
+        <span class="dot">・</span>
+        <span>22</span>
+      </div>
+    </div>
+  </div>
+  <nav id="tab-wrapper">
+    <ul>
+      <li>
+        <div class="tab-box">
+          <a href="home.html">
+            <img alt="" src="../img/tab/tab-home.svg"/>
+            <span>홈</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="#">
+            <img alt="" src="../img/tab/tab-ranking-pink.svg"/>
+            <span class="open">랭킹</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="feed.html">
+            <img alt="" src="../img/tab/tab-feed.svg"/>
+            <span>피드</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="chat.html">
+            <img alt="" src="../img/tab/tab-chat.svg"/>
+            <span>채팅</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="my.html">
+            <img alt="" src="../img/tab/tab-my.svg"/>
+            <span>MY</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!--//tab bar-->
+</div>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const myRankBtn = document.querySelector("#content .ranking-my");
+        const targetEl = document.querySelector("#my-rank");
 
-                    // 한 번 클릭하면 사라짐
-                    myRankBtn.style.display = "none";
+        if (myRankBtn && targetEl) {
+            myRankBtn.addEventListener("click", () => {
+                // 스크롤 이동
+                targetEl.scrollIntoView({
+                    behavior: "smooth",
+                    block: "center"
                 });
-            }
-        });
 
-        targetEl.classList.add("highlight");
-        setTimeout(() => targetEl.classList.remove("highlight"), 1000);
-    </script>
-    <script src="../js/select-modal.js"></script>
+                // 한 번 클릭하면 사라짐
+                myRankBtn.style.display = "none";
+            });
+        }
+    });
+
+    targetEl.classList.add("highlight");
+    setTimeout(() => targetEl.classList.remove("highlight"), 1000);
+</script>
+<script src="../js/select-modal.js"></script>
 </body>
 </html>

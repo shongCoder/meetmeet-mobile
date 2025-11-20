@@ -2,142 +2,142 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/common/reset.css">
-  <link rel="stylesheet" href="../../css/common/style.css">
-  <link rel="stylesheet" href="../../css/etc/payment.css">
-  <link rel="stylesheet" href="../../css/common/tab-bar.css">
-  <link rel="stylesheet" href="../../css/common/header-base.css">
-  <link rel="stylesheet" href="../../css/common/form.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/etc/payment.css" rel="stylesheet">
+  <link href="../../css/common/tab-bar.css" rel="stylesheet">
+  <link href="../../css/common/header-base.css" rel="stylesheet">
+  <link href="../../css/common/form.css" rel="stylesheet">
   <title>MeetMeet : 결제하기</title>
 </head>
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <button class="back_btn">
-        <img src="../../img/influ_apply/back_btn.svg" alt="뒤로가기" />
-      </button>
-    </header>
-    <!--//header-->
+<div id="wrapper">
+  <header id="header">
+    <button class="back_btn">
+      <img alt="뒤로가기" src="../../img/influ_apply/back_btn.svg"/>
+    </button>
+  </header>
+  <!--//header-->
 
-    <div id="title">
-      <h1>
-        결제하기
-      </h1>
-      <p>멤버십을 결제합니다.</p>
-    </div>
-    <!--//title-->
+  <div id="title">
+    <h1>
+      결제하기
+    </h1>
+    <p>멤버십을 결제합니다.</p>
+  </div>
+  <!--//title-->
 
-    <div id="payment-wrap">
-      <div class="product">
-        <span class="title">상품 정보</span>
-        <div class="prod-card">
-          <div class="prod-header">
-            <div class="prod-main">
-              <div class="img-box">
-                <img src="../../img/payment/product1.png" alt="상품 이미지">
-              </div>
-              <div class="prod-info">
-                <div class="prod-grade">VIP 2</div>
-                <div class="prod-name">Level. 2</div>
-                <div class="prod-qty">
-                  <button><img src="../../img/payment/qty-minus.svg" alt="빼기" /></button>
-                  <span class="qty">1</span>
-                  <button><img src="../../img/payment/qty-plus.svg" alt="더하기" /></button>
-                </div>
+  <div id="payment-wrap">
+    <div class="product">
+      <span class="title">상품 정보</span>
+      <div class="prod-card">
+        <div class="prod-header">
+          <div class="prod-main">
+            <div class="img-box">
+              <img alt="상품 이미지" src="../../img/payment/product1.png">
+            </div>
+            <div class="prod-info">
+              <div class="prod-grade">VIP 2</div>
+              <div class="prod-name">Level. 2</div>
+              <div class="prod-qty">
+                <button><img alt="빼기" src="../../img/payment/qty-minus.svg"/></button>
+                <span class="qty">1</span>
+                <button><img alt="더하기" src="../../img/payment/qty-plus.svg"/></button>
               </div>
             </div>
-            <div class="prod-amount">₩ 33,000원</div>
           </div>
-          <ul class="prod-summary">
-            <li>account cannot be restored after account</li>
-            <li>Information associated with your current</li>
-            <li>Lorem ipsum dolor sit amet, consectetur </li>
-          </ul>
+          <div class="prod-amount">₩ 33,000원</div>
+        </div>
+        <ul class="prod-summary">
+          <li>account cannot be restored after account</li>
+          <li>Information associated with your current</li>
+          <li>Lorem ipsum dolor sit amet, consectetur</li>
+        </ul>
+      </div>
+    </div>
+    <!--//product-->
+
+    <div class="box"></div>
+
+    <div class="payment-area">
+      <h2 class="title mb-12">결제 정보</h2>
+      <div class="mb-12">
+        <div class="flex justify-between item-center mb-16">
+          <span class="total-amount label">총 주문 금액</span>
+          <span class="total-amount value">₩ 30,000원</span>
+        </div>
+        <div class="flex justify-between item-center">
+          <span class="order-vat label">부가세</span>
+          <span class="order-vat value">₩ 3,000원</span>
         </div>
       </div>
-      <!--//product-->
-
-      <div class="box"></div>
-
-      <div class="payment-area">
-        <h2 class="title mb-12">결제 정보</h2>
-        <div class="mb-12">
-          <div class="flex justify-between item-center mb-16">
-            <span class="total-amount label">총 주문 금액</span>
-            <span class="total-amount value">₩ 30,000원</span>
-          </div>
-          <div class="flex justify-between item-center">
-            <span class="order-vat label">부가세</span>
-            <span class="order-vat value">₩ 3,000원</span>
-          </div>
-        </div>
-        <div class="sm-box"></div>
-        <div class="flex justify-between item-center mb-20">
-          <span class="net-amount label">총 결제 금액</span>
-          <span class="net-amount value">₩ 3,000원</span>
-        </div>
-        <div class="terms">
-          <label class="terms-check">
-            <input type="checkbox" class="sub-check" />
-            <span class="custom-check"></span>
-            <span class="text">결제 처리 서비스 약관에 동의합니다 <span style="color: #FA1155;">(필수)</span></span>
-          </label>
-          <button><img src="../../img/icon/icon-arrow-right.svg" alt="terms detail"></button>
-        </div>
+      <div class="sm-box"></div>
+      <div class="flex justify-between item-center mb-20">
+        <span class="net-amount label">총 결제 금액</span>
+        <span class="net-amount value">₩ 3,000원</span>
       </div>
-      <!--//payment area-->
+      <div class="terms">
+        <label class="terms-check">
+          <input class="sub-check" type="checkbox"/>
+          <span class="custom-check"></span>
+          <span class="text">결제 처리 서비스 약관에 동의합니다 <span style="color: #FA1155;">(필수)</span></span>
+        </label>
+        <button><img alt="terms detail" src="../../img/icon/icon-arrow-right.svg"></button>
+      </div>
     </div>
-
-    <div class="button-area">
-      <button class="submit">₩ 33,000원 결제하기</button>
-    </div>
+    <!--//payment area-->
   </div>
-  <script>
+
+  <div class="button-area">
+    <button class="submit">₩ 33,000원 결제하기</button>
+  </div>
+</div>
+<script>
     document.addEventListener("DOMContentLoaded", function () {
 
-      const prodCard = document.querySelector(".prod-card");
-      const qtySpan = prodCard.querySelector(".qty");
-      const minusBtn = prodCard.querySelector(".prod-qty button:first-child");
-      const plusBtn = prodCard.querySelector(".prod-qty button:last-child");
+        const prodCard = document.querySelector(".prod-card");
+        const qtySpan = prodCard.querySelector(".qty");
+        const minusBtn = prodCard.querySelector(".prod-qty button:first-child");
+        const plusBtn = prodCard.querySelector(".prod-qty button:last-child");
 
-      const prodAmount = document.querySelector(".prod-amount");
-      const totalAmount = document.querySelector(".total-amount.value");
-      const vatAmount = document.querySelector(".order-vat.value");
-      const netAmount = document.querySelector(".net-amount.value");
-      const submitBtn = document.querySelector(".submit");
+        const prodAmount = document.querySelector(".prod-amount");
+        const totalAmount = document.querySelector(".total-amount.value");
+        const vatAmount = document.querySelector(".order-vat.value");
+        const netAmount = document.querySelector(".net-amount.value");
+        const submitBtn = document.querySelector(".submit");
 
-      const UNIT_PRICE = 33000; // 상품 1개 가격
-      const VAT_RATE = 0.1;     // 부가세 10%
+        const UNIT_PRICE = 33000; // 상품 1개 가격
+        const VAT_RATE = 0.1;     // 부가세 10%
 
-      function updatePrices(qty) {
-        const productTotal = UNIT_PRICE * qty;
-        const vat = Math.floor(productTotal * VAT_RATE);
-        const net = productTotal; // 결제금액 = 상품가격(부가세 포함이면 수정 가능)
+        function updatePrices(qty) {
+            const productTotal = UNIT_PRICE * qty;
+            const vat = Math.floor(productTotal * VAT_RATE);
+            const net = productTotal; // 결제금액 = 상품가격(부가세 포함이면 수정 가능)
 
-        prodAmount.textContent = `₩ ${productTotal.toLocaleString()}원`;
-        totalAmount.textContent = `₩ ${productTotal.toLocaleString()}원`;
-        vatAmount.textContent = `₩ ${vat.toLocaleString()}원`;
-        netAmount.textContent = `₩ ${net.toLocaleString()}원`;
-        submitBtn.textContent = `₩ ${net.toLocaleString()}원 결제하기`;
-      }
-
-      minusBtn.addEventListener("click", function () {
-        let qty = parseInt(qtySpan.textContent);
-        if (qty > 1) {
-          qty--;
-          qtySpan.textContent = qty;
-          updatePrices(qty);
+            prodAmount.textContent = `₩ ${productTotal.toLocaleString()}원`;
+            totalAmount.textContent = `₩ ${productTotal.toLocaleString()}원`;
+            vatAmount.textContent = `₩ ${vat.toLocaleString()}원`;
+            netAmount.textContent = `₩ ${net.toLocaleString()}원`;
+            submitBtn.textContent = `₩ ${net.toLocaleString()}원 결제하기`;
         }
-      });
 
-      plusBtn.addEventListener("click", function () {
-        let qty = parseInt(qtySpan.textContent);
-        qty++;
-        qtySpan.textContent = qty;
-        updatePrices(qty);
-      });
+        minusBtn.addEventListener("click", function () {
+            let qty = parseInt(qtySpan.textContent);
+            if (qty > 1) {
+                qty--;
+                qtySpan.textContent = qty;
+                updatePrices(qty);
+            }
+        });
+
+        plusBtn.addEventListener("click", function () {
+            let qty = parseInt(qtySpan.textContent);
+            qty++;
+            qtySpan.textContent = qty;
+            updatePrices(qty);
+        });
     });
-  </script>
+</script>
 </body>
 </html>

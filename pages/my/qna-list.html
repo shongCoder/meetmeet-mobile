@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../css/common/reset.css" />
-  <link rel="stylesheet" href="../../css/common/style.css" />
-  <link rel="stylesheet" href="../../css/common/header-base.css" />
-  <link rel="stylesheet" href="../../css/my/qna.css" />
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../../css/common/reset.css" rel="stylesheet"/>
+  <link href="../../css/common/style.css" rel="stylesheet"/>
+  <link href="../../css/common/header-base.css" rel="stylesheet"/>
+  <link href="../../css/my/qna.css" rel="stylesheet"/>
   <title>MeetMeet : 1:1 문의</title>
 </head>
 <body>
 <div id="wrapper">
   <header id="header">
     <div class="back">
-      <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+      <button class="back-btn" onclick="goBack()"><img alt="뒤로가기" src="../../img/icon/icon-arrow-left-pink.svg"/>
+      </button>
     </div>
     <div class="flex gap-4 item-center">
       <h1>문의하기</h1>
@@ -65,13 +66,13 @@
   </div>
 </div>
 <script>
-  function goBack() {
-    if (document.referrer && document.referrer !== "") {
-      history.back();
-    } else {
-      window.location.href = "../my.html";
+    function goBack() {
+        if (document.referrer && document.referrer !== "") {
+            history.back();
+        } else {
+            window.location.href = "../my.html";
+        }
     }
-  }
 </script>
 </body>
 </html>

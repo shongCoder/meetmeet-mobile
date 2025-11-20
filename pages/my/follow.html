@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../../css/common/reset.css" />
-  <link rel="stylesheet" href="../../css/common/style.css" />
-  <link rel="stylesheet" href="../../css/common/header-base.css" />
-  <link rel="stylesheet" href="../../css/my/follow.css" />
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../../css/common/reset.css" rel="stylesheet"/>
+  <link href="../../css/common/style.css" rel="stylesheet"/>
+  <link href="../../css/common/header-base.css" rel="stylesheet"/>
+  <link href="../../css/my/follow.css" rel="stylesheet"/>
   <title>MeetMeet : 팔로워 관리</title>
 </head>
 <body>
 <div id="wrapper">
   <header id="header">
     <div class="back">
-      <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+      <button class="back-btn" onclick="goBack()"><img alt="뒤로가기" src="../../img/icon/icon-arrow-left-pink.svg"/>
+      </button>
     </div>
     <div class="flex gap-4 item-center">
       <h1>닉네임(본인)</h1>
@@ -40,12 +41,12 @@
         <li>
           <div class="follow-profile">
             <div class="profile-img">
-              <img src="../../img/my/follow/profile1.png" alt="프로필 이미지" />
+              <img alt="프로필 이미지" src="../../img/my/follow/profile1.png"/>
             </div>
             <div class="profile-info">
               <div class="nick-name">
                 <span>Gabriel</span>
-                <img src="../../img/icon/verified.svg" alt="인증된 사용자" />
+                <img alt="인증된 사용자" src="../../img/icon/verified.svg"/>
               </div>
               <span class="name">@suyeon_soe</span>
             </div>
@@ -54,12 +55,12 @@
         <li>
           <div class="follow-profile">
             <div class="profile-img">
-              <img src="../../img/my/follow/profile2.png" alt="프로필 이미지" />
+              <img alt="프로필 이미지" src="../../img/my/follow/profile2.png"/>
             </div>
             <div class="profile-info">
               <div class="nick-name">
                 <span>Bin Thieu</span>
-                <img src="" alt="" />
+                <img alt="" src=""/>
               </div>
               <span class="name">@Bin_Thieu</span>
             </div>
@@ -75,12 +76,12 @@
         <li>
           <div class="follow-profile">
             <div class="profile-img">
-              <img src="../../img/my/follow/profile1.png" alt="프로필 이미지" />
+              <img alt="프로필 이미지" src="../../img/my/follow/profile1.png"/>
             </div>
             <div class="profile-info">
               <div class="nick-name">
                 <span>Gabriel</span>
-                <img src="../../img/icon/verified.svg" alt="인증된 사용자" />
+                <img alt="인증된 사용자" src="../../img/icon/verified.svg"/>
                 <div class="rank normal">일반인</div>
               </div>
               <span class="name">@suyeon_soe</span>
@@ -91,7 +92,7 @@
         <li>
           <div class="follow-profile">
             <div class="profile-img">
-              <img src="../../img/my/follow/profile2.png" alt="프로필 이미지" />
+              <img alt="프로필 이미지" src="../../img/my/follow/profile2.png"/>
             </div>
             <div class="profile-info">
               <div class="nick-name">
@@ -106,7 +107,7 @@
         <li>
           <div class="follow-profile">
             <div class="profile-img">
-              <img src="../../img/my/follow/profile3.png" alt="프로필 이미지" />
+              <img alt="프로필 이미지" src="../../img/my/follow/profile3.png"/>
             </div>
             <div class="profile-info">
               <div class="nick-name">
@@ -125,60 +126,60 @@
 </div>
 
 <script>
-  const tabs = document.querySelectorAll("#tab-menu .tab-box");
-  const underline = document.querySelector("#tab-underline");
-  const follower = document.querySelector("#follower");
-  const following = document.querySelector("#following");
+    const tabs = document.querySelectorAll("#tab-menu .tab-box");
+    const underline = document.querySelector("#tab-underline");
+    const follower = document.querySelector("#follower");
+    const following = document.querySelector("#following");
 
-  follower.style.display = "block";
-  following.style.display = "none";
+    follower.style.display = "block";
+    following.style.display = "none";
 
-  function moveUnderline(tab) {
-    const menuRect = document
+    function moveUnderline(tab) {
+        const menuRect = document
             .querySelector("#tab-menu")
             .getBoundingClientRect();
-    const tabRect = tab.getBoundingClientRect();
+        const tabRect = tab.getBoundingClientRect();
 
-    const left = tabRect.left - menuRect.left; // 탭메뉴 안에서의 x좌표
-    const width = tabRect.width;
+        const left = tabRect.left - menuRect.left; // 탭메뉴 안에서의 x좌표
+        const width = tabRect.width;
 
-    underline.style.left = left + "px";
-    underline.style.width = width + "px";
-  }
-
-  // 초기 언더라인 위치 (기본 active = 첫 번째 탭)
-  window.addEventListener("load", () => {
-    const activeTab = document.querySelector("#tab-menu .tab-box.active") || tabs[0];
-    moveUnderline(activeTab);
-  });
-
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => {
-      // active 토글
-      tabs.forEach(t => t.classList.remove("active"));
-      tab.classList.add("active");
-
-      // 언더라인 이동
-      moveUnderline(tab);
-
-      // 콘텐츠 토글
-      if (index === 0) {
-        follower.style.display = "block";
-        following.style.display = "none";
-      } else {
-        follower.style.display = "none";
-        following.style.display = "block";
-      }
-    });
-  });
-
-  function goBack() {
-    if (document.referrer && document.referrer !== "") {
-      history.back();
-    } else {
-      window.location.href = "../my.html";
+        underline.style.left = left + "px";
+        underline.style.width = width + "px";
     }
-  }
+
+    // 초기 언더라인 위치 (기본 active = 첫 번째 탭)
+    window.addEventListener("load", () => {
+        const activeTab = document.querySelector("#tab-menu .tab-box.active") || tabs[0];
+        moveUnderline(activeTab);
+    });
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener("click", () => {
+            // active 토글
+            tabs.forEach(t => t.classList.remove("active"));
+            tab.classList.add("active");
+
+            // 언더라인 이동
+            moveUnderline(tab);
+
+            // 콘텐츠 토글
+            if (index === 0) {
+                follower.style.display = "block";
+                following.style.display = "none";
+            } else {
+                follower.style.display = "none";
+                following.style.display = "block";
+            }
+        });
+    });
+
+    function goBack() {
+        if (document.referrer && document.referrer !== "") {
+            history.back();
+        } else {
+            window.location.href = "../my.html";
+        }
+    }
 </script>
 
 </body>

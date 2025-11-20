@@ -2,92 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/common/reset.css">
-  <link rel="stylesheet" href="../../css/common/style.css">
-  <link rel="stylesheet" href="../../css/etc/post-set.css">
-  <link rel="stylesheet" href="../../css/common/tab-bar.css">
-  <link rel="stylesheet" href="../../css/common/header-base.css">
-  <link rel="stylesheet" href="../../css/common/form.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/etc/post-set.css" rel="stylesheet">
+  <link href="../../css/common/tab-bar.css" rel="stylesheet">
+  <link href="../../css/common/header-base.css" rel="stylesheet">
+  <link href="../../css/common/form.css" rel="stylesheet">
   <title>MeetMeet : 게시글 설정</title>
 </head>
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <div class="back">
-        <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
-      </div>
-      <div class="flex gap-4 item-center">
-        <h1>게시글 설정</h1>
-      </div>
-      <div style="width: 1.25rem;"></div>
-    </header>
-    <!--//header-->
-
-    <div id="setting-wrap">
-      <ul>
-        <li>
-          <div class="set-box mb-12">
-            <span>유료 공개</span>
-            <label class="toggle">
-              <input type="checkbox" id="paid">
-              <span class="slider"></span>
-            </label>
-          </div>
-          <div class="input-box">
-            <input type="text" placeholder="금액을 입력해 주세요" />
-            <span class="unit">원</span>
-          </div>
-        </li>
-        <li>
-          <div class="set-box">
-            <span>성인 이상 공개</span>
-            <label class="toggle">
-              <input type="checkbox" id="adult">
-              <span class="slider"></span>
-            </label>
-          </div>
-        </li>
-        <li>
-          <div class="set-box">
-            <span>내용(글자) 구매자만 확인</span>
-            <label class="toggle">
-              <input type="checkbox" id="buyer">
-              <span class="slider"></span>
-            </label>
-          </div>
-        </li>
-        <li>
-          <div class="set-box">
-            <span>멤버십 단계 설정</span>
-            <label>
-              <select id="grade" name="grade">
-                <option value="VIP 1">VIP 1</option>
-                <option value="VIP 2">VIP 2</option>
-                <option value="VIP 3">VIP 3</option>
-              </select>
-              <img src="../../img/icon/icon-arrow-down-pink.svg" class="arrow" alt="펼치기" />
-            </label>
-          </div>
-        </li>
-        <li>
-          <div class="set-box">
-            <span>멤버십 보유자만 공개</span>
-            <label class="toggle">
-              <input type="checkbox" id="membership">
-              <span class="slider"></span>
-            </label>
-          </div>
-        </li>
-      </ul>
+<div id="wrapper">
+  <header id="header">
+    <div class="back">
+      <button class="back-btn" onclick="goBack()"><img alt="뒤로가기" src="../../img/icon/icon-arrow-left-pink.svg"/>
+      </button>
     </div>
-    <!--//setting wrap-->
-
-    <p class="info-text">포스팅은 포인트로 구매 혹은 멤버십 보유자가 열람 가능합니다.</p>
-
-    <div class="button-area">
-      <button class="submit">저장하기</button>
+    <div class="flex gap-4 item-center">
+      <h1>게시글 설정</h1>
     </div>
+    <div style="width: 1.25rem;"></div>
+  </header>
+  <!--//header-->
+
+  <div id="setting-wrap">
+    <ul>
+      <li>
+        <div class="set-box mb-12">
+          <span>유료 공개</span>
+          <label class="toggle">
+            <input id="paid" type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="input-box">
+          <input placeholder="금액을 입력해 주세요" type="text"/>
+          <span class="unit">원</span>
+        </div>
+      </li>
+      <li>
+        <div class="set-box">
+          <span>성인 이상 공개</span>
+          <label class="toggle">
+            <input id="adult" type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="set-box">
+          <span>내용(글자) 구매자만 확인</span>
+          <label class="toggle">
+            <input id="buyer" type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="set-box">
+          <span>멤버십 단계 설정</span>
+          <label>
+            <select id="grade" name="grade">
+              <option value="VIP 1">VIP 1</option>
+              <option value="VIP 2">VIP 2</option>
+              <option value="VIP 3">VIP 3</option>
+            </select>
+            <img alt="펼치기" class="arrow" src="../../img/icon/icon-arrow-down-pink.svg"/>
+          </label>
+        </div>
+      </li>
+      <li>
+        <div class="set-box">
+          <span>멤버십 보유자만 공개</span>
+          <label class="toggle">
+            <input id="membership" type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+      </li>
+    </ul>
   </div>
+  <!--//setting wrap-->
+
+  <p class="info-text">포스팅은 포인트로 구매 혹은 멤버십 보유자가 열람 가능합니다.</p>
+
+  <div class="button-area">
+    <button class="submit">저장하기</button>
+  </div>
+</div>
 </body>
 </html>

@@ -6,19 +6,18 @@
 #wrapper .gradient-pink {
     width: 100%;
     height: 100vh;
-    background:
-            linear-gradient(
-                    135deg,
-                    rgba(250, 17, 149, 0.9) 0%,
-                    rgba(250, 17, 110, 0.9) 23.27%,
-                    rgba(227, 14, 76, 0.9) 100%
-            ),
-            linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0.1) 0%,
-                    rgba(0, 0, 0, 0.01) 100%
-            ),
-            url("../../img/auth/intro-back.jpg") center/cover no-repeat;
+    background: linear-gradient(
+            135deg,
+            rgba(250, 17, 149, 0.9) 0%,
+            rgba(250, 17, 110, 0.9) 23.27%,
+            rgba(227, 14, 76, 0.9) 100%
+    ),
+    linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0.1) 0%,
+            rgba(0, 0, 0, 0.01) 100%
+    ),
+    url("../../img/auth/intro-back.jpg") center/cover no-repeat;
 
     background-blend-mode: normal, soft-light, normal;
 }
@@ -26,23 +25,24 @@
 #wrapper .gradient-black {
     width: 100%;
     height: 100vh;
-    background:
-            linear-gradient(
-                    180deg,
-                    rgba(255, 255, 255, 0) 54%,
-                    rgba(25, 21, 21, 0.4) 87%
-            ),
-            url("../../img/auth/intro-back.jpg") center/cover no-repeat;
+    background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 54%,
+            rgba(25, 21, 21, 0.4) 87%
+    ),
+    url("../../img/auth/intro-back.jpg") center/cover no-repeat;
 
     background-blend-mode: normal, soft-light, normal;
 }
 
 .gradient-pink .back-black {
-    background: rgba(17,18,20,0.12);
+    background: rgba(17, 18, 20, 0.12);
 }
+
 .gradient-black .back-black {
-    background: rgba(17,18,20,0.4);
+    background: rgba(17, 18, 20, 0.4);
 }
+
 .back-black {
     width: 100%;
     height: 100%;
@@ -61,7 +61,7 @@
 
 .loading {
     animation: spin 6s linear infinite,
-                pulse 2s ease-in-out infinite;
+    pulse 2s ease-in-out infinite;
 }
 
 @keyframes spin {
@@ -74,9 +74,15 @@
 }
 
 @keyframes pulse {
-    0%   { transform: scale(0.85)   rotate(0deg); }
-    50%  { transform: scale(1) rotate(180deg); }
-    100% { transform: scale(0.85)   rotate(360deg); }
+    0% {
+        transform: scale(0.85) rotate(0deg);
+    }
+    50% {
+        transform: scale(1) rotate(180deg);
+    }
+    100% {
+        transform: scale(0.85) rotate(360deg);
+    }
 }
 
 .copy-right {
@@ -115,11 +121,12 @@
 
 .backdrop {
     position: fixed;
-    top:0; left:0;
-    width:100%;
-    height:100%;
-    background: rgba(0,0,0,0.6);
-    display:none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
 }
 
 .bottom-sheet {
@@ -208,6 +215,7 @@
     margin-right: 8px;
     background: url('../../img/icon/unchecked.svg') no-repeat center / contain;
 }
+
 .bottom-sheet .terms .terms-box input:checked ~ .custom-check {
     background: url('../../img/icon/checked.svg') no-repeat center / contain;
 }

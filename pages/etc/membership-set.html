@@ -2,136 +2,136 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/common/reset.css">
-  <link rel="stylesheet" href="../../css/common/style.css">
-  <link rel="stylesheet" href="../../css/etc/membership-set.css">
-  <link rel="stylesheet" href="../../css/common/tab-bar.css">
-  <link rel="stylesheet" href="../../css/common/header-base.css">
-  <link rel="stylesheet" href="../../css/common/form.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/etc/membership-set.css" rel="stylesheet">
+  <link href="../../css/common/tab-bar.css" rel="stylesheet">
+  <link href="../../css/common/header-base.css" rel="stylesheet">
+  <link href="../../css/common/form.css" rel="stylesheet">
   <title>MeetMeet : 멤버십 생성</title>
 </head>
 <body>
-  <div id="wrapper">
-    <header id="header">
-      <button class="back_btn">
-        <img src="../../img/influ_apply/back_btn.svg" alt="뒤로가기" />
-      </button>
-    </header>
-    <!--//header-->
-    <div id="title">
-      <h1>
-        멤버십 단계를<br />
-        생성해 보세요
-      </h1>
-      <p>멤버십 단계별 혜택을 제공해 보세요</p>
-    </div>
-    <!--//title-->
-
-    <div id="membership-wrap">
-      <div class="membership-card">
-        <div class="card-header">
-          <h2>멤버십 1</h2>
-          <button>
-            <img src="../../img/icon/close-pink.svg" alt="닫기" />
-          </button>
-        </div>
-        <div class="card-body">
-          <form>
-            <div class="form-field">
-              <label for="plan-title">플랜 제목</label>
-              <div class="input-box flex">
-                <input id="plan-title" name="plan-title" required placeholder='플랜 제목을 입력해 주세요' />
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="group">VIP 단계</label>
-              <div class="input-box flex gap-12">
-                <select id="group" name="group">
-                  <option value="">VIP 단계를 설정해 주세요</option>
-                  <option value="gold">GOLD</option>
-                  <option value="vip">VIP</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-field">
-              <label>기본 구독 혜택</label>
-              <div class="info-box">
-                <ul>
-                  <li>VIP 이하 단계 포스팅 열람 가능</li>
-                  <li>영상통화 신청시 구독자 마크 표시</li>
-                </ul>
-              </div>
-            </div>
-            <div class="form-field">
-              <label for="benefit">추가 구독 혜택</label>
-              <div id="benefit-list">
-                <div class="input-box flex benefit-item">
-                  <input id="benefit" name="benefit" required placeholder='구독 혜택을 적어주세요' />
-                  <button type="button" class="add">
-                    <img src="../../img/icon/input-plus.svg" alt="추가하기" />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-        <!--//card body-->
-      </div>
-      <!--//membership card-->
-
-      <button class="add-membership">
-        <img src="../../img/icon/plus-purple.svg" alt="" />
-        <span>생성하기</span>
-      </button>
-    </div>
-    <div class="button-area">
-      <button>완 료</button>
-    </div>
+<div id="wrapper">
+  <header id="header">
+    <button class="back_btn">
+      <img alt="뒤로가기" src="../../img/influ_apply/back_btn.svg"/>
+    </button>
+  </header>
+  <!--//header-->
+  <div id="title">
+    <h1>
+      멤버십 단계를<br/>
+      생성해 보세요
+    </h1>
+    <p>멤버십 단계별 혜택을 제공해 보세요</p>
   </div>
-  <script>
+  <!--//title-->
+
+  <div id="membership-wrap">
+    <div class="membership-card">
+      <div class="card-header">
+        <h2>멤버십 1</h2>
+        <button>
+          <img alt="닫기" src="../../img/icon/close-pink.svg"/>
+        </button>
+      </div>
+      <div class="card-body">
+        <form>
+          <div class="form-field">
+            <label for="plan-title">플랜 제목</label>
+            <div class="input-box flex">
+              <input id="plan-title" name="plan-title" placeholder='플랜 제목을 입력해 주세요' required/>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="group">VIP 단계</label>
+            <div class="input-box flex gap-12">
+              <select id="group" name="group">
+                <option value="">VIP 단계를 설정해 주세요</option>
+                <option value="gold">GOLD</option>
+                <option value="vip">VIP</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <label>기본 구독 혜택</label>
+            <div class="info-box">
+              <ul>
+                <li>VIP 이하 단계 포스팅 열람 가능</li>
+                <li>영상통화 신청시 구독자 마크 표시</li>
+              </ul>
+            </div>
+          </div>
+          <div class="form-field">
+            <label for="benefit">추가 구독 혜택</label>
+            <div id="benefit-list">
+              <div class="input-box flex benefit-item">
+                <input id="benefit" name="benefit" placeholder='구독 혜택을 적어주세요' required/>
+                <button class="add" type="button">
+                  <img alt="추가하기" src="../../img/icon/input-plus.svg"/>
+                </button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <!--//card body-->
+    </div>
+    <!--//membership card-->
+
+    <button class="add-membership">
+      <img alt="" src="../../img/icon/plus-purple.svg"/>
+      <span>생성하기</span>
+    </button>
+  </div>
+  <div class="button-area">
+    <button>완 료</button>
+  </div>
+</div>
+<script>
     document.addEventListener("DOMContentLoaded", function () {
 
-      const list = document.getElementById("benefit-list");
+        const list = document.getElementById("benefit-list");
 
-      list.addEventListener("click", function (e) {
-        const btn = e.target.closest("button");
-        if (!btn) return;
+        list.addEventListener("click", function (e) {
+            const btn = e.target.closest("button");
+            if (!btn) return;
 
-        if (btn.classList.contains("add")) {
-          const newItem = document.createElement("div");
-          newItem.className = "input-box flex benefit-item";
-          newItem.innerHTML = `
+            if (btn.classList.contains("add")) {
+                const newItem = document.createElement("div");
+                newItem.className = "input-box flex benefit-item";
+                newItem.innerHTML = `
         <input name="benefit" required placeholder="구독 혜택을 적어주세요" />
         <button type="button" class="remove">
           <img src="../../img/icon/input-minus.svg" alt="삭제하기" />
         </button>
       `;
-          list.appendChild(newItem);
-        }
+                list.appendChild(newItem);
+            }
 
-        if (btn.classList.contains("remove")) {
-          btn.closest(".benefit-item").remove();
-        }
-      });
+            if (btn.classList.contains("remove")) {
+                btn.closest(".benefit-item").remove();
+            }
+        });
 
-      const addMembershipBtn = document.querySelector(".add-membership");
+        const addMembershipBtn = document.querySelector(".add-membership");
 
-      addMembershipBtn.addEventListener("click", function () {
-        const wrap = document.getElementById("membership-wrap");
-        const card = document.querySelector(".membership-card");
-        const newCard = card.cloneNode(true);
+        addMembershipBtn.addEventListener("click", function () {
+            const wrap = document.getElementById("membership-wrap");
+            const card = document.querySelector(".membership-card");
+            const newCard = card.cloneNode(true);
 
-        const cards = document.querySelectorAll(".membership-card");
-        const newIndex = cards.length + 1;
-        newCard.querySelector("h2").textContent = `멤버십 ${newIndex}`;
+            const cards = document.querySelectorAll(".membership-card");
+            const newIndex = cards.length + 1;
+            newCard.querySelector("h2").textContent = `멤버십 ${newIndex}`;
 
-        newCard.querySelectorAll("input").forEach(i => i.value = "");
-        newCard.querySelectorAll("select").forEach(s => s.selectedIndex = 0);
+            newCard.querySelectorAll("input").forEach(i => i.value = "");
+            newCard.querySelectorAll("select").forEach(s => s.selectedIndex = 0);
 
-        const benefitList = newCard.querySelector("#benefit-list");
-        if (benefitList) {
-          benefitList.innerHTML = `
+            const benefitList = newCard.querySelector("#benefit-list");
+            if (benefitList) {
+                benefitList.innerHTML = `
         <div class="input-box flex benefit-item">
           <input name="benefit" required placeholder="구독 혜택을 적어주세요" />
           <button type="button" class="add">
@@ -139,44 +139,44 @@
           </button>
         </div>
       `;
-          benefitList.removeAttribute("id");
-        }
+                benefitList.removeAttribute("id");
+            }
 
-        const closeBtn = newCard.querySelector(".card-header button");
-        closeBtn.addEventListener("click", function () {
-          newCard.remove();
-          updateCloseButtons();
+            const closeBtn = newCard.querySelector(".card-header button");
+            closeBtn.addEventListener("click", function () {
+                newCard.remove();
+                updateCloseButtons();
+            });
+
+            wrap.insertBefore(newCard, addMembershipBtn);
+
+            updateCloseButtons();
         });
 
-        wrap.insertBefore(newCard, addMembershipBtn);
+        const firstClose = document.querySelector(".membership-card .card-header button");
+        firstClose.addEventListener("click", function () {
+            document.querySelector(".membership-card").remove();
+            updateCloseButtons();
+        });
 
-        updateCloseButtons();
-      });
+        // 닫기 버튼 활성/비활성 관리
+        function updateCloseButtons() {
+            const cards = document.querySelectorAll(".membership-card");
+            const closeButtons = document.querySelectorAll(".membership-card .card-header button");
 
-      const firstClose = document.querySelector(".membership-card .card-header button");
-      firstClose.addEventListener("click", function () {
-        document.querySelector(".membership-card").remove();
-        updateCloseButtons();
-      });
-
-      // 닫기 버튼 활성/비활성 관리
-      function updateCloseButtons() {
-        const cards = document.querySelectorAll(".membership-card");
-        const closeButtons = document.querySelectorAll(".membership-card .card-header button");
-
-        if (cards.length === 1) {
-          closeButtons[0].disabled = true;
-          closeButtons[0].style.opacity = "0.3";
-        } else {
-          closeButtons.forEach(btn => {
-            btn.disabled = false;
-            btn.style.opacity = "1";
-          });
+            if (cards.length === 1) {
+                closeButtons[0].disabled = true;
+                closeButtons[0].style.opacity = "0.3";
+            } else {
+                closeButtons.forEach(btn => {
+                    btn.disabled = false;
+                    btn.style.opacity = "1";
+                });
+            }
         }
-      }
 
-      updateCloseButtons();
+        updateCloseButtons();
     });
-  </script>
+</script>
 </body>
 </html>

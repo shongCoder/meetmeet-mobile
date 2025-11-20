@@ -1,128 +1,129 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/common/reset.css" />
-    <link rel="stylesheet" href="../../css/common/style.css" />
-    <link rel="stylesheet" href="../../css/common/header-base.css" />
-    <link rel="stylesheet" href="../../css/my/charge.css" />
-    <title>MeetMeet : 포인트 충전</title>
-  </head>
-  <body>
-    <div id="wrapper">
-      <header id="header">
-        <div class="back">
-          <button onclick="goBack()" class="back-btn"><img src="../../img/icon/icon-arrow-left-pink.svg" alt="뒤로가기" /></button>
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="../../css/common/reset.css" rel="stylesheet"/>
+  <link href="../../css/common/style.css" rel="stylesheet"/>
+  <link href="../../css/common/header-base.css" rel="stylesheet"/>
+  <link href="../../css/my/charge.css" rel="stylesheet"/>
+  <title>MeetMeet : 포인트 충전</title>
+</head>
+<body>
+<div id="wrapper">
+  <header id="header">
+    <div class="back">
+      <button class="back-btn" onclick="goBack()"><img alt="뒤로가기" src="../../img/icon/icon-arrow-left-pink.svg"/>
+      </button>
+    </div>
+    <div>
+      <h1 style="margin-left: 5rem;">충전하기</h1>
+    </div>
+    <div class="point-box">
+      <img alt="포인트" src="../../img/icon/point.svg"/>
+      <span>40,000</span>
+    </div>
+  </header>
+  <!--//header-->
+  <div id="charge">
+    <!-- 베너슬라이드 예정(?) -->
+    <ul class="banner mb-20">
+      <li class="ban-box">
+        <img alt="banner1" src="../../img/charge/banner1.png"/>
+      </li>
+    </ul>
+    <!-- 충전금액 -->
+    <ul class="amount mb-20">
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>4,000</span>
         </div>
-        <div>
-          <h1 style="margin-left: 5rem;">충전하기</h1>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 8,000</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
         </div>
-        <div class="point-box">
-          <img src="../../img/icon/point.svg" alt="포인트" />
-          <span>40,000</span>
+      </li>
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>8,000</span>
         </div>
-      </header>
-      <!--//header-->
-      <div id="charge">
-        <!-- 베너슬라이드 예정(?) -->
-        <ul class="banner mb-20">
-          <li class="ban-box">
-            <img src="../../img/charge/banner1.png" alt="banner1" />
-          </li>
-        </ul>
-        <!-- 충전금액 -->
-        <ul class="amount mb-20">
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>4,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 8,000</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>8,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 14,500</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>15,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 25,000</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>30,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 48,000</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>60,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 96,000</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>100,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 160,000</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-          <li class="amo-box">
-            <div class="flex gap-12 item-center">
-              <img src="../../img/icon/point.svg" alt="포인트" />
-              <span>200,000</span>
-            </div>
-            <div class="flex gap-4 item-center">
-              <span class="b">₩ 320,000</span>
-              <button><img src="../../img/icon/icon-arrow-right-small.svg" /></button>
-            </div>
-          </li>
-        </ul>
-        <div class="info">
-          <div class="info-box">
-            <p>·</p>
-            <p>
-              영상통화는 최초 연결완료 이후부터 <br />
-              30초마다 <span>1,000+a포인트</span>가 소진됩니다
-            </p>
-          </div>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 14,500</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
         </div>
+      </li>
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>15,000</span>
+        </div>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 25,000</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
+        </div>
+      </li>
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>30,000</span>
+        </div>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 48,000</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
+        </div>
+      </li>
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>60,000</span>
+        </div>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 96,000</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
+        </div>
+      </li>
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>100,000</span>
+        </div>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 160,000</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
+        </div>
+      </li>
+      <li class="amo-box">
+        <div class="flex gap-12 item-center">
+          <img alt="포인트" src="../../img/icon/point.svg"/>
+          <span>200,000</span>
+        </div>
+        <div class="flex gap-4 item-center">
+          <span class="b">₩ 320,000</span>
+          <button><img src="../../img/icon/icon-arrow-right-small.svg"/></button>
+        </div>
+      </li>
+    </ul>
+    <div class="info">
+      <div class="info-box">
+        <p>·</p>
+        <p>
+          영상통화는 최초 연결완료 이후부터 <br/>
+          30초마다 <span>1,000+a포인트</span>가 소진됩니다
+        </p>
       </div>
     </div>
-    <script>
-      function goBack() {
+  </div>
+</div>
+<script>
+    function goBack() {
         if (document.referrer && document.referrer !== "") {
-          history.back();
+            history.back();
         } else {
-          window.location.href = "../my.html";
+            window.location.href = "../my.html";
         }
-      }
-    </script>
-  </body>
+    }
+</script>
+</body>
 </html>

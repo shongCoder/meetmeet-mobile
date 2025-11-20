@@ -88,7 +88,7 @@ handle.addEventListener("pointermove", e => {
         selectModal.style.transform = `translateY(${diff}px)`;
         e.preventDefault?.();
     }
-}, { passive: false });
+}, {passive: false});
 
 function endDrag(e) {
     if (!dragging) return;

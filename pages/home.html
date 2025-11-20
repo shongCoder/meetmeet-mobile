@@ -2,373 +2,381 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../css/common/reset.css">
-  <link rel="stylesheet" href="../css/common/style.css">
-  <link rel="stylesheet" href="../css/home.css">
-  <link rel="stylesheet" href="../css/common/tab-bar.css">
-  <link rel="stylesheet" href="../css/common/header-base.css">
-  <link rel="stylesheet" href="../css/common/story.css">
-  <link rel="stylesheet" href="../css/common/select-modal.css">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../css/common/reset.css" rel="stylesheet">
+  <link href="../css/common/style.css" rel="stylesheet">
+  <link href="../css/home.css" rel="stylesheet">
+  <link href="../css/common/tab-bar.css" rel="stylesheet">
+  <link href="../css/common/header-base.css" rel="stylesheet">
+  <link href="../css/common/story.css" rel="stylesheet">
+  <link href="../css/common/select-modal.css" rel="stylesheet">
   <title>MeetMeet : Home</title>
 </head>
 <body>
-  <div id="wrapper">
+<div id="wrapper">
 
-    <div id="selectModal" class="bottom-modal">
-      <div class="handle">
-        <div class="handle-bar"></div>
-      </div>
-      <div class="modal-content">
-        <ul class="modal-list"></ul>
-        <div class="btn-box">
-          <button class="modal-close" type="button">닫기</button>
-        </div>
+  <div class="bottom-modal" id="selectModal">
+    <div class="handle">
+      <div class="handle-bar"></div>
+    </div>
+    <div class="modal-content">
+      <ul class="modal-list"></ul>
+      <div class="btn-box">
+        <button class="modal-close" type="button">닫기</button>
       </div>
     </div>
-
-    <header id="header">
-      <div><img src="../img/meetmeet_logo.svg" alt="밋밋"/></div>
-      <div class="flex gap-12 item-center">
-        <div class="point-box">
-          <img src="../img/icon/point.svg" alt="포인트"/>
-          <span>40,000</span>
-        </div>
-        <div class="alarm-icon">
-          <a href="etc/notice.html">
-            <img src="../img/icon/alarm_inactive.svg" alt="알람"/>
-          </a>
-        </div>
-      </div>
-    </header>
-    <div id="story">
-      <div class="search-box">
-        <div class="circle">
-          <img src="../img/icon/search-icon-pink.svg" alt="찾아보기" />
-        </div>
-        <span>찾아보기</span>
-      </div>
-      <ul class="story-list">
-        <li>
-          <div class="story-box">
-            <div class="circle active">
-              <div class="circle-img">
-                <img src="../img/home/story1.png" alt="profile" />
-              </div>
-            </div>
-            <span>Bin Thieu</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle active">
-              <div class="circle-img">
-                <img src="../img/home/story2.jpg" alt="profile" />
-              </div>
-            </div>
-            <span>Fernandez</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle">
-              <div class="circle-img">
-                <img src="../img/home/story3.png" alt="profile" />
-              </div>
-            </div>
-            <span>Aiony Haust</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle">
-              <div class="circle-img">
-                <img src="../img/home/story4.png" alt="profile" />
-              </div>
-            </div>
-            <span>Gabriel</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle active">
-              <div class="circle-img">
-                <img src="../img/home/story1.png" alt="profile" />
-              </div>
-            </div>
-            <span>Bin Thieu</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle active">
-              <div class="circle-img">
-                <img src="../img/home/story2.jpg" alt="profile" />
-              </div>
-            </div>
-            <span>Fernandez</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle">
-              <div class="circle-img">
-                <img src="../img/home/story3.png" alt="profile" />
-              </div>
-            </div>
-            <span>Aiony Haust</span>
-          </div>
-        </li>
-        <li>
-          <div class="story-box">
-            <div class="circle">
-              <div class="circle-img">
-                <img src="../img/home/story4.png" alt="profile" />
-              </div>
-            </div>
-            <span>Gabriel</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!--//story-->
-    <div id="profile">
-      <div class="filter-box">
-        <div class="select-box">
-          <button type="button" class="open-select" data-target="gender">여자</button>
-        </div>
-        <div class="select-box">
-          <button type="button" class="open-select" data-target="region">국내</button>
-        </div>
-      </div>
-      <!--filter-->
-      <ul class="profile-list">
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online"></div>
-                  <span>귤귤무슨귤</span>
-                  <img src="../img/home/verified.svg" alt="" />
-                  <img src="../img/home/paid.svg" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online active"></div>
-                  <span>Vinicius</span>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile3.png') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online"></div>
-                  <span>Fernandez</span>
-                  <img src="../img/home/verified.svg" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile4.png') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online"></div>
-                  <span>Bin Thieu</span>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online"></div>
-                  <span>귤귤무슨귤</span>
-                  <img src="../img/home/verified.svg" alt="" />
-                  <img src="../img/home/paid.svg" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online active"></div>
-                  <span>Vinicius</span>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile3.png') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online"></div>
-                  <span>Fernandez</span>
-                  <img src="../img/home/verified.svg" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="profile-box" style="background: #f7f7f7 url('/img/home/profile4.png') no-repeat; background-size: cover;">
-            <div class="gradient">
-              <div class="pro-content">
-                <div class="name-box">
-                  <div class="online"></div>
-                  <span>Bin Thieu</span>
-                  <img src="" alt="" />
-                  <img src="" alt="" />
-                </div>
-                <div class="info-box">
-                  <div class="flag">
-                    <img src="../img/home/korean-flag.jpg" alt="대한민국" />
-                  </div>
-                  <span>대한민국</span>
-                  <span class="dot">・</span>
-                  <span>22</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!--//profile-set-->
-    <nav id="tab-wrapper">
-      <ul>
-        <li>
-          <div class="tab-box">
-            <a href="#">
-              <img src="../img/tab/tab-home-pink.svg" alt="" />
-              <span class="open">홈</span>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="tab-box">
-            <a href="ranking.html">
-              <img src="../img/tab/tab-ranking.svg" alt="" />
-              <span>랭킹</span>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="tab-box">
-            <a href="feed.html">
-              <img src="../img/tab/tab-feed.svg" alt="" />
-              <span>피드</span>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="tab-box">
-            <a href="chat.html">
-              <img src="../img/tab/tab-chat.svg" alt="" />
-              <span>채팅</span>
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="tab-box">
-            <a href="my.html">
-              <img src="../img/tab/tab-my.svg" alt="" />
-              <span>MY</span>
-            </a>
-          </div>
-        </li>
-      </ul>
-    </nav>
-    <!--//tab bar-->
   </div>
 
-  <script src="../js/select-modal.js"></script>
+  <header id="header">
+    <div><img alt="밋밋" src="../img/meetmeet_logo.svg"/></div>
+    <div class="flex gap-12 item-center">
+      <div class="point-box">
+        <img alt="포인트" src="../img/icon/point.svg"/>
+        <span>40,000</span>
+      </div>
+      <div class="alarm-icon">
+        <a href="etc/notice.html">
+          <img alt="알람" src="../img/icon/alarm_inactive.svg"/>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div id="story">
+    <div class="search-box">
+      <div class="circle">
+        <img alt="찾아보기" src="../img/icon/search-icon-pink.svg"/>
+      </div>
+      <span>찾아보기</span>
+    </div>
+    <ul class="story-list">
+      <li>
+        <div class="story-box">
+          <div class="circle active">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story1.png"/>
+            </div>
+          </div>
+          <span>Bin Thieu</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle active">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story2.jpg"/>
+            </div>
+          </div>
+          <span>Fernandez</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story3.png"/>
+            </div>
+          </div>
+          <span>Aiony Haust</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story4.png"/>
+            </div>
+          </div>
+          <span>Gabriel</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle active">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story1.png"/>
+            </div>
+          </div>
+          <span>Bin Thieu</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle active">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story2.jpg"/>
+            </div>
+          </div>
+          <span>Fernandez</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story3.png"/>
+            </div>
+          </div>
+          <span>Aiony Haust</span>
+        </div>
+      </li>
+      <li>
+        <div class="story-box">
+          <div class="circle">
+            <div class="circle-img">
+              <img alt="profile" src="../img/home/story4.png"/>
+            </div>
+          </div>
+          <span>Gabriel</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--//story-->
+  <div id="profile">
+    <div class="filter-box">
+      <div class="select-box">
+        <button class="open-select" data-target="gender" type="button">여자</button>
+      </div>
+      <div class="select-box">
+        <button class="open-select" data-target="region" type="button">국내</button>
+      </div>
+    </div>
+    <!--filter-->
+    <ul class="profile-list">
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online"></div>
+                <span>귤귤무슨귤</span>
+                <img alt="" src="../img/home/verified.svg"/>
+                <img alt="" src="../img/home/paid.svg"/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online active"></div>
+                <span>Vinicius</span>
+                <img alt="" src=""/>
+                <img alt="" src=""/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile3.png') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online"></div>
+                <span>Fernandez</span>
+                <img alt="" src="../img/home/verified.svg"/>
+                <img alt="" src=""/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile4.png') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online"></div>
+                <span>Bin Thieu</span>
+                <img alt="" src=""/>
+                <img alt="" src=""/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile1.jpg') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online"></div>
+                <span>귤귤무슨귤</span>
+                <img alt="" src="../img/home/verified.svg"/>
+                <img alt="" src="../img/home/paid.svg"/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile2.jpg') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online active"></div>
+                <span>Vinicius</span>
+                <img alt="" src=""/>
+                <img alt="" src=""/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile3.png') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online"></div>
+                <span>Fernandez</span>
+                <img alt="" src="../img/home/verified.svg"/>
+                <img alt="" src=""/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="profile-box"
+             style="background: #f7f7f7 url('/img/home/profile4.png') no-repeat; background-size: cover;">
+          <div class="gradient">
+            <div class="pro-content">
+              <div class="name-box">
+                <div class="online"></div>
+                <span>Bin Thieu</span>
+                <img alt="" src=""/>
+                <img alt="" src=""/>
+              </div>
+              <div class="info-box">
+                <div class="flag">
+                  <img alt="대한민국" src="../img/home/korean-flag.jpg"/>
+                </div>
+                <span>대한민국</span>
+                <span class="dot">・</span>
+                <span>22</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!--//profile-set-->
+  <nav id="tab-wrapper">
+    <ul>
+      <li>
+        <div class="tab-box">
+          <a href="#">
+            <img alt="" src="../img/tab/tab-home-pink.svg"/>
+            <span class="open">홈</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="ranking.html">
+            <img alt="" src="../img/tab/tab-ranking.svg"/>
+            <span>랭킹</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="feed.html">
+            <img alt="" src="../img/tab/tab-feed.svg"/>
+            <span>피드</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="chat.html">
+            <img alt="" src="../img/tab/tab-chat.svg"/>
+            <span>채팅</span>
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="tab-box">
+          <a href="my.html">
+            <img alt="" src="../img/tab/tab-my.svg"/>
+            <span>MY</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+  <!--//tab bar-->
+</div>
+
+<script src="../js/select-modal.js"></script>
 </body>
 </html>
