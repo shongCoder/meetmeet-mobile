@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="파일 구조 변경">
-      <change afterPath="$PROJECT_DIR$/pages/my/block-empty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/my/block.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/my/block.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/etc/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/alarm-icon-gray.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/telephone.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/video-camera.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/profile/back-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/profile/profile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/etc/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -68,11 +75,11 @@
       <recent name="$PROJECT_DIR$/img/ranking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\profile" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\point-exchange" />
       <recent name="$PROJECT_DIR$/pages/etc" />
       <recent name="$PROJECT_DIR$/css/etc" />
-      <recent name="$PROJECT_DIR$/css/my" />
-      <recent name="$PROJECT_DIR$/pages/my" />
     </key>
   </component>
   <component name="SharedIndexes">

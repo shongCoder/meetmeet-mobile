@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/etc/profile.css" rel="stylesheet">
+  <link href="../../css/common/tab-bar.css" rel="stylesheet">
+  <link href="../../css/common/form.css" rel="stylesheet">
+  <title>MeetMeet : 프로필</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="content" style="background-image:  url('../../img/profile/back-img.jpg')">
+      <div class="gradient-black">
+        <div class="control-btn">
+          <button class="close-btn"><img src="../../img/icon/close.svg" alt="닫기" /></button>
+          <button class="alarm-btn"><img src="../../img/icon/alarm-icon-gray.svg" alt="알람" /></button>
+        </div>
+      </div>
+      <!--//header-->
+
+      <div id="profile">
+        <div class="profile-header">
+          <div class="profile-info">
+            <div class="img-outline">
+              <div class="img-box">
+                <img src="../../img/profile/profile.jpg" alt="프로필 이미지" />
+              </div>
+            </div>
+            <div>
+              <div class="name-verif">
+                <span class="name">귤귤무슨귤</span>
+                <img src="../../img/icon/verified.svg" alt="인증된 사용자"/>
+              </div>
+              <div class="follow-post">
+                <span class="follow">752</span><span> 팔로워</span><sapn>・</sapn><span class="post">7</span><span> 포스트</span>
+              </div>
+            </div>
+          </div>
+          <button class="follow-btn">팔로우</button>
+        </div>
+        <!--//profile header-->
+        <div class="profile-body">
+          <p class="profile-intro ellipsis-2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          </p>
+          <div class="profile-link">
+            <a href="#">
+              <img src="../../img/icon/link.svg" alt="링크" />
+              <span>nmoment.live/profile/@suyeon_soe</span>
+            </a>
+          </div>
+        </div>
+        <!--//profile body-->
+      </div>
+      <!--//profile-->
+
+      <div id="tab-menu">
+        <div class="tab-box active">
+          <span>포스트</span>
+        </div>
+        <div class="tab-box">
+          <span>멤버십</span>
+        </div>
+
+        <div id="tab-underline"></div>
+      </div>
+      <!--//tab menu-->
+
+      <div id="tab-content">
+        <div id="post">
+          <ul>
+            <li class="post-box">
+              <div class="profile">
+                <div class="flex item-center gap-8">
+                  <div class="img-box">
+                    <img alt="프로필 이미지" src="../../img/feed/profile1.jpg"/>
+                  </div>
+                  <div class="name-time">
+                    <div class="name">
+                      <span>귤귤무슨귤</span>
+                      <img alt="인증된 사용자" src="../../img/my/verified.svg"/>
+                    </div>
+                    <div class="time">3시간 전</div>
+                  </div>
+                </div>
+                <button class="open-select" data-target="feed" type="button">
+                  <img alt="더보기" src="../../img/icon/kebab.svg"/>
+                </button>
+              </div>
+              <!--//profile-set-->
+              <div class="content">
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna
+                </div>
+                <div class="post-img">
+                  <img alt="포스팅 이미지" src="../../img/feed/post1.jpg"/>
+                </div>
+              </div>
+              <!--//content-->
+              <div class="status">
+                <div class="like-box">
+                  <img alt="좋아요" src="../../img/icon/like-active.svg"/>
+                  <span class="active">172</span>
+                </div>
+                <div class="comment-btn">
+                  <img alt="댓글" src="../../img/icon/comment.svg"/>
+                  <span>32</span>
+                </div>
+              </div>
+              <!--//status-->
+            </li>
+            <li class="post-box">
+              <div class="profile">
+                <div class="flex item-center gap-8">
+                  <div class="img-box">
+                    <img alt="프로필 이미지" src="../../img/feed/profile1.jpg"/>
+                  </div>
+                  <div class="name-time">
+                    <div class="name">
+                      <span>귤귤무슨귤</span>
+                      <img alt="인증된 사용자" src="../../img/my/verified.svg"/>
+                    </div>
+                    <div class="time">3시간 전</div>
+                  </div>
+                </div>
+                <button class="open-select" data-target="feed" type="button">
+                  <img alt="더보기" src="../../img/icon/kebab.svg"/>
+                </button>
+              </div>
+              <!--//profile-set-->
+              <div class="content">
+                <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                  dolore magna
+                </div>
+                <div class="post-img">
+                  <img alt="포스팅 이미지" src="../../img/feed/view-pass.png"/>
+                </div>
+              </div>
+              <!--//content-->
+              <div class="status">
+                <div class="like-box">
+                  <img alt="좋아요" src="../../img/icon/like.svg"/>
+                  <span>172</span>
+                </div>
+                <div class="comment-btn">
+                  <img alt="댓글" src="../../img/icon/comment.svg"/>
+                  <span>32</span>
+                </div>
+              </div>
+              <!--//status-->
+            </li>
+          </ul>
+        </div>
+        <!--//post-->
+        <div id="membership">
+          <div class="membership-box">
+            <div class="membership-card">
+              <div class="check-box">
+                <label class="check">
+                  <input class="sub-check" type="checkbox"/>
+                  <span class="custom-check"></span>
+                </label>
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="tags">
+                    <div class="grade">VIP 2</div>
+                    <div class="status">모집중</div>
+                  </div>
+                  <div class="amount">
+                    <span>Level. 2</span>
+                    <span>₩ 30,000원</span>
+                  </div>
+                </div>
+                <ul class="summary">
+                  <li>account cannot be restored after account</li>
+                  <li>Information associated with your current</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur</li>
+                </ul>
+              </div>
+            </div>
+            <!--//card1-->
+            <div class="membership-card">
+              <div class="check-box">
+                <label class="check">
+                  <input class="sub-check" type="checkbox"/>
+                  <span class="custom-check"></span>
+                </label>
+              </div>
+              <div class="card-content">
+                <div class="card-header">
+                  <div class="tags">
+                    <div class="grade">VIP 4</div>
+                    <div class="status">모집중</div>
+                  </div>
+                  <div class="amount">
+                    <span>Level. 4</span>
+                    <span>₩ 200,000원</span>
+                  </div>
+                </div>
+                <ul class="summary">
+                  <li>account cannot be restored after account</li>
+                  <li>Information associated with your current</li>
+                  <li>Lorem ipsum dolor sit amet, consectetur</li>
+                </ul>
+              </div>
+            </div>
+            <!--//card2-->
+          </div>
+        </div>
+        <!--//membership-->
+      </div>
+    </div>
+    <!--//content-->
+
+    <div id="control-area">
+      <button class="control-btn">
+        <img src="../../img/icon/video-camera.svg" alt="영상채팅 아이콘" />
+        <span class="btn-text">영상채팅</span>
+      </button>
+      <button class="control-btn">
+        <img src="../../img/icon/telephone.svg" alt="음성채팅 아이콘" />
+        <span class="btn-text">음성채팅</span>
+      </button>
+      <button class="membership-btn">
+        멤버십 구독
+      </button>
+    </div>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const followBtn = document.querySelector(".follow-btn");
+          const tabs = document.querySelectorAll("#tab-menu .tab-box");
+          const postSection = document.querySelector("#post");
+          const membershipSection = document.querySelector("#membership");
+          const underline = document.querySelector("#tab-underline");
+
+          followBtn.addEventListener("click", function () {
+              // 클래스 토글
+              followBtn.classList.toggle("following");
+
+              // 텍스트 변경
+              if (followBtn.classList.contains("following")) {
+                  followBtn.textContent = "팔로잉";
+              } else {
+                  followBtn.textContent = "팔로우";
+              }
+          });
+
+          function moveUnderline(index) {
+              const tab = tabs[index];
+              const tabRect = tab.getBoundingClientRect();
+              const menuRect = tab.parentElement.getBoundingClientRect();
+
+              const leftPos = tabRect.left - menuRect.left;
+              const width = tabRect.width;
+
+              underline.style.left = leftPos + "px";
+              underline.style.width = width + "px";
+          }
+
+          tabs.forEach((tab, index) => {
+              tab.addEventListener("click", function () {
+                  // active 초기화
+                  tabs.forEach(t => t.classList.remove("active"));
+                  tab.classList.add("active");
+
+                  // 언더라인 이동
+                  moveUnderline(index);
+
+                  // 화면 전환
+                  if (index === 0) {
+                      postSection.style.display = "flex";
+                      membershipSection.style.display = "none";
+                  } else {
+                      postSection.style.display = "none";
+                      membershipSection.style.display = "flex";
+                  }
+              });
+          });
+
+          // 초기 언더라인 위치 설정
+          moveUnderline(0);
+
+          // 체크박스
+          const checkboxes = document.querySelectorAll("#membership .sub-check");
+
+          checkboxes.forEach((checkbox) => {
+              checkbox.addEventListener("change", function () {
+                  const card = checkbox.closest(".membership-card");
+
+                  if (checkbox.checked) {
+                      card.classList.add("checked");
+                  } else {
+                      card.classList.remove("checked");
+                  }
+              });
+          });
+      });
+  </script>
+
+</body>
+</html>

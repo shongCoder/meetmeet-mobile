@@ -63,6 +63,13 @@ html, body {
     display: none !important;
 }
 
+.ellipsis-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* 보여줄 줄 수 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /*
     토글
  */
