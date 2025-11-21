@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link href="../../css/common/reset.css" rel="stylesheet">
+  <link href="../../css/common/style.css" rel="stylesheet">
+  <link href="../../css/common/header-base.css" rel="stylesheet"/>
+  <link href="../../css/video-calling.css" rel="stylesheet">
+  <title>MeetMeet : 영상통화 통화중</title>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="gift-popup">
+      <div class="popup-box">
+        <div class="popup-title">
+          <span></span>
+          <span>선물하기</span>
+          <img alt="창닫기" src="../../img/icon/close.svg">
+        </div>
+        <div class="my-mileage">
+          <span class="text">보유 마일리지</span>
+          <div class="point-box">
+            <img alt="포인트" src="../../img/icon/point.svg"/>
+            <span>4,000</span>
+          </div>
+        </div>
+        <div class="point-list">
+          <ul>
+            <li>1,000포인트</li>
+            <li>3,000포인트</li>
+            <li class="active">5,000포인트</li>
+            <li>7,000포인트</li>
+            <li>9,000포인트</li>
+            <li>10,000포인트</li>
+          </ul>
+        </div>
+        <div class="btn-box">
+          <button class="cancel">취소</button>
+          <button class="submit">선물하기</button>
+        </div>
+      </div>
+    </div>
+    <!--//gift popup-->
+
+    <div id="review-popup">
+      <div class="popup-box">
+        <div class="popup-title">
+          <span></span>
+          <span>통화 평가</span>
+          <img alt="창닫기" src="../../img/icon/close.svg">
+        </div>
+        <div class="popup-content">
+          <p>상대방과의 통화가 즐거우셨나요?</p>
+          <div class="star-rating">
+            <img src="../../img/icon/star-unchecked.svg" data-value="1" />
+            <img src="../../img/icon/star-unchecked.svg" data-value="2" />
+            <img src="../../img/icon/star-unchecked.svg" data-value="3" />
+            <img src="../../img/icon/star-unchecked.svg" data-value="4" />
+            <img src="../../img/icon/star-unchecked.svg" data-value="5" />
+          </div>
+          <p class="review-text"></p>
+        </div>
+        <div class="btn-box">
+          <button class="cancel">취소</button>
+          <button class="submit">제출</button>
+        </div>
+      </div>
+    </div>
+    <!--//review popup-->
+
+    <header id="header">
+      <div class="call-time">
+        <span>00</span>
+        <span>:</span>
+        <span>09</span>
+        <span>:</span>
+        <span>45</span>
+      </div>
+      <button class="alarm-btn"><img alt="" src="../../img/call/siren.svg"/></button>
+    </header>
+    <!--//header-->
+
+    <div id="calling-area">
+      <div class="side-area left" style="background-image: url('../../img/call/remote-video.png');">
+        <div class="black"></div>
+      </div>
+      <div class="remote-video" style="background-image: url('../../img/call/remote-video.png');">
+        <div class="gradient-black"></div>
+      </div>
+      <div class="side-area right" style="background-image: url('../../img/call/remote-video.png');">
+        <div class="black"></div>
+      </div>
+    </div>
+    <!--calling area-->
+
+    <div id="my-video">
+      <div class="video-area" style="background-image: url('../../img/call/my-video.png');">
+      </div>
+      <button class="gift-btn">
+        <img src="../../img/call/gift-btn.svg" alt="선물하기" />
+      </button>
+    </div>
+
+    <div class="actions">
+      <button class="hang-up-btn"><img alt="" src="../../img/call/call_slash.svg"/></button>
+      <div class="control-btns">
+        <button><img src="../../img/icon/mic.svg" alt="음소거" /></button>
+        <button><img src="../../img/icon/recording.svg" alt="녹화" /></button>
+        <button><img src="../../img/icon/screen-trans.svg" alt="카메라 전환" /></button>
+      </div>
+    </div>
+  </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          /* --- 선물 팝업 --- */
+          const giftPopup = document.getElementById("gift-popup");
+          const openGiftBtn = document.querySelector(".gift-btn");
+          const closeGiftBtn = document.querySelector("#gift-popup .popup-title img");
+          const cancelGiftBtn = document.querySelector("#gift-popup .btn-box .cancel");
+          const submitGiftBtn = document.querySelector("#gift-popup .btn-box .submit");
+
+          openGiftBtn.addEventListener("click", () => {
+              giftPopup.style.display = "block";
+          });
+
+          closeGiftBtn.addEventListener("click", () => {
+              giftPopup.style.display = "none";
+          });
+
+          cancelGiftBtn.addEventListener("click", () => {
+              giftPopup.style.display = "none";
+          });
+
+          submitGiftBtn.addEventListener("click", () => {
+              giftPopup.style.display = "none";
+          });
+
+          giftPopup.addEventListener("click", (e) => {
+              if (e.target.id === "gift-popup") {
+                  giftPopup.style.display = "none";
+              }
+          });
+
+          /* --- 통화 평가 팝업 --- */
+          const reviewPopup = document.getElementById("review-popup");
+          const openReviewBtn = document.querySelector(".hang-up-btn"); // 통화 종료 후 열리는 버튼
+          const closeReviewBtn = document.querySelector("#review-popup .popup-title img");
+          const cancelReviewBtn = document.querySelector("#review-popup .btn-box .cancel");
+          const submitReviewBtn = document.querySelector("#review-popup .btn-box .submit");
+          const reviewText = document.querySelector(".review-text");
+
+          // 통화 종료 버튼 누르면 평가 팝업 열기
+          openReviewBtn.addEventListener("click", () => {
+              reviewPopup.style.display = "block";
+          });
+
+          closeReviewBtn.addEventListener("click", () => {
+              reviewPopup.style.display = "none";
+          });
+
+          cancelReviewBtn.addEventListener("click", () => {
+              reviewPopup.style.display = "none";
+          });
+
+          submitReviewBtn.addEventListener("click", () => {
+              reviewPopup.style.display = "none";
+          });
+
+          reviewPopup.addEventListener("click", (e) => {
+              if (e.target.id === "review-popup") {
+                  reviewPopup.style.display = "none";
+              }
+          });
+
+          /* --- 별점 --- */
+          const starContainer = document.querySelector(".star-rating");
+          const stars = starContainer.querySelectorAll("img");
+          let currentRating = 0;
+
+          stars.forEach(star => {
+              star.addEventListener("click", () => {
+                  const clickedValue = parseInt(star.dataset.value);
+                  currentRating = clickedValue;
+
+                  stars.forEach((s, idx) => {
+                      if (idx < clickedValue) {
+                          s.src = "../../img/icon/star-checked.svg";
+                      } else {
+                          s.src = "../../img/icon/star-unchecked.svg";
+                      }
+                  });
+
+                  // 평점별 문구
+                  let message = "";
+                  switch (clickedValue) {
+                      case 1:
+                          message = "별로에요";
+                          break;
+                      case 2:
+                          message = "아쉬워요";
+                          break;
+                      case 3:
+                          message = "만족해요";
+                          break;
+                      case 4:
+                          message = "매우 만족해요";
+                          break;
+                      case 5:
+                          message = "최고였어요!";
+                          break;
+                  }
+
+                  reviewText.textContent = message;
+              });
+          });
+
+      });
+  </script>
+
+</body>
+</html>

@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="파일 구조 변경">
+      <change afterPath="$PROJECT_DIR$/css/video-calling.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/call/gift-btn.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/call/my-video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/call/remote-video.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/mic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/recording.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/screen-trans.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/star-checked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/star-unchecked.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/call/video-calling.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/call.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/call.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/call/video-call.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/call/video-call.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -68,8 +76,8 @@
       <recent name="$PROJECT_DIR$/img/ranking" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\call" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\icon" />
+      <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\call" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\css" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\pages\call" />
       <recent name="C:\Users\sypark\WebstormProjects\meetmeet-mobile\img\profile" />
@@ -111,7 +119,7 @@
       <workItem from="1763337919894" duration="13000" />
       <workItem from="1763371373430" duration="9673000" />
       <workItem from="1763407505517" duration="25440000" />
-      <workItem from="1763685298313" duration="8191000" />
+      <workItem from="1763685298313" duration="14559000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
