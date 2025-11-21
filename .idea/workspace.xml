@@ -5,20 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="파일 구조 변경">
-      <change afterPath="$PROJECT_DIR$/img/call/call-point.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/chat-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/profile-gray.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/call/video-call.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/call/video-wait.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-11-13__6_36__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_2025-11-13_오후_6_36_[Changes]/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/auth/intro.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/auth/intro.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/common/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/common/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/etc/call.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/call.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/etc/call.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/call/call.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/etc/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/etc/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/call.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/call.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/call/video-call.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/call/video-call.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +111,7 @@
       <workItem from="1763337919894" duration="13000" />
       <workItem from="1763371373430" duration="9673000" />
       <workItem from="1763407505517" duration="25440000" />
-      <workItem from="1763685298313" duration="7015000" />
+      <workItem from="1763685298313" duration="8191000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />

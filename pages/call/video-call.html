@@ -11,6 +11,25 @@
 </head>
 <body>
   <div id="wrapper">
+    <div id="block-popup">
+      <div class="popup-box">
+        <div class="popup-title">
+          <span></span>
+          <span>영상통화 성별</span>
+          <button>
+            <img alt="창닫기" src="../../img/icon/close.svg">
+          </button>
+        </div>
+        <div class="popup-content">
+          <p>통화는 이성 간에만 이용 가능합니다.</p>
+        </div>
+        <div class="btn-box">
+          <button class="submit">확 인</button>
+        </div>
+      </div>
+    </div>
+    <!--//gift popup-->
+
     <header id="header">
       <button class="close-btn"><img alt="" src="../../img/call/exit.svg"/></button>
       <button class="alarm-btn"><img alt="" src="../../img/call/siren.svg"/></button>
@@ -59,11 +78,43 @@
         <span class="btn-text">프로필</span>
       </button>
       <button class="membership-btn">
-        멤버십 구독
+        영상 통화
         <img class="call-point" src="../../img/call/call-point.svg" alt="통화 포인트 4,000" />
       </button>
     </div>
     <!--//tab bar-->
   </div>
+  <script>
+      document.addEventListener("DOMContentLoaded", () => {
+          const popup = document.getElementById("block-popup");
+          const openBtn = document.querySelector(".membership-btn");
+          const closeBtn = document.querySelector("#block-popup .popup-title img");
+          const cancelBtn = document.querySelector("#block-popup .btn-box .submit");
+
+          // 팝업 열기
+          openBtn.addEventListener("click", () => {
+              popup.style.display = "block";
+          });
+
+          // 닫기 버튼
+          closeBtn.addEventListener("click", () => {
+              popup.style.display = "none";
+          });
+
+          cancelBtn.addEventListener("click", () => {
+              popup.style.display = "none";
+          });
+
+          submitBtn.addEventListener("click", () => {
+              popup.style.display = "none";
+          });
+
+          popup.addEventListener("click", (e) => {
+              if (e.target.id === "gift-popup") {
+                  popup.style.display = "none";
+              }
+          });
+      });
+  </script>
 </body>
 </html>
