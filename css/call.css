@@ -36,22 +36,20 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    position: relative;
 }
 
 .profile-card {
     border-radius: 24px;
     width: 400px;
     padding: 24px;
-    position: relative;
     text-align: center;
 }
 
-.profile-content {
+.profile-card .profile-content {
     margin-top: 32px;
 }
 
-.profile-photo img {
+.profile-card .profile-content .profile-photo img {
     width: 96px;
     height: 96px;
     border-radius: 50%;
@@ -60,7 +58,7 @@
     margin: 0 auto 16px auto;
 }
 
-.profile-info .name-row {
+.profile-card .profile-content .profile-info .name-row {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,26 +69,26 @@
     margin-bottom: 1rem;
 }
 
-.online-dot {
+.profile-card .profile-content .profile-info .online-dot {
     width: 0.25rem;
     height: 0.25rem;
     background-color: #2ecc71;
     border-radius: 50%;
 }
 
-.verified-icon {
+.profile-card .profile-content .profile-info .verified-icon {
     color: #3498db;
     font-size: 16px;
 }
 
-.country-age {
+.profile-card .profile-content .profile-info .country-age {
     margin-top: 4px;
     font-size: 14px;
     opacity: 0.8;
     color: #c8c8c8;
 }
 
-.rating {
+.profile-card .profile-content .profile-info .rating {
     margin-top: 12px;
     font-size: 16px;
     display: flex;
@@ -98,25 +96,37 @@
     align-items: center;
 }
 
-.star-icon {
+.profile-card .profile-content .profile-info .star-icon {
     margin-right: 4px;
 }
 
-.score {
+.profile-card .profile-content .profile-info .score {
     font-weight: 700;
     color: white;
     font-size: 0.8125rem;
 }
 
-.small-text {
+.profile-card .profile-content .profile-info .small-text {
     font-size: 0.625rem;
     opacity: 0.8;
     margin-left: 4px;
     color: #898d99;
 }
 
-.video-duration {
-    margin-top: 1rem;
+.profile-card .profile-content .profile-info .summary {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0 1.25rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    color: #C8C8C8;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.profile-card .profile-content .profile-info .video-duration {
+    margin-top: 0.5rem;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -129,9 +139,21 @@
     font-size: .625rem;
 }
 
-.duration {
+.profile-card .profile-content .profile-info .duration {
     color: #ff4d4f;
     font-weight: 700;
+}
+
+#video-call{
+    position: absolute;
+    bottom: 7rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .actions {
@@ -140,9 +162,11 @@
     left: 0;
     padding: 1.25rem;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
     width: calc(100% - 2.5rem);
+    overflow: visible;
 }
 
 .btn {
@@ -178,10 +202,59 @@
     display: inline-block;
 }
 
+.control-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.5rem;
+    gap: 2px;
+}
+
+.control-btn span.btn-text {
+    font-size: 0.625rem;
+    font-weight: 500;
+    line-height: 0.75rem;
+    color: #898D99;
+    text-align: center;
+}
+
+.membership-btn {
+    flex: 1;
+    padding: 0.875rem 0;
+    background: #FA1155;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    color: white;
+    position: relative;
+}
+
+.call-point {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.hang-up-btn {
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 1.875rem;
+    background: #FA1155;
+}
+
+.hang-up-btn img {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* 배경 */
 .bg_img {
     width: 100vw;
     height: 100vh;
-    background: url("../../img/call/background.png") center / cover no-repeat;
+    background: url("../img/call/background.png") center / cover no-repeat;
     position: absolute;
     z-index: -10;
     top: 0;
@@ -195,8 +268,27 @@
     top: 0;
     left: 0;
     transform: scale(10);
-    background: linear-gradient(180deg, rgba(28, 30, 34, 0.6) 0%, rgba(28, 30, 34, 0.2) 33%, #1c1e22 100%);
     backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px);
     z-index: -1;
+}
+
+.bg_img .gradient-black {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            180deg,
+            rgba(28, 30, 34, 0.6) 0%,
+            rgba(28, 30, 34, 0.2) 33%,
+            #1C1E22 100%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.loading {
+    margin-top: 0.75rem;
 }
