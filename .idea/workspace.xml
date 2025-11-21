@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="796ad413-b043-41bb-933d-b1656e5e3d5b" name="Changes" comment="파일 구조 변경">
-      <change afterPath="$PROJECT_DIR$/css/video-calling.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/call/gift-btn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/call/my-video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/call/remote-video.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/mic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/recording.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/screen-trans.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/star-checked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/icon/star-unchecked.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/call/video-calling.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/etc/search.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/icon/search-icon-line.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/etc/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -119,7 +112,7 @@
       <workItem from="1763337919894" duration="13000" />
       <workItem from="1763371373430" duration="9673000" />
       <workItem from="1763407505517" duration="25440000" />
-      <workItem from="1763685298313" duration="14559000" />
+      <workItem from="1763685298313" duration="16710000" />
     </task>
     <task id="LOCAL-00001" summary="?">
       <option name="closed" value="true" />
