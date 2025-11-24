@@ -201,9 +201,10 @@
       <button class="gift-btn">
         <img alt="선물하기" src="../img/chat/gift.svg"/>
       </button>
-      <input class="input-bar" placeholder="메세지를 입력하세요." type="text"/>
+      <textarea class="input-bar" placeholder="메세지를 입력하세요."></textarea>
       <button class="send-btn">
         <img alt="메세지 전송" src="../img/icon/send.svg"/>
+        <img alt="메세지 전송" src="../img/icon/send-active.svg"/>
       </button>
     </div>
   </div>
@@ -240,6 +241,19 @@
             }
         });
 
+        // 선물하기 포인트 선택 기능
+        const pointItems = document.querySelectorAll("#gift-popup .point-list ul li");
+
+        pointItems.forEach(item => {
+            item.addEventListener("click", () => {
+                // 모든 active 제거
+                pointItems.forEach(li => li.classList.remove("active"));
+
+                // 클릭한 li에 active 추가
+                item.classList.add("active");
+            });
+        })
+
 
         /* ===== 메뉴 모달 ===== */
         const menuModal = document.getElementById("menu-modal");
@@ -264,7 +278,7 @@
                 }, 300);
             }
         });
-    });   // ✅ ← 빠져있던 닫는 괄호
+    });
 
 
     // 뒤로가기
@@ -276,6 +290,30 @@
         }
     });
 
+    const textarea = document.querySelector('.input-bar');
+    const sendBtn = document.querySelector('.send-btn');
+    const sendImages = sendBtn.querySelectorAll('img');
+
+    textarea.addEventListener('input', () => {
+        // 높이 자동 조절 기존 기능
+        textarea.style.height = 'auto';
+        const maxHeight = parseFloat(getComputedStyle(textarea).maxHeight);
+
+        if (textarea.scrollHeight > maxHeight) {
+            textarea.style.height = maxHeight + 'px';
+        } else {
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        // 🔥 send 아이콘 이미지 전환
+        if (textarea.value.trim().length > 0) {
+            sendImages[0].style.display = 'none';   // 기본 이미지
+            sendImages[1].style.display = 'block';  // 활성 이미지
+        } else {
+            sendImages[0].style.display = 'block';
+            sendImages[1].style.display = 'none';
+        }
+    });
 
 </script>
 </body>

@@ -141,17 +141,22 @@
     height: 100%;
 }
 
-#action-area .action-box input {
+#action-area .action-box textarea {
+    box-sizing: border-box;     /* 🔥 패딩 포함한 높이 계산 */
     width: 100%;
     padding: 0.5rem 0;
-    color: #1C1E22;
-    font-size: 0.8125rem;
-    font-weight: 400;
+    min-height: 1.25rem;        /* 1줄 */
+    max-height: 2.5rem;         /* 2줄 */
     line-height: 1.25rem;
+    font-family: "Pretendard", sans-serif;
+    font-size: 0.8125rem;
+    resize: none;
+    overflow-y: auto;
+    outline: none;
     border: none;
 }
 
-#action-area .action-box input::placeholder {
+#action-area .action-box textarea::placeholder {
     color: #898D99;
 }
 
@@ -163,6 +168,14 @@
 #action-area .action-box .send-btn img {
     width: 100%;
     height: 100%;
+}
+
+.send-btn img:nth-child(1) {
+    display: block;   /* 기본 이미지 */
+}
+
+.send-btn img:nth-child(2) {
+    display: none;    /* 활성 이미지 */
 }
 
 /* 선물하기 팝업 */
